@@ -1,0 +1,250 @@
+{% extends 'baseedit.html.twig' %}
+
+{% block body %}
+    <h1 style="text-align:center; color:#1abc9c;">Modifier l'inscription de l'enfant</h1>
+
+   
+        <style>
+        body {
+            font-family: DejaVu Sans, sans-serif;
+            font-size: 14px;
+            color: #333;
+            padding: 30px;
+            background-color: #fdfdfd;
+        }
+
+        h1 {
+            color: #1abc9c;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 20px;
+        }
+
+        .form-container {
+            background-color: #a0eecc;
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+    </style>
+          <div class="form-container">
+            {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+            
+            <div>
+            {{ form_label(form.secteur) }}
+            {{ form_widget(form.secteur) }}
+            <div class="error">{{ form_errors(form.secteur) }}</div>
+        </div>
+        <div class="text-center">
+                    <button type="submit">Enregistrer</button>
+                </div>
+        <div>
+        <h3>Inscription</h3>
+        <div class="<div class="form-group">
+            {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+        
+            {{ form_label(form.nouvelleInscription) }}
+            {{ form_widget(form.nouvelleInscription) }}
+            <div class="error">{{ form_errors(form.nouvelleInscription) }}</div>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.reinscription) }}
+            {{ form_widget(form.reinscription) }}
+            <div class="error">{{ form_errors(form.reinscription) }}</div>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.ancienAccompagnement) }}
+            {{ form_widget(form.ancienAccompagnement) }}
+            <div class="error">{{ form_errors(form.ancienAccompagnement) }}</div>
+        </div>
+        <div class="form-group">
+        {{ form_label(form.nombreAnneesSuivies) }}
+        {{ form_widget(form.nombreAnneesSuivies) }}
+        <div class="error">{{ form_errors(form.nombreAnneesSuivies) }}</div>
+        </div>
+        <h3>Informations de l'enfant</h3>
+        <div class="form-group">
+            {{ form_label(form.genre) }}
+            {{ form_widget(form.genre) }}
+            <div class="error">{{ form_errors(form.genre) }}</div>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.nomEnfant) }}
+            {{ form_widget(form.nomEnfant) }}
+            <div class="error">{{ form_errors(form.nomEnfant) }}</div>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.prenomEnfant) }}
+            {{ form_widget(form.prenomEnfant) }}
+            <div class="error">{{ form_errors(form.prenomEnfant) }}</div>
+        </div>
+        <div>
+            {{ form_label(form.dateNaissance) }}
+            {{ form_widget(form.dateNaissance) }}
+            <div class="error">{{ form_errors(form.dateNaissance) }}</div>
+        </div>
+        
+        <div class="form-group">
+            {{ form_label(form.niveau_scolaire) }}
+            {{ form_widget(form.niveau_scolaire) }}
+            <div class="error">{{ form_errors(form.niveau_scolaire) }}</div>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.classe) }}
+            {{ form_widget(form.classe) }}
+            <div class="error">{{ form_errors(form.classe) }}</div>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.etablissement) }}
+            {{ form_widget(form.etablissement) }}
+            <div class="error">{{ form_errors(form.etablissement) }}</div>
+        </div>
+
+        <h3>Parent 1 (Obligatoire)</h3>
+        <div class="form-group">
+            {{ form_label(form.nomParent1) }}
+            {{ form_widget(form.nomParent1) }}
+            <div class="error">{{ form_errors(form.nomParent1) }}</div>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.prenomParent1) }}
+            {{ form_widget(form.prenomParent1) }}
+            <div class="error">{{ form_errors(form.prenomParent1) }}</div>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.adresseParent1) }}
+            {{ form_widget(form.adresseParent1) }}
+            <div class="error">{{ form_errors(form.adresseParent1) }}</div>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.codePostalParent1) }}
+            {{ form_widget(form.codePostalParent1) }}
+            <div class="error">{{ form_errors(form.codePostalParent1) }}</div>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.villeParent1) }}
+            {{ form_widget(form.villeParent1) }}
+            <div class="error">{{ form_errors(form.villeParent1) }}</div>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.professionParent1) }}
+            {{ form_widget(form.professionParent1) }}
+            <div class="error">{{ form_errors(form.professionParent1) }}</div>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.telephoneParent1) }}
+            {{ form_widget(form.telephoneParent1) }}
+            <div class="error">{{ form_errors(form.telephoneParent1) }}</div>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.emailParent1) }}
+            {{ form_widget(form.emailParent1) }}
+            <div class="error">{{ form_errors(form.emailParent1) }}</div>
+        </div>
+
+        <h3>Parent 2 (Facultatif)</h3>
+        <div class="form-group">
+            {{ form_label(form.nomParent2) }}
+            {{ form_widget(form.nomParent2) }}
+            <div class="error">{{ form_errors(form.nomParent2) }}</div>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.prenomParent2) }}
+            {{ form_widget(form.prenomParent2) }}
+            <div class="error">{{ form_errors(form.prenomParent2) }}</div>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.adresseParent2) }}
+            {{ form_widget(form.adresseParent2) }}
+            <div class="error">{{ form_errors(form.adresseParent2) }}</div>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.codePostalParent2) }}
+            {{ form_widget(form.codePostalParent2) }}
+            <div class="error">{{ form_errors(form.codePostalParent2) }}</div>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.villeParent2) }}
+            {{ form_widget(form.villeParent2) }}
+            <div class="error">{{ form_errors(form.villeParent2) }}</div>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.professionParent2) }}
+            {{ form_widget(form.professionParent2) }}
+            <div class="error">{{ form_errors(form.professionParent2) }}</div>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.telephoneParent2) }}
+            {{ form_widget(form.telephoneParent2) }}
+            <div class="error">{{ form_errors(form.telephoneParent2) }}</div>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.emailParent2) }}
+            {{ form_widget(form.emailParent2) }}
+            <div class="error">{{ form_errors(form.emailParent2) }}</div>
+        </div>
+
+        <h3>Matières pour l’accompagnement</h3>
+        <div class="form-group">
+            {{ form_label(form.matieresSouhaitees) }}
+            {{ form_widget(form.matieresSouhaitees) }}
+            <div class="error">{{ form_errors(form.matieresSouhaitees) }}</div>
+        </div>
+
+        <h3>Diagnostic & Activités</h3>
+        <div>
+            {{ form_label(form.diagnosticEtabli) }}
+            {{ form_widget(form.diagnosticEtabli) }}
+            <div class="error">{{ form_errors(form.diagnosticEtabli) }}</div>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.accepteActivitesCulturelles) }}
+            {{ form_widget(form.accepteActivitesCulturelles) }}
+            <div class="error">{{ form_errors(form.accepteActivitesCulturelles) }}</div>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.quotientFamilialPdf) }}
+            {{ form_widget(form.quotientFamilialPdf) }}
+            {{ form_errors(form.quotientFamilialPdf) }}
+
+         {% if enfant.quotientFamilialPdf %}
+        <p>
+            <a href="{{ asset('uploads/quotient_familial/' ~ enfant.quotientFamilialPdf) }}" target="_blank">
+                Voir le PDF actuel
+            </a>
+        </p>
+    {% else %}
+        <p>Pas de fichier PDF chargé.</p>
+    {% endif %}
+        </div>
+        <div class="form-group">
+    {{ form_label(form.donLibre) }}
+    {{ form_widget(form.donLibre) }}
+    <div class="error">{{ form_errors(form.donLibre) }}</div>
+    </div>
+
+
+            {{ form_end(form) }}
+     </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+Partenaires
+{% endblock %}
+
+{% block body %}
+        <div class="container text-center mt-0">
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <h1 class="text-black">Nos partenaires</h1>
+                    </div>
+                </div>
+        <br><br>
+       {% set partenaires = [
+    {'src': 'img/partenaires/caf.png', 'alt': 'Logo CAF'},
+    {'src': 'img/partenaires/region_bretagne.png', 'alt': 'Logo Région Bretagne'},
+    {'src': 'img/partenaires/Finistere.png', 'alt': 'Logo Finistère'},
+    {'src': 'img/partenaires/pont_l_abbe_nouveau.jpg', 'alt': 'Logo Pont l\'Abbé'},
+    {'src': 'img/partenaires/france_benevolat.png', 'alt': 'Logo France Bénévolat'},
+    {'src': 'img/partenaires/service_civique.png', 'alt': 'Logo Service Civique'},
+    {'src': 'img/partenaires/haut_pays_bigouden.png', 'alt': 'Logo Haut Pays Bigouden'},
+    {'src': 'img/partenaires/Quimper.png', 'alt': 'Logo Quimper'},
+    {'src': 'img/partenaires/ploneour_lanvern.png', 'alt': 'Logo Plonéour-Lanvern'},
+    {'src': 'img/partenaires/espace_asso_quimper.png', 'alt': 'Logo Espace Asso Quimper'}
+] %}
+
+<div class="container d-flex flex-column align-items-center gap-4">
+    <div class="d-flex flex-wrap justify-content-center gap-5">
+        {% for partenaire in partenaires %}
+            <img src="{{ asset(partenaire.src) }}" alt="{{ partenaire.alt }}" class="img-fluid" width="170" height="170">
+        {% endfor %}
+    </div>
+</div><br><br>
+
+{% endblock %}
+

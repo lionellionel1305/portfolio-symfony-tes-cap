@@ -1,0 +1,149 @@
+{% block body %}
+<style>
+    body {
+        font-family: DejaVu Sans, sans-serif;
+        font-size: 14px;
+        color: #333;
+        padding: 30px;
+        background-color: #fdfdfd;
+    }
+
+    h1 {
+        color: #1abc9c;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    table {
+        width: 100%;
+        max-width: 100vw;
+        margin: 0 auto 30px;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+
+    th {
+        background-color: #a0eecc;
+        color: black;
+        text-align: left;
+        padding: 8px;
+        width: 30%;
+        vertical-align: middle;
+    }
+
+    td {
+        background-color: #ecf0f1;
+        padding: 8px;
+        width: 70%;
+    }
+
+    tr + tr td,
+    tr + tr th {
+        border-top: 4px solid #ffffff;
+    }
+    
+    button {
+        background-color: #3498db;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        font-size: 14px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 20px auto;
+        display: block;
+    }
+
+    button:hover {
+        background-color: #2980b9;
+    }
+    .btn-large-text {
+        font-size: 1.8rem; /* Ajuste la taille ici */
+    }
+    
+</style>
+
+<h1>Modifier les informations du bénévole</h1>
+<table class="table">
+        <tr>
+            <th>Genre</th>
+            <td>{{ benevole.sexe }}</td>
+        </tr>
+        <tr>
+            <th>Nom</th>
+            <td>{{ benevole.nom }}</td>
+        </tr>
+        <tr>
+            <th>Prénom</th>
+            <td>{{ benevole.prenom }}</td>
+        </tr>
+        <tr>
+            <th>Âge</th>
+            <td>{{ benevole.age }}</td>
+        </tr>
+        <tr>
+            <th>Enfant suivi</th>
+            <td>{{ benevole.enfantSuivie }}</td>
+        </tr>
+        <tr>
+            <th>Téléphone</th>
+            <td>{{ benevole.telephone }}</td>
+        </tr>
+        <tr>
+            <th>Adresse</th>
+            <td>{{ benevole.adresse }}</td>
+        </tr>
+        <tr>
+            <th>Code Postal</th>
+            <td>{{ benevole.codePostal }}</td>
+        </tr>
+        <tr>
+            <th>Ville</th>
+            <td>{{ benevole.ville }}</td>
+        </tr>
+
+        <tr>
+            <th>Secteur</th>
+            <td>{{ benevole.secteur }}</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><a href="mailto:{{ benevole.email }}">{{ benevole.email }}</a></td>
+        </tr>
+        <tr>
+            <th>Déplacement</th>
+            <td style="white-space: nowrap;">{{ benevole.plagesDistances| join("<br>") |raw }}</td>
+        </tr>
+        <tr>
+            <th>Accompagment matière </th>
+            <td style="white-space: nowrap;">{{ benevole.matieresAccompagment | join("<br>") |raw }}</td>
+        </tr>
+        <tr>
+            <th> Niveau accompagnement </th>
+            <td style="white-space: nowrap;">{{ benevole.niveauAccompagment|join(', ') }}</td>
+        </tr>
+        <tr>
+            <th>Information complémentaire</th>
+            <td>{{ benevole.informationComplementaire}}</td>
+        </tr>
+        <tr>
+            <th> Comment vous nous avez connu ?  </th>
+            <td style="white-space: nowrap;">{{ benevole.connaitretescap|join(', ') }}</td>
+        </tr>
+        <tr>
+            <th>Casier Judiciaire</th>
+            <td>
+                {% if benevole.casierJudiciaire %}
+                    <a href="{{ asset('uploads/casier_judiciaire/' ~ benevole.casierJudiciaire) }}" target="_blank">Voir PDF</a>
+                {% else %}
+                    Pas de fichier
+                {% endif %}
+           
+        </tr>
+    </table>
+           <button class="btn btn-primary" style="@media print { display: none; }" onclick="window.open('{{ path('app_benevoles_generate_pdf', { 'id': benevole.id }) }}', '_blank')">
+            Générer PDF
+            </button>
+           
+{% endblock %}

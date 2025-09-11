@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Contact/Horaires
+{% endblock %}  {# Fermeture du block title #}
+{% block body %}
+<div class="tescap-page">
+    <h1 class="contacter text-center">Contact et Horaires</h1>
+    <div class="container mt-5">
+        <div class="d-flex flex-row justify-content-center flex-wrap gap-4 py-4">
+            <!-- Horaires -->
+            <div class="container_horaires text-center p-3 border rounded">
+                <h2><strong><span>H</span><span>or</span><span>ai</span><span>r</span><span>es</span></strong></h2>
+                <img src="{{ asset('img/contact/horloge_murale.png') }}" alt="Photo d'une horloge murale." class="img-fluid" style="max-width: 50px;">
+                <ul class="list-unstyled">
+                    <li><strong>Lundi : Fermé</strong></li>
+                    <li><strong>Mardi : 8h30-12h30 et 14h-18h</strong></li>
+                    <li><strong>Mercredi : 8h30-12h30 et 14h-18h</strong></li>
+                    <li><strong>Jeudi : 8h30-12h30 et 14h-18h</strong></li>
+                    <li><strong>Vendredi : 8h30-12h30 et 14h-18h</strong></li>
+                    <li><strong>Samedi : 9h-12h</strong></li>
+                    <li><strong>Dimanche : Fermé</strong></li>
+                </ul>
+            </div>
+
+            <!-- Adresse -->
+            <div class="container_rue text-center p-3 border rounded">
+                <h2><strong><span>A</span><span>dr</span><span>e</span><span>ss</span><span>e</span></strong></h2>
+                <img src="{{ asset('img/contact/batiment.png') }}" alt="Photo d'un immeuble." class="img-fluid" style="max-width: 50px;">
+                <p class="mb-1"><strong>4 rue René Daniel</strong></p>
+                <p class="mb-1"><strong>29720 Plonéour-Lanvern</strong></p>
+                <p><a href="mailto:tescapcontact@gmail.com">tescapcontact@gmail.com</a></p>
+            </div>
+
+            <!-- Téléphone -->
+            <div class="container_tel text-center p-3 border rounded">
+                <h2><strong><span>té</span><span>lé</span><span>ph</span><span>on</span><span>iq</span><span>ue</span></strong></h2>
+                <img src="{{ asset('img/contact/telephone.png') }}" alt="Photo d'un téléphone." class="img-fluid" style="max-width: 50px;"><br><br>
+                <h4 class="num_tel">
+                   <strong>
+                    <a href="tel:0951658538" class="text-dark tel-link">09 51 65 85 38</a><br><br>
+                    <a href="tel:0688791738" class="text-dark tel-link">06 88 79 17 38</a>
+                </strong>
+                </h4>
+                <style>
+                    .tel-link:hover {
+                        background-color: rgba(0, 123, 255, 0.3); /* Bleu Bootstrap avec transparence 
+                        border-radius: 5px; /* Arrondir un peu la surbrillance 
+                        padding: 2px 4px; /* Ajouter un léger padding 
+                    }
+                </style>
+            </div>
+            <div class="container_map text-center p-3 border rounded">
+                 <h2><strong>Localisation</strong></h2>
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2674.6892990616802!2d-4.285737523174046!3d47.90369866741386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48172eddd411747f%3A0x2732d42af8192fd4!2s4%20Rue%20Ren%C3%A9%20Daniel%2C%2029720%20Plon%C3%A9our-Lanvern!5e0!3m2!1sfr!2sfr!4v1739007126627!5m2!1sfr!2sfr" 
+                 width="800" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+    </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

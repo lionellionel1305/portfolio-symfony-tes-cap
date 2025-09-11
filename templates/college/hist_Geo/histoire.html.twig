@@ -1,0 +1,146 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Histoire{% endblock %}
+
+{% block body %}
+    
+        
+        {% if CollegeHistoire is not empty %}
+            {% for key, CollegeHistoire in CollegeHistoire %}
+                <div class="col-11">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <div>
+                                <h1 class="custom-title">{{ CollegeHistoire.editableTitle | default('Titre non défini') }}</h1>
+                            </div>
+
+                            <div class="container_dys_description">
+                                <h5>{{ CollegeHistoire.description | default('') | linkify | nl2br }}</h5>
+                                <h5>{{ CollegeHistoire.description1 | default('') | linkify | nl2br }}</h5>
+                                <h5>{{ CollegeHistoire.description2 | default('') | linkify | nl2br }}</h5>
+                                <h5>{{ CollegeHistoire.description3 | default('') | linkify | nl2br }}</h5>
+                                <h5>{{ CollegeHistoire.description4 | default('') | linkify | nl2br }}</h5>
+                                <h5>{{ CollegeHistoire.description5 | default('') | linkify | nl2br }}</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             
+            {% endfor %}
+        {% else %}
+            <p>Aucune entrée trouvée pour Histoire Géographie.</p>
+        {% endif %}<br><br><br>
+    </div>
+        <div class="container">
+    <div class="row gy-4"> <!-- Ajout de gy-4 pour espacer verticalement -->
+        <div class="col-md-3 text-center">
+            <h4>Frise 5ème</h4>
+            <img src="{{ asset('img/matieres/frise 5ème.PNG') }}" alt="Frise 5ème" class="img-fluid image-to-fullscreen" width="200" height="200">
+        </div>
+        <div class="col-md-3 text-center">
+            <h4>Frise 4ème</h4>
+            <img src="{{ asset('img/matieres/frise historique général 4ieme.PNG') }}" alt="Frise 4ème" class="img-fluid image-to-fullscreen" width="200" height="200">
+        </div>
+        <div class="col-md-3 text-center">
+            <h4>Frise 4ème fin XVIII°-XIX°</h4>
+            <img src="{{ asset('img/matieres/Frise fin WVIII.PNG') }}" alt="Frise 4ème fin XVII°" class="img-fluid image-to-fullscreen" width="200" height="200">
+        </div>
+        <div class="col-md-3 text-center">
+            <h4>L'ancien régime 4ème</h4>
+            <img src="{{ asset('img/matieres/ancien regime.PNG') }}" alt="L'ancien régime 4ème" class="img-fluid image-to-fullscreen" width="200" height="200">
+        </div>
+    </div>
+    
+    <div class="row gy-4 mt-4">
+        <div class="col-md-3 text-center">
+            <h4>La révolution 1789 4ème</h4>
+            <img src="{{ asset('img/matieres/La revoltion1789.PNG') }}" alt="La révolution 1789 4ème" class="img-fluid image-to-fullscreen" width="200" height="200">
+        </div>
+        <div class="col-md-3 text-center">
+            <h4>Frise 3ème</h4>
+            <img src="{{ asset('img/matieres/frise 3ème.PNG') }}" alt="Frise 3ème" class="img-fluid image-to-fullscreen" width="200" height="200">
+        </div>
+        <div class="col-md-3 text-center">
+            <h4>Le suicide de l'Europe</h4>
+            <img src="{{ asset('img/matieres/Europe.PNG') }}" alt="Le suicide de l'Europe" class="img-fluid image-to-fullscreen" width="200" height="200">
+        </div>
+        <div class="col-md-3 text-center">
+            <h4>1920-1930 Les régimes totalitaires</h4>
+            <img src="{{ asset('img/matieres/Le regimes totalitaires en europes.PNG') }}" alt="Régimes totalitaires" class="img-fluid image-to-fullscreen" width="200" height="200">
+        </div>
+    </div>
+    
+    <div class="row gy-4 mt-4">
+        <div class="col-md-3 text-center">
+            <h4>Affrontement capitalisme, communisme</h4>
+            <img src="{{ asset('img/matieres/affrontement capitalisme.PNG') }}" alt="Affrontement capitalisme, communisme" class="img-fluid image-to-fullscreen" width="200" height="200">
+        </div>
+        <div class="col-md-3 text-center">
+            <h4>Première Guerre Mondiale - Partie 1</h4>
+            <img src="{{ asset('img/matieres/1iere guerremondial1.PNG') }}" alt="Première Guerre Mondiale 1" class="img-fluid image-to-fullscreen" width="200" height="200">
+        </div>
+        <div class="col-md-3 text-center">
+            <h4>Première Guerre Mondiale - Partie 2</h4>
+            <img src="{{ asset('img/matieres/1iere guerremondial2.PNG') }}" alt="Première Guerre Mondiale 2" class="img-fluid image-to-fullscreen" width="200" height="200">
+        </div>
+        <div class="col-md-3 text-center">
+            <h4>Première Guerre Mondiale - Partie 3</h4>
+            <img src="{{ asset('img/matieres/1iere guerremondial3.PNG') }}" alt="Première Guerre Mondiale 3" class="img-fluid image-to-fullscreen" width="200" height="200">
+        </div>
+    </div>
+    
+    <div class="row gy-4 mt-4">
+        <div class="col-md-3 text-center">
+            <h4>Seconde Guerre Mondiale - Partie 1</h4>
+            <img src="{{ asset('img/matieres/2guerremondial1.PNG') }}" alt="Seconde Guerre Mondiale 1" class="img-fluid image-to-fullscreen" width="200" height="200">
+        </div>
+        <div class="col-md-3 text-center">
+            <h4>Seconde Guerre Mondiale - Partie 2</h4>
+            <img src="{{ asset('img/matieres/2guerremondial2.PNG') }}" alt="Seconde Guerre Mondiale 2" class="img-fluid image-to-fullscreen" width="200" height="200">
+        </div>
+        <div class="col-md-3 text-center">
+            <h4>Seconde Guerre Mondiale - Partie 3</h4>
+            <img src="{{ asset('img/matieres/2guerremondial3.PNG') }}" alt="Seconde Guerre Mondiale 3" class="img-fluid image-to-fullscreen" width="200" height="200">
+        </div>
+        <div class="col-md-3 text-center">
+            <h4>Frise historique général</h4>
+            <img src="{{ asset('img/matieres/frise historique généralPNG.PNG') }}" alt="Frise historique général" class="img-fluid image-to-fullscreen" width="200" height="200">
+        </div>
+    </div>
+    
+    <div class="row gy-4 mt-4">
+        <div class="col-md-3 text-center">
+            <h4>Frise à réaliser</h4>
+            <img src="{{ asset('img/matieres/frise general grand periodes d histtoire.PNG') }}" alt="Frise à réaliser" class="img-fluid image-to-fullscreen" width="200" height="200">
+        </div>
+    </div><br><br><br>
+    
+   <div class="container">
+        <div class="text-center mt-5">
+        {% if is_granted('ROLE_ADMIN') or is_granted('ROLE_BUREAU') %}
+            <a href="{{ path('app_collegeHist_edit') }}" class="btn btn-primary btn-lg">Modifier</a>
+        {% endif %}
+        
+    </div>
+</div>
+
+   <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let images = document.querySelectorAll(".image-to-fullscreen");
+
+        images.forEach(image => {
+            image.addEventListener("click", function() {
+                if (this.requestFullscreen) {
+                    this.requestFullscreen();
+                } else if (this.mozRequestFullScreen) { // Firefox
+                    this.mozRequestFullScreen();
+                } else if (this.webkitRequestFullscreen) { // Chrome, Safari et Opera
+                    this.webkitRequestFullscreen();
+                } else if (this.msRequestFullscreen) { // IE/Edge
+                    this.msRequestFullscreen();
+                }
+            });
+        });
+    });
+</script>
+{% endblock %}

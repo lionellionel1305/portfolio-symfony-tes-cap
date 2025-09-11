@@ -1,0 +1,117 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Page d'Accueil
+{% endblock %}
+
+{% block body %}
+
+<div class="container text-center mt-5">
+    <div class="row mt-4">
+        <div class="col-13">
+            <h1 class="text-black">Accompagnement scolaire du CP à la Terminale</h1>
+        </div>
+    </div>
+
+    <div class="row justify-content-between mt-5">
+        <!-- Première colonne -->
+        <div class="col-12 col-md-3 align-self-start">
+            <div class="card mb-4">
+                <div class="card-body" style="background-color: #fafafa; color: #333333;">
+                    <h3 class="card-title">L'association</h3>
+                    <a class="nav-link" href="{{ path('app_association') }}">Présentation</a>
+                    <a class="nav-link" href="{{ path('app_photo_index') }}">Vie de l'association</a>
+                    <a class="nav-link" href="{{ asset('uploads/pdfs/reglement/reglement.pdf') }}">Règlement intérieur</a>
+                    <a class="nav-link" href="{{ asset('uploads/pdfs/reglement/statuts.pdf') }}">Statuts l'association</a>
+                    <a class="nav-link" href="{{ path('app_mentions_legales') }}">Mentions Légales</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Colonne centrale -->
+        <div class="col-12 col-md-6 text-center mt-4">
+            <img src="{{ asset('img/accueil/D.jpg') }}" alt="Personne du CA de T'es Cap." class="img-fluid rounded w-95">
+        </div>
+
+        <!-- Troisième colonne -->
+        <div class="col-8 col-md-3 align-self-start">
+            <div class="card mb-3">
+                <div class="card-body" style="background-color: #fafafa; color: #333333;">
+                    <h3 class="card-title">Outils pédagogiques</h3>
+                    <a class="nav-link" href="{{ path('app_primaire') }}">Primaire</a>
+                    <a class="nav-link" href="{{ path('app_college') }}">Collège</a>
+                    <a class="nav-link" href="{{ path('app_lycee') }}">Lycée</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-between mt-4">
+        <!-- Nos partenaires -->
+        <div class="col-12 col-md-3">
+            <div class="card mb-4">
+                <div class="card-body" style="background-color: #fafafa; color: #333333;">
+                    <h3 class="card-title">Nos partenaires</h3>
+                    <a class="nav-link" href="{{ path('app_partenaires') }}">Liste</a>
+                    <a class="nav-link" href="{{ path('app_scivique') }}">Service Civique</a>
+                    <a class="nav-link" href="{{ path('app_service_snu') }}">Service National Universel</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Faire un don -->
+        <div class="col-12 col-md-3 d-flex justify-content-center align-items-center">
+            <div class="mb-1">
+                <a href="https://www.helloasso.com/associations/t-es-cap/formulaires/1/widget" target="_blank">
+                    <img src="{{ asset('img/accueil/100EURO.webp') }}" alt="Photo d'une pièce de monnaie." class="coin" width="60" height="60">
+                </a>
+                <h3 class="title">Faire un don</h3>
+                <select id="paiement" name="paiement" onchange="handlePaymentChange(this)" style="background-color: #fafafa; color: #333333;">
+                    <option value="">-- Au choix --</option>
+                    <option value="hello-asso">HelloAsso</option>
+                    <option value="Nous">Autre nous contacter</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Liens utiles -->
+        <div class="col-12 col-md-3">
+            <div class="card mb-4">
+                <div class="card-body" style="background-color: #fafafa; color: #333333;">
+                    <h3 class="card-title">Liens utiles</h3>
+                    <a class="nav-link" href="{{ path('app_dys') }}">Les Dys</a>
+                    <a class="nav-link" href="{{ path('app_autres_lien_dys') }}">Sites internet utiles</a>
+                    <a class="nav-link" href="{{ path('app_document_index') }}">Adresses utiles</a>
+                </div>
+            </div>
+        </div>
+    </div><br>
+
+<script>
+function handlePaymentChange(select) {
+    if (select.value === "hello-asso") {
+        window.open("https://www.helloasso.com/associations/t-es-cap/formulaires/1/widget", "_blank");
+    } else {
+        window.location.href = '{{ path('app_contact') }}';
+    }
+}
+
+window.onload = function() {
+    var modalElement = document.getElementById('popupModal');
+    if(modalElement && !localStorage.getItem('popupShown')) {
+        var modal = new bootstrap.Modal(modalElement, { backdrop: false });
+        modal.show();
+
+        modalElement.addEventListener('hidden.bs.modal', function () {
+            document.body.classList.remove('modal-open');
+            document.body.style.overflow = '';
+            document.body.style.paddingRight = '';
+            var backdrop = document.querySelector('.modal-backdrop');
+            if (backdrop) backdrop.remove();
+            localStorage.setItem('popupShown', 'true');
+        });
+    }
+};
+</script>
+
+{% endblock %}

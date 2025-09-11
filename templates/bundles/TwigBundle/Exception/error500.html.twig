@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Erreur 500 - Problème serveur {% endblock %}
+
+{% block body %}
+    <div style="text-align: center; padding: 50px;">
+        <h1>😢 Oups ! Une erreur est survenue.</h1>
+        <h2>La page demandée n'existe pas. Merci de revenir à l'accueil.</h2>
+        <a href="{{ path('accueil_accueil') }}" style="text-decoration: none; color: blue; font-size: 50px; ">Retour à l'accueil</a>
+    </div>
+{% endblock %}

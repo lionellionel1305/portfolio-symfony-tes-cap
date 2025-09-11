@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Primaires
+{% endblock %}
+
+{% block body %}
+    <div class="container text-center mt-0">
+        <div class="row mt-4">
+            <div class="col-12">
+                <h1 class="text-black">Primaire</h1>
+            </div>
+        </div><br>
+        <div class="container-fuild ">
+            <div class="row g-2">
+                <div class="col-4 ">
+                    <h5>Français</h5>
+                    <a href="{{ path('app_francais') }}">
+                    <img src="{{ asset('img/matieres/francais2.webp') }}" alt="Francais" class="img-fluid" width="140" height="140">
+                    </a>
+                </div>
+                <div class="col-4 ">
+                    <h5>Math</h5>
+                    <a href="{{ path('app_math') }}">
+                    <img src="{{ asset('img/matieres/Math1.webp') }}" alt="Mathématique" class="img-fluid" width="140" height="140">
+                    </a>
+                </div>    
+                <div class="col-4 ">
+                    <h5>Langues</h5>
+                    <a href="{{ path('app_anglais') }}">
+                    <img src="{{ asset('img/matieres/langues1.webp') }}" alt="Langues" class="img-fluid" width="140" height="140">
+                    </a>
+                 </div>
+            </div> <br><br>
+            <div class="row g-2">
+                <div class="col-4" style="position: relative; left: 180px;">
+                <h5>Hist-Géo</h5>
+                    <a href="{{ path('app_hist') }}">
+                    <img src="{{ asset('img/matieres/histoire.webp') }}" alt="Géographie" class="img-fluid" width="140" height="140">
+                    </a>
+                </div>
+                
+                <div class="col-4" style="position: relative; left: 210px;">
+                <h5>Loisirs créatifs</h5>
+                    <a href="{{ path('app_loisirs') }}">
+                    <img src="{{ asset('img/matieres/loisir1.webp') }}" alt="Loisir creatif" class="img-fluid" width="140" height="140">
+                    </a>
+                </div>  
+                </div>
+            </div>
+        </div>
+    </div><br><br><br>    
+        
+        </div>
+    </div>
+{% endblock %}

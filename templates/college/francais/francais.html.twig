@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Francais{% endblock %}
+
+{% block body %}
+<div class="container">
+    {% if CollegeFrancais is not empty %}
+        {% for key, CollegeFrancais in CollegeFrancais %}
+            <div class="col-11">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div>
+                            <h1 class="custom-title">{{ CollegeFrancais.editableTitle | default('Titre non défini') }}</h1>
+                        </div>
+
+                        <div class="container_dys_description">
+                            <h5>{{ CollegeFrancais.description | default('') | linkify | nl2br }}</h5>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>Aucune entrée trouvée pour Francais.</p>
+    {% endif %}
+
+    <div class="buton_modifier_dys">
+        <div class="col-12">
+            {% if is_granted('ROLE_ADMIN') or is_granted('ROLE_BUREAU') %}
+                <div class="container_dys_description_button text-center">
+                    <a href="{{ path('app_collegeFrancais_edit') }}" class="boutton_dys btn btn-primary btn-lg">Modifier</a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

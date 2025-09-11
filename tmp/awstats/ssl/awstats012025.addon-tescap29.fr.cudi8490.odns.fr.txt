@@ -1,0 +1,2245 @@
+AWSTATS DATA FILE 7.9 (build 20230108)
+# If you remove this file, all statistics for date 202501 will be lost/reset.
+# Last config file used to build this data file was /home/cudi8490/tmp/awstats/ssl/awstats.addon-tescap29.fr.cudi8490.odns.fr.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2069                
+POS_TIME 2743                
+POS_VISITOR 16971               
+POS_DAY 26361               
+POS_DOMAIN 3640                
+POS_LOGIN 4156                
+POS_ROBOT 4311                
+POS_WORMS 5051                
+POS_EMAILSENDER 5182                
+POS_EMAILRECEIVER 5325                
+POS_SESSION 27133               
+POS_FILESIZE 65140               
+POS_SIDER 27345               
+POS_FILETYPES 5460                
+POS_DOWNLOADS 5703                
+POS_OS 5793                
+POS_BROWSER 6105                
+POS_SCREENSIZE 7552                
+POS_UNKNOWNREFERER 7626                
+POS_UNKNOWNREFERERBROWSER 8985                
+POS_ORIGIN 9536                
+POS_SEREFERRALS 9683                
+POS_PAGEREFS 9953                
+POS_SEARCHWORDS 10444               
+POS_KEYWORDS 10596               
+POS_MISC 2405                
+POS_ERRORS 10655               
+POS_CLUSTER 4012                
+POS_SIDER_404 10815               
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20250201000051 2843 690716 9413945380202
+FirstTime 0
+LastTime 20250131174719
+LastUpdate 20250201001118 2843 0 2842 0 0
+TotalVisits 358                 
+TotalUnique 233                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 241                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+AddToFavourites 0 129 0
+TotalMisc 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+RealPlayerSupport 0 0 0
+JavascriptDisabled 0 0 0
+FlashSupport 0 0 0
+JavaEnabled 0 0 0
+PDFSupport 0 0 0
+DirectorSupport 0 0 0
+QuickTimeSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 9 9 47095 47 71 119433
+1 9 10 60997 41 98 157566
+2 6 7 47658 65 126 205723
+3 20 20 104042 44 76 1039230
+4 5 7 100788 45 78 389034
+5 6 6 12974 57 98 1158244
+6 8 31 890006 42 98 216190
+7 240 337 20096118 94 171 1574667
+8 116 291 16401646 75 115 212367
+9 286 810 27587410 76 147 282582
+10 307 1070 39630533 128 212 5225190
+11 253 501 32166262 106 195 319090
+12 460 659 33400849 107 176 333783
+13 40 96 2132090 104 183 875686
+14 196 307 19536535 176 239 3896728
+15 817 1041 64904456 174 248 11430466
+16 883 1025 58997835 176 262 22536170
+17 738 942 47686415 175 251 4962512
+18 209 450 20627789 118 185 1297498
+19 16 77 5348926 83 166 1813989
+20 97 173 8730908 138 300 11683958
+21 53 148 15119016 103 176 504546
+22 12 48 2623014 72 115 340318
+23 11 32 4356470 46 73 177664
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 22
+fr 4474 7567 398381704
+us 224 400 20556095
+pl 25 25 229120
+ca 24 24 122435
+zz 15 15 69563
+gb 7 24 632355
+in 4 4 19394
+se 4 6 88757
+eu 3 5 83715
+ro 3 3 33270
+ru 2 2 9697
+bz 2 2 1632
+de 2 4 11003
+ip 1 1 810
+nl 1 1 816
+ch 1 1 16929
+lv 1 1 8850
+ie 1 2 39321
+ir 1 1 5160
+at 1 7 259885
+cn 1 1 816
+pt 0 1 38505
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 16
+Googlebot/ 505 14041947 20250131172445 0
+bingbot/ 188 6929463 20250131225757 0
+AhrefsBot/ 59 2065241 20250127002658 0
+Googlebot\-Image/ 48 8452133 20250129054503 0
+SemrushBot/ 28 179221 20250131021350 0
+yandex 10 62940 20250130011320 0
+no_user_agent 9 7344 20250113003158 0
+facebookexternalhit/ 9 53098 20250125192401 0
+Applebot/ 8 70698 20250131095604 0
+bot[\s_+:,\.\;\/\\-] 4 7706 20250130183859 0
+survey 3 2448 20250107011047 0
+libwww\-perl 1 816 20250105231737 0
+Barkrowler 1 816 20250106182440 0
+MojeekBot 1 816 20250109150729 0
+YandexImages/ 1 38505 20250111025131 0
+YandexBot/ 1 816 20250111024944 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 9
+png 2409 262489200 0 0
+css 449 5267331 0 0
+pdf 7 1373897 0 0
+js 312 203736 0 0
+yaml 1 714 0 0
+jpg 123 42518172 0 0
+php 2 108644 0 0
+Unknown 4513 108305866 0 0
+html 281 342272 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 1
+/uploads/pdfs/formulaire.pdf 12 0 2355252
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 16
+androidnougat 45 17
+macosx14 1 1
+android13 34 9
+android11 43 6
+android10 549 141
+macosx15 156 34
+android 41 5
+win10 6736 4382
+androidmarshmallow 54 53
+ios_iphone 311 66
+winnt 1 1
+Unknown 65 41
+linux 52 32
+linuxubuntu 5 5
+win7 1 1
+androidoreo 3 3
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 68
+chrome101.0.4951.64 1 1
+chrome115.0.0.0 1 1
+chrome58.0.3029.110 1 1
+chrome117.0.5938.92 7 1
+chrome132.0.6834.122 1 0
+safari18.1.1 117 33
+firefox128.0 21 3
+chrome105.0.0.0 6 4
+chrome100.0.4896.75 1 1
+chrome19.0.1041.0 1 1
+chrome131.0.0.0 3375 2544
+chrome131.0.6778.131 2 1
+chrome131.0.6778.200 2 1
+chrome63.0.3239.84 4 4
+chrome132.0.0.0 3588 1879
+firefox97.0 2 2
+chrome84.0.4147.105 1 1
+chrome124.0.0.0 6 3
+chrome103.0.0.0 1 1
+safari17.4.1 1 0
+chrome127.0.0.0 1 1
+firefox133.0 6 3
+chrome132.0.6834.83 39 38
+chrome120.0.0.0 1 1
+safari16.6 92 15
+chrome114.0.5735.196 2 1
+safari15.6 1 1
+chrome122.0.0.0 2 2
+chrome59.0.3071.125 45 17
+chrome113.0.0.0 5 5
+chrome130.0.0.0 2 1
+safari 44 7
+chrome128.0.0.0 1 1
+chrome72.0.3626.121 1 1
+Unknown 16 16
+firefox116.0 1 1
+safari17.6 6 3
+firefox113.0 1 1
+chrome104.0.5112.34 6 6
+firefox101.0 4 4
+safari18.0 72 11
+firefox134.0 98 17
+chrome76.0.3809.100 1 0
+chrome86.0.4240.111 2 2
+chrome131.0.6778.260 36 2
+chrome94.0.4606.81 3 3
+chrome83.0.4103.97 2 2
+chrome71.0.3578.141 1 1
+mozilla 19 13
+chrome125.0.0.0 35 9
+safari6.0 3 3
+chrome68.0.3440.91 2 2
+chrome132.0.6834.90 20 3
+firefox135.0 1 1
+firefox103.0 2 2
+firefox42.0 19 12
+samsung 11 0
+chrome123.0.0.0 1 1
+chrome62.0.3202.104 1 1
+chrome108.0.0.0 2 2
+firefox123.0 1 1
+chrome69.2.0.1713 201 49
+iphone 39 4
+chrome114.0.0.0 18 18
+chrome132.0.6834.110 15 15
+chrome75.0.3770.143 25 5
+firefox120.0 6 6
+safari18.2 46 5
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 13
+Expanse,_a_Palo_Alto_Networks_company,_searches_across_the_global_IPv4_space_multiple_times_per_day_to_identify_customers&#39;_presences_on_the_Internet._If_you_would_like_to_be_excluded_from_our_scans,_please_send_IP_addresses/domains_to:_scaninfo@paloaltonetworks.com 20250115082824
+[FBAN/FB4A;FBAV/496.0.0.45.65;FBBV/684523783;FBDM/{density=2.8125,width=1080,height=2125};FBLC/fr_FR;FBRV/687546985;FBCR/F-Bouygues_Telecom;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A155F;FBSV/14;FBOP/1;FBCA/arm64-v8a:;] 20250124205626
+Mozilla/5.0_(compatible;_CensysInspect/1.1;__https://about.censys.io/) 20250129175850
+Mozilla/5.0_(compatible;_AGU/0.8.5) 20250123213924
+Mozilla/5.0/Firefox/42.0_-_nbertaupete95(at)gmail.com 20250130032053
+python-requests/2.32.3 20250126202300
+[FBAN/FB4A;FBAV/494.0.0.55.73;FBBV/674947256;FBDM/{density=1.875,width=720,height=1465};FBLC/fr_FR;FBRV/681510047;FBCR/REGLO_Mobile;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A037G;FBSV/13;FBOP/1;FBCA/arm64-v8a:;] 20250106202250
+Mozilla/5.0_(compatible;_Dataprovider.com) 20250113090740
+\ 20250110141003
+Mozilla/5.0_(compatible) 20250122022825
+got_(https://github.com/sindresorhus/got) 20250120160210
+python-requests/2.26.0 20250124164448
+WhatsApp/3.0.0.0_A 20250122182844
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 6
+WhatsApp/3.0.0.0_A 20250122182844
+python-requests/2.26.0 20250124164448
+got_(https://github.com/sindresorhus/got) 20250120160210
+\ 20250110141003
+Expanse,_a_Palo_Alto_Networks_company,_searches_across_the_global_IPv4_space_multiple_times_per_day_to_identify_customers&#39;_presences_on_the_Internet._If_you_would_like_to_be_excluded_from_our_scans,_please_send_IP_addresses/domains_to:_scaninfo@paloaltonetworks.com 20250115082824
+python-requests/2.32.3 20250126202300
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 373 399
+From1 4 15
+From2 162 165
+From3 24 25
+From4 4234 7493
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 7
+duckduckgo 1 1
+www_google_com 149 150
+google_com 0 1
+www_bing_com 2 3
+qwant_com 1 1
+www_google_fr 8 8
+fr_search_yahoo_com 1 1
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 11
+https://www.plomodiern.bzh 6 6
+https://functions.o2switch.net:2083 3 3
+https://chatgpt.com 3 3
+http://m.facebook.com 3 3
+https://chateaulin.fr 2 2
+https://lm.facebook.com 2 2
+https://ville-fouesnant.fr 2 2
+https://l.facebook.com 1 1
+https://l.instagram.com 1 1
+https://fr.all-url.info/fr/tescap29.fr/ 1 1
+https://mail.tescap29.fr/accueil 0 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 6
+401 1 35
+400 2 64299
+302 76 27716
+404 1236 25904865
+500 741 12528328
+301 660 160475
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 130
+/tesCap29.fr/dys/dyslexie 8 https://tescap29.fr/dys
+/faire-un-don 10 -
+/about-3 1 -
+/_files/ugd/293439_1b91b8c236ea449a95695fbf95d52c2f.pdf 1 -
+/primaire/anglais 4 https://tescap29.fr/primaire
+/.well-known/assetlinks.json 1 -
+/_files/ugd/293439_b9f18750bae84269a481a858449fd8f9.pdf 1 -
+/primaire-outils-histoire-g%C3%A9ographie 7 -
+/ads.txt 5 -
+/_files/ugd/293439_d54e351d566744ef84a227a4666b563a.pdf 3 https://www.qwant.com/
+/college-outils-maths-sciences 8 -
+/logout 5 https://tescap29.fr/accueil
+/members 2 -
+/test/%7B%7B%20asset('styles/app.css')%20%7D%7D 3 https://www.tescap29.fr/test/
+/_files/ugd/293439_93048edb6d5b473d937ede4a833697c7.pdf 1 -
+/tesCap29.fr/dys/dyscalculie 4 https://tescap29.fr/tesCap29.fr/dys
+/_files/ugd/293439_b0d46ea491ed463db71f7b43189e6064.pdf 7 -
+/tesCap29.fr/primaire/histoire-geographie/edit 1 https://tescap29.fr/primaire/Histoire-G%C3%A9ographie
+/accompagner-un-enfant-de-lycee 6 -
+/lagout 1 -
+/_files/ugd/293439_070a208e003444e586e82574ee11bf08.pdf 2 -
+/image.jpg/D.png 6 https://www.tescap29.fr/
+/tesCap29.fr/service/civique 1 -
+/_files/ugd/293439_7fa15be5fc2e465cb4c3ebcc12d49d73.pdf 1 -
+/tesCap29.fr/primaire/mathematique/edit 1 https://tescap29.fr/primaire/mathematique
+/apple-touch-icon-precomposed.png 1 -
+/copie-de-lyc%C3%A9e-histoire-g%C3%A9ographie 1 -
+/config.json 1 -
+/ 12 https://www.google.com/
+/lycee-outils-francais 2 -
+/test 1 -
+/service/civique/edit 1 https://tescap29.fr/service/civique
+/_api/v1/access-tokens 6 https://www.tescap29.fr/activit%C3%A9s-collectives
+/test/%7B%7B%20asset('styles/coin_animation.css')%20%7D%7D 3 https://www.tescap29.fr/test/
+/_files/ugd/293439_2be918f349684b03aed8fb28fac75f1a.pdf 2 -
+/.well-known/traffic-advice 59 -
+/public_html/test 1 -
+/tesCap29.fr/login 3 -
+/lycee-outils-langues 3 -
+/college-outils-francais 7 -
+/_files/ugd/293439_3095a977761542f5ace4defd072ecdb9.pdf 3 -
+/primaire-outils-langues 7 -
+/aider-un-enfant-de-college 2 -
+/uploads/photos/IMG-20241130-104232-1-676064c9a403b.jpg 13 -
+/_files/ugd/293439_89da0caf3da6426e8f2999ef9ab7f362.pdf 1 -
+/dys-autisme 7 -
+/http://thontrius.space/ 1 -
+/tesCap29.fr/dys/dyslexie/edit 7 https://tescap29.fr/dys/dyslexie
+/_files/ugd/293439_3fbae4708b63443795e4e90d554d0810.pdf 1 -
+/_files/ugd/293439_e2ae42b9a7e049f886f5c79971011e02.pdf 5 -
+/primaire-outils-divers 4 -
+/uploads/photos/ 2 https://tescap29.fr/vie/association/photos
+/account/my-account 2 -
+/mentions-l%C3%A9gales 4 https://www.google.com/
+/horaires-d-accueil 16 https://www.google.com/
+/tesCap29.fr/accueil 29 https://tescap29.fr/tesCap29.fr/login
+/img/favicon1.png%3F1.0 1 -
+/apple-touch-icon.png 1 -
+/tesCap29.fr/autres/lien/dys/edit 2 https://tescap29.fr/dys/autres/lien/dys
+/tesCap29.fr/lyc%C3%A9e/langues 1 https://tescap29.fr/lycee
+/image.jpg/TesCap.png 7 https://www.tescap29.fr/
+/tesCap29.fr/photos/new 5 https://tescap29.fr/vie/association/photos
+/_files/ugd/293439_b7c9d701b8c3405b88d3227edcb63edb.pdf 3 -
+/lycee-outils-histoire-geographie 3 -
+/college-outils-histoire-geographie 3 -
+/_files/ugd/293439_95e3014d1f0543c69ccfb79edc6cc69a.pdf 1 -
+/_files/ugd/293439_ff6af98acec24706ac258d94300a63c8.pdf 2 -
+/service/civique/edit/ 1 https://tescap29.fr/service/civique
+/_files/ugd/293439_dd374fc16ac640ff9372190b0685d4fb.pdf 3 -
+/wp-login.php 3 http://www.google.com.hk
+/tesCap29.fr/benevoles/inscription 5 https://tescap29.fr/tesCap29.fr/charger/mission
+/_files/ugd/293439_04465d50db7144a5b0502ac86dcea255.pdf 1 -
+/_files/ugd/293439_91a03285ac3f4f27897b192cdc5c1461.pdf 2 -
+/tesCap29.fr/lyc%C3%A9e/mathematique 3 https://tescap29.fr/lycee
+/lycee-outils-maths-sciences 6 https://www.google.com/
+/accueil/edit 3 -
+/_wdt/dc5d78 13 https://tescap29.fr/college/Techno
+/primaire-outils-francais 3 -
+/lycee-outils-preparer-le-bac 3 -
+/_files/ugd/293439_82926d49990649e8968f7314a0516192.pdf 1 -
+/cgi-bin/ 4 https://www.tescap29.fr/
+/accueil 8 -
+/tesCap29.fr/coll%C3%A8ge/francais 1 https://tescap29.fr/tesCap29.fr/coll%C3%A8ge
+/_files/ugd/293439_d1a5c486936c4f079a49146873f80864.pdf 2 -
+/sitemap_index.xml 2 -
+/_files/ugd/293439_650317b3c57543df8ab940e58854499f.pdf 1 -
+/js/FonctionLogin.js 40 https://tescap29.fr/tesCap29.fr/login
+/tesCap29.fr/service/civique/edit 5 https://tescap29.fr/service/civique
+/accueil/lagaout 1 -
+/image/D.png 6 https://www.tescap29.fr/
+/_files/ugd/293439_2b1c830b2b564221819f3fd35a77ca51.pdf 1 -
+/vous-engager 12 -
+/uploads/photos/IMG-20241130-104226-1-6760645d30536.jpg 13 -
+/.well-known/connection-check/connected 7 -
+/_api/tag-manager/api/v1/tags/sites/91b30073-48a7-4b5c-86e0-6de005717073 3 https://www.tescap29.fr/activit%C3%A9s-collectives
+/_files/ugd/293439_4749d94705094dffac71caaa94a99af7.pdf 1 -
+/primaire-outils-maths-sciences 7 -
+/robots.txt 463 -
+/_files/ugd/293439_aa6f350c51c9492c97fc5d74ef4fa02a.pdf 1 -
+/outils-et-base-de-connaissances 13 -
+/_files/ugd/293439_74364712ebc14086bfc5e608d2a5b7a7.pdf 2 -
+/presse 9 https://www.google.com/
+/tescap29.fr/dys/dyscalculie 1 -
+/sitemap.xml 10 -
+/_files/ugd/293439_a29720ba348f48eeb2a8505f84d79d43.pdf 32 -
+/tesCap29.fr/mentions/legales 1 -
+/lyc%C3%A9e/physique-chimie 1 -
+/contact 13 -
+/cafes-pedagogiques 24 -
+/tesCap29.fr/lyc%C3%A9e/physique-chimie 2 https://tescap29.fr/lycee
+/tesCap29.fr/dys/Tdah 1 -
+/tesCap29.fr/service/snu 2 -
+/sitemap.xml.gz 2 -
+/acceuil/edit 1 -
+/aider-un-enfant-de-primaire 5 -
+/lycee-outils-generaliste 3 -
+/style.php 1 www.google.com
+/test/%7B%7B%20asset( 1 https://www.tescap29.fr/test/
+/img/D.png 17 https://tescap29.fr/
+/activit%C3%A9s-collectives 8 -
+/college-outils-preparer-le-brevet 22 -
+/primaire-outils-g%C3%A9n%C3%A9ralistes 1 -
+/tesCap29.fr/dys 1 -
+/college-outils-langues 4 -
+/acceuil 3 -
+/tesCap29.fr/vie/association/photos 3 https://tescap29.fr/accueil
+/documents 12 -
+/college-outil-g%C3%A9n%C3%A9ralistes 4 -
+/soutien-scolaire 85 https://www.google.com/
+/_files/ugd/293439_eb0fca5ce1b24ff58ead46dd653e2559.pdf 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 241
+109.31.122.195 2891 4317 177071836 20250131161658
+90.27.207.102 1229 1645 81956179 20250131154447
+90.19.23.159 35 92 14062201 20250124152733
+90.9.235.155 29 73 8722091 20250122213646
+83.199.125.214 28 69 8450588 20250123143912
+90.27.133.50 19 55 6059956 20250128110656
+31.38.28.247 18 95 8432568 20250131101740
+169.155.255.250 17 42 3450787 20250125155857
+109.31.122.251 15 53 5546076 20250129210550
+66.249.66.19 15 16 294240 20250124111555
+10.20.0.20 15 15 69563 20250120134852
+66.249.66.20 14 14 82032 20250124111506
+81.53.22.177 13 58 6723828 20250127184301
+79.83.35.7 13 38 4437679 20250120170839
+104.28.42.26 12 37 4481842 20250122161012
+83.205.19.6 12 66 5776088 20250124205636
+79.95.86.229 10 27 927296 20250121075655
+66.249.64.128 9 9 54709 20250130134904
+54.209.239.234 8 12 347344 20250130032053
+193.186.4.124 8 8 30638 20250129173544
+66.249.66.21 8 8 50209 20250124014432
+88.182.73.53 8 36 4101621 20250122101138
+104.28.42.14 7 10 3709142 20250124160604
+86.229.158.157 7 35 4096851 20250131073731
+86.229.250.227 7 66 8447580 20250125163045
+54.255.234.224 1 1 816 20250107034526
+3.91.60.138 3 3 31055 20250129224913
+208.115.211.107 1 1 816 20250101130936
+104.194.209.17 1 1 8850 20250129235713
+37.170.130.13 1 2 39321 20250108202607
+81.53.213.138 1 18 601061 20250126132438
+40.68.190.20 4 4 3264 20250114121836
+66.249.83.114 1 2 28594 20250123080415
+104.28.42.40 4 29 3371021 20250131123114
+207.154.242.164 1 1 816 20250106060125
+80.11.1.224 1 18 600803 20250131161530
+80.15.39.170 1 2 39026 20250115170717
+83.205.134.125 1 18 601061 20250125094731
+72.14.201.125 4 4 12272 20250130210903
+23.95.23.53 2 2 1632 20250102023225
+54.37.122.17 6 6 4890 20250116014231
+207.244.72.113 1 2 39321 20250114174541
+143.198.127.201 1 1 816 20250103080644
+31.38.10.226 1 2 39321 20250113112416
+54.88.179.33 1 1 816 20250107095920
+103.114.107.34 1 1 816 20250107104547
+88.177.120.106 6 31 4046268 20250123181515
+47.82.11.58 2 2 11338 20250128035312
+83.197.93.121 3 21 647560 20250124180522
+142.250.32.8 1 1 8887 20250130105127
+103.153.77.240 1 1 8881 20250124164448
+93.158.91.32 1 2 43578 20250124154326
+83.199.48.230 3 28 4028745 20250125190408
+44.244.66.11 1 1 816 20250110075843
+198.235.24.148 1 1 816 20250115082824
+47.82.10.71 1 1 5327 20250128035413
+159.148.128.23 1 1 8850 20250130061404
+85.169.113.60 1 2 39321 20250107175244
+192.17.103.243 1 1 8881 20250126202300
+78.242.234.89 1 18 601061 20250127134629
+85.25.177.176 1 1 816 20250103224444
+34.205.165.183 1 2 39321 20250114174510
+209.38.110.10 1 1 816 20250104093818
+81.53.116.224 1 2 39321 20250113112602
+193.186.4.119 3 3 26643 20250125152635
+198.145.175.203 1 1 816 20250112001356
+44.242.225.115 1 1 805 20250115143950
+147.185.132.228 1 1 816 20250101121014
+104.28.42.25 1 2 39321 20250109144135
+72.14.201.54 4 4 19394 20250126185526
+205.210.31.225 1 1 816 20250110025326
+142.250.32.6 2 2 14271 20250127115002
+86.198.38.51 1 3 77826 20250106202246
+34.210.77.72 1 1 816 20250114121828
+77.128.13.127 4 36 3869569 20250127090726
+194.250.50.33 1 2 39321 20250107160817
+92.184.145.100 1 2 39321 20250107102220
+147.185.132.120 1 1 816 20250107143958
+78.242.244.190 3 20 618529 20250131100450
+185.24.187.212 1 2 39321 20250106095120
+3.236.119.175 1 1 60938 20250120154349
+92.184.97.241 1 1 816 20250110173717
+212.33.255.53 1 1 816 20250107031214
+163.116.174.162 2 3 40137 20250103153256
+91.242.162.3 0 1 34697 
+88.123.43.168 1 20 1960497 20250126185601
+90.8.24.240 1 2 39321 20250112095948
+31.38.23.155 1 2 39321 20250109112406
+86.228.32.225 6 32 4079377 20250130155415
+66.249.83.115 2 9 63194 20250130105127
+159.65.94.144 1 2 43578 20250122022824
+47.82.11.98 3 3 16129 20250128040520
+94.159.108.209 1 1 8881 20250128101825
+72.14.201.124 4 4 84055 20250129175958
+83.205.16.220 1 2 39321 20250111114107
+3.231.110.184 1 2 39321 20250114162918
+176.145.66.72 1 2 39321 20250109162702
+88.172.96.107 1 2 39321 20250103151119
+79.117.245.208 2 2 32454 20250120171851
+23.95.210.50 1 1 816 20250102023422
+34.212.108.104 1 1 8881 20250128133338
+188.166.24.9 1 1 816 20250105163535
+89.91.136.244 3 23 653373 20250122103756
+178.63.3.29 1 3 10187 20250123213923
+35.92.153.36 1 1 816 20250109173717
+5.133.192.167 1 1 816 20250111220010
+90.27.206.178 1 17 566364 20250127130257
+176.140.9.64 1 2 39321 20250109232727
+72.14.201.119 2 2 9697 20250124091251
+104.166.80.77 1 1 816 20250106164120
+163.116.174.63 1 2 39321 20250107135138
+162.142.125.209 1 1 816 20250114080457
+167.94.138.39 1 2 43578 20250125104814
+81.53.29.94 1 2 39321 20250108213012
+138.197.114.198 1 1 810 20250116031803
+54.202.155.170 1 1 8881 20250123125611
+176.113.178.28 1 1 816 20250103060803
+88.184.202.177 4 21 627704 20250125203332
+85.69.222.108 2 19 606846 20250121180519
+5.133.192.87 1 2 43547 20250131015457
+104.166.80.190 2 2 1632 20250103160443
+104.171.153.122 2 2 1632 20250102053338
+176.145.69.216 1 18 601061 20250125110733
+193.186.4.54 4 4 71391 20250128084322
+163.172.188.151 1 1 8881 20250123225342
+2a06:98c0:3600::103 1 1 810 20250115181057
+104.166.80.176 1 1 8881 20250123162715
+47.82.10.55 1 1 6030 20250128035304
+205.210.31.199 1 1 816 20250111052523
+35.92.31.23 1 1 816 20250110234121
+52.4.186.160 1 4 227110 20250128213430
+142.93.134.215 1 1 816 20250106155026
+213.248.108.253 1 2 39321 20250114183442
+66.102.8.130 2 8 55071 20250130155419
+5.161.203.200 1 1 5160 20250130123606
+104.166.80.23 1 1 60878 20250122152043
+35.153.159.228 1 1 816 20250102053854
+47.82.10.4 2 2 14284 20250128040526
+103.207.37.225 1 1 816 20250114002624
+178.62.115.160 1 2 43578 20250121144124
+92.157.24.220 1 2 39321 20250113111004
+172.226.28.42 1 1 6604 20250130225004
+86.198.92.64 3 21 830455 20250130192958
+72.14.201.105 3 3 10502 20250123143333
+83.197.64.153 1 2 39321 20250110182907
+204.93.149.94 1 1 8850 20250130233251
+88.164.34.57 1 2 39321 20250108163424
+54.88.247.237 1 1 816 20250114165400
+45.147.247.72 1 1 8881 20250126215542
+176.173.216.134 6 26 673223 20250130105123
+109.223.75.176 2 4 78642 20250109195403
+207.170.178.43 1 1 816 20250110141003
+88.127.103.181 5 25 667600 20250129150744
+47.82.10.41 3 3 27211 20250128040519
+146.112.163.35 1 7 259885 20250131063704
+142.93.9.66 1 1 816 20250108120751
+66.102.8.128 5 13 74142 20250130155359
+100.26.147.104 1 1 66457 20250120160210
+66.249.69.39 1 1 8894 20250126181658
+66.102.8.129 2 2 14271 20250127115002
+78.242.114.19 1 18 601061 20250128063918
+66.249.88.231 1 4 46344 20250130155420
+104.28.42.39 5 24 1992943 20250130224942
+66.249.88.229 1 3 10200 20250125164500
+193.186.4.55 3 3 62510 20250121075556
+79.95.86.7 0 1 38505 
+66.249.64.130 3 3 19090 20250130125324
+47.82.11.16 1 1 8881 20250125060802
+104.28.42.18 1 17 566364 20250123230520
+167.71.234.112 1 1 816 20250112020206
+163.172.116.217 2 2 19965 20250124231813
+89.88.121.7 0 1 38505 
+205.210.31.250 1 1 816 20250104144643
+80.214.66.187 0 1 38505 
+62.28.79.85 0 1 38505 
+80.215.196.230 1 2 39321 20250109133929
+193.186.4.4 1 1 8881 20250128153456
+5.49.247.20 1 2 39321 20250104141717
+86.253.250.40 1 2 39321 20250103214202
+193.32.126.138 1 18 601061 20250122184111
+83.199.108.186 5 46 4489151 20250129115231
+85.1.189.38 1 1 16929 20250120145748
+38.204.62.156 1 2 39321 20250114174523
+92.139.91.163 1 2 39321 20250111180758
+212.195.230.151 2 2 32510 20250120154512
+79.95.87.194 1 18 601177 20250129181811
+23.95.23.177 1 1 816 20250102082253
+31.38.62.218 4 24 660792 20250128183131
+47.82.10.25 1 1 6611 20250128035239
+167.94.146.63 1 1 816 20250106144943
+104.28.42.15 1 1 8881 20250124140326
+31.13.115.113 1 2 39321 20250109142832
+176.157.138.193 0 1 38505 
+78.126.160.111 5 27 3341426 20250131082937
+86.253.32.251 2 27 4021505 20250131174719
+15.204.206.70 2 2 1632 20250112230039
+176.145.67.39 1 2 39321 20250108132150
+66.249.88.230 0 1 1523 
+149.56.150.156 1 1 816 20250113090740
+66.249.64.129 3 3 22830 20250130194716
+88.172.91.225 1 2 39321 20250102185909
+37.69.5.223 1 18 601155 20250130193042
+193.186.4.105 6 6 29057 20250131174708
+178.62.208.74 1 1 816 20250104093932
+104.166.80.72 1 1 816 20250107170711
+31.38.26.106 1 2 39321 20250109120636
+78.245.114.188 1 2 39321 20250108211111
+54.209.150.193 1 2 39321 20250114174511
+80.125.65.66 5 33 4079476 20250123100223
+5.133.192.135 1 1 816 20250105134043
+181.177.123.33 2 2 1632 20250102082118
+77.146.116.93 1 2 39321 20250105205334
+79.95.87.172 2 19 609942 20250122182848
+20.240.13.241 1 1 5813 20250129213834
+23.229.113.138 1 1 816 20250104212239
+91.69.202.176 1 18 601061 20250129083403
+159.203.176.237 1 1 816 20250104171817
+80.14.48.127 1 2 39321 20250106114709
+52.149.60.125 0 1 36568 
+79.95.86.227 1 2 39321 20250108161845
+198.235.24.84 1 1 816 20250103033037
+47.82.11.34 3 3 20912 20250128035332
+142.111.198.253 1 1 816 20250113092344
+3.90.251.94 1 1 60938 20250120153101
+78.245.81.226 1 2 39321 20250108153824
+172.225.120.118 1 18 600835 20250131100006
+2.10.201.225 1 18 601061 20250122144548
+98.81.113.137 1 1 816 20250101225940
+91.242.162.8 1 1 8881 20250129082014
+90.16.137.74 1 18 601061 20250126225750
+72.14.201.55 6 6 25524 20250130234045
+109.234.160.206 1 1 4734 20250120113127
+162.142.125.207 1 2 43547 20250129175845
+78.243.69.29 3 25 3323646 20250127153119
+51.83.96.192 3 3 2448 20250105203726
+90.16.138.135 2 4 78642 20250104113325
+54.202.164.227 1 1 816 20250110091443
+162.142.125.192 1 1 816 20250103160159
+1.193.168.48 1 1 816 20250113034727
+90.59.191.45 6 9 740848 20250127172913
+176.134.108.181 4 8 85186 20250125164515
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 28
+20250101 4 4 3264 4
+20250102 11 12 47481 8
+20250103 16 22 244086 15
+20250104 9 11 84354 9
+20250105 6 7 43401 4
+20250106 10 15 200685 10
+20250107 16 21 205581 16
+20250108 11 20 355521 11
+20250109 11 20 355521 10
+20250110 13 15 87618 13
+20250111 5 8 119595 5
+20250112 5 6 42585 5
+20250113 8 12 160548 8
+20250114 59 69 486024 16
+20250115 71 90 785520 11
+20250116 9 15 238320 6
+20250120 894 995 54605401 16
+20250121 322 447 23258589 9
+20250122 1388 1643 97378665 13
+20250123 111 312 33649028 26
+20250124 124 315 27140071 21
+20250125 84 282 20028804 16
+20250126 9 79 3805506 8
+20250127 36 185 18019866 12
+20250128 86 206 13758964 24
+20250129 240 468 18654896 19
+20250130 54 163 8243216 28
+20250131 1185 2655 98606722 15
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+30s-2mn 29
+5mn-15mn 14
+0s-30s 275
+30mn-1h 11
+15mn-30mn 4
+2mn-5mn 11
+1h+ 14
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 1436
+/accueil 918 23648836 124 91
+/contact 488 5440221 9 18
+/ 239 248504 153 153
+/photos/new 148 5099373 0 0
+/lycee 126 2835947 6 3
+/primaire 93 2923336 1 1
+/coll%C3%A8ge 70 1691730 3 0
+/famille 68 1337690 1 7
+/vie/association/photos 63 2494334 1 1
+/charg%C3%A9e/mission 49 954063 2 1
+/dys 48 2327815 0 1
+/tesCap29.fr/dys 45 1474362 3 0
+/lyc%C3%A9e/francais 44 557195 0 0
+/tesCap29.fr/vie/association/photos 42 1210990 3 5
+/association 42 817844 1 3
+/charger/mission 36 900358 1 2
+/primaire/francais 36 1049154 1 2
+/tesCap29.fr/login 31 630684 3 1
+/primaire/mathematique 30 846554 0 6
+/lyc%C3%A9e/mathematique 27 362774 0 3
+/primaire/anglais 25 619480 1 2
+/test/ 24 64796 2 0
+/benevoles/liste 24 653306 0 1
+/partenaires 23 499458 2 2
+/college/mathematique 23 332421 2 2
+/_wdt/6a784b 1 18701 0 0
+/_wdt/2fbc6e 1 16227 0 0
+/_wdt/a9d8eb 1 20775 0 0
+/_wdt/b786de 1 19678 0 0
+/_wdt/0cc09f 1 21447 0 0
+/_wdt/fd1a55 1 18717 0 0
+/_wdt/4ab355 1 21048 0 0
+/_wdt/3adf0a 1 21452 0 0
+/_wdt/1701b4 1 19132 0 0
+/_wdt/c9d53f 1 21480 0 0
+/primaire/Histoire-G%C3%A9ographie 15 400620 0 0
+/_wdt/30069f 1 19150 0 0
+/_wdt/741368 1 16227 0 0
+/_wdt/705cf0 1 24616 0 0
+/_wdt/2958fb 1 17772 0 0
+/_wdt/9f270e 1 17772 0 0
+/_wdt/491e1e 1 21481 0 0
+/_wdt/80bda5 1 24682 0 0
+/_wdt/fc6a8d 1 19154 0 0
+/_wdt/652cf1 1 21482 0 0
+/_wdt/f22ca1 1 24582 0 0
+/_wdt/d4b6b4 1 16954 0 0
+/test/src/Entity/ 1 3519 0 0
+/_wdt/71a7f0 1 21449 0 0
+/tesCap29.fr/coll%C3%A8ge 6 349513 0 0
+/college/francais/edit 1 58434 0 0
+/_wdt/563bed 1 17772 0 0
+/_wdt/98d3cb 1 18603 0 0
+/_wdt/acfd38 1 22815 0 0
+/_wdt/2e9014 1 22620 0 0
+/dys/dyscalculie/edit 2 118517 0 0
+/_wdt/8a66ae 1 22653 0 0
+/_wdt/1e620d 1 19120 0 0
+/_wdt/952348 1 24579 0 0
+/_wdt/a73bfb 1 20906 0 0
+/_wdt/41b29e 1 17663 0 0
+/_wdt/1829ee 1 19132 0 0
+/_wdt/15105a 1 22830 0 0
+/_wdt/2e36db 1 24731 0 0
+/_wdt/192375 1 19138 0 0
+/_wdt/4ba21d 1 19168 0 0
+/_wdt/a6ddb4 1 22851 0 0
+/_wdt/a65af2 1 21134 0 0
+/_wdt/a6a224 1 19138 0 0
+/_wdt/f8b453 1 21146 0 0
+/_wdt/6e4450 1 19144 0 0
+/_wdt/b4ebb1 1 21446 0 0
+/_wdt/81514b 1 20946 0 0
+/tesCap29.fr/dys/dysgraphie/edit 1 58659 0 0
+/_wdt/30f980 1 21483 0 0
+/_wdt/a56876 1 24681 0 0
+/_wdt/69ad2a 1 20994 0 0
+/_wdt/d3071b 1 21447 0 0
+/_wdt/21c133 1 21481 0 0
+/_wdt/ff8966 1 17772 0 0
+/_wdt/5fd94a 1 22833 0 0
+/_wdt/f45842 1 24583 0 0
+/_wdt/af4f92 1 17767 0 0
+/primaire/loisir-cr%C3%A9atif/edit 2 64525 0 0
+/_wdt/26184f 1 17404 0 0
+/test/compose.yaml 1 714 0 0
+/_wdt/cf0ab1 1 24581 0 0
+/_wdt/96a33e 1 20946 0 0
+/_wdt/5473d0 1 17772 0 0
+/_wdt/7db0ab 1 19144 0 0
+/_wdt/930837 1 20994 0 0
+/_wdt/a15340 1 19188 0 0
+/_wdt/a56474 1 22917 0 0
+/_wdt/23b7fc 1 19150 0 0
+/_wdt/4ab39e 1 17772 0 0
+/_wdt/93643e 1 26173 0 0
+/_wdt/6653dc 1 20219 0 1
+/benevole/22/detail 1 2026 0 0
+/_wdt/f0277f 1 17364 0 0
+/_wdt/b16bd1 1 19144 0 0
+/_wdt/96c539 1 19120 0 0
+/_wdt/ad1579 1 19150 0 0
+/_wdt/401a76 1 19150 0 0
+/_wdt/135501 1 19131 0 0
+/_wdt/00399e 1 18038 0 0
+/_wdt/7656ec 1 17101 0 0
+/_wdt/525fc3 1 19161 0 0
+/tesCap29.fr/college/francais/edit 1 58443 0 0
+/_wdt/4dcba8 1 24696 0 0
+/_wdt/dc5d78 1 21133 0 1
+/_wdt/82f68f 1 19176 0 0
+/_wdt/10c668 1 19678 0 0
+/_wdt/0448e7 1 21110 0 0
+/_wdt/dbdfeb 1 18038 0 0
+/lyc%C3%A9e/mathematique/edit 5 32872 0 0
+/_wdt/61e26a 1 24424 0 0
+/_wdt/550edb 1 24686 0 0
+/tesCap29.fr/mentions/legales/edit 1 69708 0 0
+/_wdt/fd57a0 1 21459 0 0
+/tesCap29.fr/primaire/Loisir-cr%C3%A9atif 2 114820 0 0
+/_wdt/19fbf6 1 19132 0 0
+/_wdt/db1c90 1 19185 0 0
+/_wdt/a98609 1 19678 0 0
+/_wdt/8e32f0 1 22830 0 0
+/_wdt/0ac12d 1 20984 0 0
+/_wdt/9784d3 1 21461 0 0
+/_wdt/ff6c3d 1 15989 0 0
+/_wdt/38ac1f 1 15991 0 0
+/_wdt/2cbad1 1 21091 0 0
+/_wdt/80cc58 1 21459 0 0
+/_wdt/0b7095 1 16227 0 0
+/_wdt/5c66cc 1 22832 0 0
+/_wdt/2a86fe 1 19150 0 0
+/_wdt/b7b88e 1 17793 0 0
+/_wdt/c4b68e 1 18753 0 0
+/_wdt/5fd15b 1 20234 0 0
+/_wdt/8d0989 1 22688 0 0
+/_wdt/99daec 1 19188 0 0
+/_wdt/7cf2c9 1 18469 0 0
+/_wdt/7fcea1 1 19770 0 0
+/_wdt/3a0392 1 24581 0 0
+/test/cgi-bin/ 2 1238 0 0
+/_wdt/aec9e5 1 24581 0 0
+/_wdt/f3d4ab 1 21438 0 0
+/_wdt/a5f970 1 17772 0 0
+/_wdt/a5e097 1 18717 0 0
+/_wdt/8db354 1 17098 0 0
+/_wdt/16bb9f 1 20231 0 0
+/_wdt/0d8d6d 1 21152 0 0
+/_wdt/5c436b 1 19185 0 0
+/_wdt/acd787 1 21032 0 0
+/_wdt/93caa2 1 21427 0 0
+/_wdt/8c8f15 1 17409 0 0
+/_wdt/6ee1f3 1 17663 0 0
+/_wdt/18f33b 1 19138 0 0
+/_wdt/d8c6c1 1 19138 0 0
+/_wdt/9f7298 1 17772 0 0
+/_wdt/cf7302 1 19185 0 0
+/tesCap29.fr/primaire/mathematique/edit 1 58410 0 0
+/_wdt/f6b088 1 19188 0 0
+/_wdt/f3e6ee 1 22815 0 0
+/_wdt/6fd815 1 21135 0 0
+/_wdt/63a5a9 1 16227 0 0
+/tesCap29.fr/dys/dyschronie 5 185167 1 0
+/_wdt/102ac9 1 20994 0 0
+/_wdt/89fff1 1 22833 0 0
+/_wdt/8345f6 1 21119 0 0
+/_wdt/7c2517 1 21482 0 0
+/_wdt/e95cdf 1 17772 0 0
+/_wdt/5087c4 1 19709 0 0
+/_wdt/e9c6f4 1 17772 0 0
+/_wdt/378f5d 1 15989 0 0
+/primaire/francais/edit 1 58680 0 0
+/_wdt/395944 1 21447 0 0
+/_wdt/b7903f 1 22928 0 0
+/_wdt/cd9813 1 22653 0 0
+/_wdt/36af9a 1 25953 0 0
+/_wdt/db201d 1 21449 0 0
+/src/ 1 2186 0 0
+/_wdt/8337c3 1 19710 0 0
+/_wdt/1d9958 1 19120 0 0
+/_wdt/1c8a72 1 19675 0 1
+/_wdt/e4bfb4 1 19132 0 0
+/_wdt/b79cbd 1 17772 0 0
+/_wdt/98622b 1 22928 0 0
+/_wdt/3dd347 1 25953 0 0
+/_wdt/2cf245 1 22833 0 0
+/_wdt/0542ea 1 24682 0 0
+/_wdt/bccc35 1 21446 0 0
+/_wdt/b15241 1 20219 0 0
+/primaire/anglais/%C3%A9dit 3 124222 0 0
+/_wdt/ad992d 1 21447 0 0
+/_wdt/fca796 1 18040 0 0
+/_wdt/ccfdbc 1 19150 0 0
+/_wdt/026c1d 1 21446 0 0
+/_wdt/74ec89 1 17096 0 0
+/_wdt/088fe0 1 17405 0 0
+/_wdt/d47bd9 1 24583 0 0
+/tesCap29.fr/college/mathematique 1 57176 0 0
+/_wdt/8e74d0 1 20948 0 0
+/_wdt/5a784d 1 20948 0 0
+/_wdt/cd2b4e 1 21108 0 0
+/_wdt/e6c5dd 1 24243 0 0
+/_wdt/9a3751 1 21024 0 0
+/_wdt/874bfd 1 19150 0 0
+/_wdt/02b2c3 1 21447 0 0
+/_wdt/c6c004 1 17772 0 0
+/_wdt/aae9b3 1 15989 1 0
+/_wdt/22778c 1 19150 0 0
+/_wdt/282c76 1 21057 0 0
+/_wdt/80fded 1 21446 0 0
+/_wdt/8d9bcf 1 19163 0 0
+/_wdt/9cb9d7 1 22916 0 0
+/_wdt/cbe1b0 1 19188 0 0
+/_wdt/56a7ba 1 21140 0 0
+/_wdt/dc6f8d 1 19676 0 0
+/_wdt/60612e 1 19144 0 0
+/_wdt/f53bb5 1 21446 0 0
+/_wdt/51484f 1 19150 0 0
+/_wdt/66852f 1 22851 0 0
+/_wdt/3ab98b 1 22897 0 0
+/_wdt/567e26 1 21458 0 0
+/_wdt/d46e0c 1 19150 0 0
+/_wdt/26ce0f 1 17683 0 0
+/_wdt/17d443 1 21447 0 0
+/_wdt/6af269 1 16954 0 0
+/_wdt/0563c5 1 21480 0 0
+/_wdt/607d1d 1 17367 0 0
+/_wdt/b236bb 1 16763 0 0
+/_wdt/e1a8d7 1 17364 0 0
+/_wdt/57dfda 1 21049 0 0
+/_wdt/eb09df 1 21132 0 0
+/_wdt/43a9f1 1 21482 0 0
+/_wdt/13a2f3 1 20946 0 0
+/_wdt/81b5ae 1 21124 0 0
+/_wdt/22b5b1 1 21158 0 0
+/_wdt/fa113f 1 19188 0 0
+/_wdt/bfe67f 1 16255 0 0
+/_wdt/7c361b 1 21551 0 0
+/_wdt/ab0f89 1 21109 0 0
+/_wdt/5c7bfc 1 19150 0 0
+/_wdt/ab7fb9 1 18040 0 0
+/_wdt/c91d58 1 19676 0 0
+/_wdt/cbb592 1 19132 0 0
+/_wdt/f4cd97 1 21059 0 0
+/primaire/Histoire-G%C3%A9ographie/%C3%A9dit 2 65334 0 0
+/_wdt/c44f25 1 21459 0 0
+/_wdt/cf73fc 1 18872 0 0
+/_wdt/986035 1 21480 0 0
+/_wdt/404798 1 21447 0 0
+/college/Svt 11 270073 2 1
+/tesCap29.fr/dys/Tdah 15 557483 1 1
+/_wdt/b4f354 1 22798 0 0
+/_wdt/42e87f 1 19699 0 0
+/_wdt/53d74d 1 17772 0 0
+/_wdt/743e9d 1 19147 0 0
+/_wdt/f19364 1 22916 0 0
+/_wdt/0bf56d 1 21458 0 0
+/_wdt/01d93d 1 24580 0 0
+/_wdt/ee47d7 1 19676 0 0
+/_wdt/3c1dc0 1 21049 0 0
+/_wdt/8dcc8f 1 18040 0 0
+/_wdt/da6ef2 1 19147 0 0
+/_wdt/696cd5 1 21429 0 0
+/_wdt/74397c 1 16227 0 0
+/_wdt/28f607 1 17772 0 0
+/_wdt/8965b9 1 16227 0 0
+/_wdt/8b68e3 1 19147 0 0
+/_wdt/1b0f14 1 15989 0 0
+/_wdt/69280e 1 16227 0 0
+/_wdt/6e87cd 1 18701 0 0
+/_wdt/daf4ff 1 21447 0 0
+/_wdt/40610a 1 17772 0 0
+/_wdt/980ac1 1 25953 0 0
+/_wdt/34a3a4 1 22832 0 0
+/_wdt/e5618c 1 22795 0 0
+/_wdt/4105d2 1 24681 0 0
+/_wdt/ee72c7 1 21125 0 0
+/_wdt/9721dc 1 18701 0 0
+/_wdt/a0c606 1 19144 0 0
+/_wdt/a01de0 1 22929 0 0
+/_wdt/872ae8 1 19676 0 0
+/_wdt/78cfe5 1 17772 0 0
+/_wdt/fed5d5 1 17760 0 0
+/_wdt/d96352 1 19147 0 0
+/_wdt/ec52fe 1 21480 0 0
+/_wdt/5badf8 1 22851 0 0
+/_wdt/83e6d6 1 18902 0 0
+/_wdt/018ad5 1 21117 0 0
+/_wdt/aaf7a7 1 15989 0 0
+/_wdt/a6c914 1 19143 0 0
+/_wdt/e394d8 1 19712 0 0
+/dys/dyschronie 4 127390 1 0
+/_wdt/e79d9e 1 15984 0 0
+/_wdt/4c8ac7 1 21127 0 0
+/_wdt/2387a5 1 20906 0 0
+/_wdt/78d4a4 1 17767 0 0
+/_wdt/63d13f 1 19120 0 0
+/_wdt/ed798f 1 22900 0 0
+/_wdt/c4487b 1 17772 0 0
+/lyc%C3%A9e/Svt/edit 1 6370 0 0
+/_wdt/ca8584 1 17663 0 0
+/_wdt/bae474 1 22795 0 0
+/_wdt/b20d34 1 21449 0 0
+/_wdt/7bf953 1 21047 0 0
+/_wdt/7a7054 1 17772 0 0
+/_wdt/dcc344 1 21480 0 0
+/_wdt/a6beba 1 21551 0 0
+/_wdt/3508ac 1 20225 0 0
+/_wdt/ee3a5a 1 21479 0 0
+/lyc%C3%A9e/francais/edit 14 88945 0 0
+/_wdt/583c65 1 22935 0 0
+/_wdt/878691 1 21449 0 0
+/_wdt/d4d1e6 1 24687 0 0
+/tesCap29.fr/primaire 7 403678 0 0
+/_wdt/a2d8b0 1 19147 0 0
+/_wdt/ee39a8 1 19144 0 0
+/_wdt/fa2102 1 19147 0 0
+/_wdt/c5c6e7 1 17680 0 0
+/_wdt/aaf346 1 22929 0 0
+/_wdt/ca8e2b 1 18872 0 0
+/_wdt/bacdf1 1 21446 0 0
+/_wdt/c33cd6 1 19120 0 0
+/_wdt/f95450 1 19144 0 0
+/_wdt/e9dd91 1 21459 0 0
+/_wdt/bf1300 1 17772 0 0
+/primaire/mathematique/edit 1 58423 0 0
+/_wdt/758a37 1 24581 0 0
+/_wdt/304daf 1 18039 0 0
+/_wdt/a46416 1 18721 0 0
+/_wdt/bce29a 1 24615 0 0
+/_wdt/f5400d 1 21067 0 0
+/_wdt/83a201 1 18872 0 0
+/_wdt/a68af5 1 21027 0 0
+/college/Techno 11 322121 0 1
+/_wdt/306a38 1 17402 0 0
+/_wdt/5f6f5d 1 20943 0 0
+/test/public/ 3 1851 0 0
+/lyc%C3%A9e/Loisir-cr%C3%A9atif 14 181404 0 0
+/_wdt/98e38c 1 25951 0 0
+/_wdt/df188d 1 18039 0 0
+/_wdt/587f48 1 19676 0 0
+/_wdt/5e72a9 1 19150 0 0
+/_wdt/7f792d 1 20219 0 0
+/_wdt/93c563 1 22649 0 0
+/_wdt/20f3fa 1 17772 0 0
+/_wdt/0cf1ac 1 18039 0 0
+/_wdt/3aa50a 1 21447 0 0
+/_wdt/993f54 1 19675 0 0
+/_wdt/455d78 1 19178 0 0
+/_wdt/8faa67 1 21480 0 0
+/_wdt/dc4596 1 17101 0 0
+/_wdt/66d8be 1 22903 0 0
+/_wdt/95d8ed 1 17355 0 0
+/connection 5 294457 0 0
+/_wdt/752b98 1 19150 0 0
+/_wdt/1414f0 1 17772 0 0
+/_wdt/1cf360 1 17772 0 0
+/_wdt/a83037 1 19120 0 0
+/_wdt/e614f7 1 17402 0 0
+/_wdt/5297ae 1 16255 0 1
+/_wdt/22a496 1 21032 0 0
+/_wdt/cc7a71 1 18039 0 0
+/_wdt/36db7c 1 18880 0 0
+/_wdt/8b0f86 1 16255 0 0
+/_wdt/bd3cf3 1 19150 0 0
+/_wdt/e8aad8 1 17772 0 0
+/_wdt/3e2537 1 18872 0 0
+/_wdt/31e118 1 16255 0 0
+/_wdt/46520a 1 16255 0 0
+/_wdt/ee956a 1 17772 0 0
+/_wdt/1942da 1 19188 0 0
+/_wdt/3e8e8c 1 21160 0 0
+/_wdt/cad60a 1 19173 0 0
+/_wdt/4f409c 1 21449 0 0
+/_wdt/c227cd 1 19132 0 0
+/_wdt/33ac35 1 19150 0 0
+/_wdt/13625c 1 21461 0 0
+/_wdt/d35322 1 22618 0 0
+/benevoles/inscription 14 567172 1 3
+/_wdt/c658eb 1 22833 0 0
+/_wdt/16a0a2 1 17097 0 0
+/_wdt/84e3b5 1 18717 0 0
+/_wdt/7fd2f9 1 17760 0 0
+/_wdt/213ba1 1 24580 0 0
+/_wdt/2d58a0 1 20994 0 0
+/_wdt/0b5b3f 1 21084 0 0
+/_wdt/6f2fc3 1 24580 0 0
+/_wdt/e25cd3 1 16227 0 0
+/_wdt/336480 1 22915 0 0
+/_wdt/44c69d 1 25953 0 0
+/_wdt/6b2d60 1 20994 0 0
+/_wdt/6fe6f2 1 19676 0 0
+/_wdt/a920c4 1 21055 0 0
+/_wdt/d22da8 1 17760 0 0
+/_wdt/739121 1 18743 0 0
+/_wdt/933be8 1 21447 0 0
+/_wdt/3fc0d8 1 21120 0 0
+/test/src/ 3 6603 0 0
+/_wdt/a72950 1 19147 0 0
+/_wdt/d6d7b5 1 20948 0 0
+/_wdt/54c314 1 17772 0 1
+/_wdt/579d66 1 17772 0 0
+/_wdt/f64cd2 1 25953 0 0
+/_wdt/13d37d 1 23049 0 0
+/_wdt/295dd4 1 21146 0 0
+/_wdt/e25efb 1 21146 0 0
+/_wdt/91d08f 1 24581 0 0
+/_wdt/4f5c29 1 21460 0 0
+/_wdt/0717c1 1 20219 0 0
+/_wdt/1961c0 1 17772 0 0
+/_wdt/53f25a 1 21459 0 0
+/_wdt/b53218 1 17664 0 0
+/tesCap29.fr/service/snu/edit 1 57608 0 0
+/_wdt/d24138 1 17760 0 0
+/coll%C3%A8ge/anglais/edit 3 72761 0 0
+/_wdt/6947db 1 21134 0 0
+/_wdt/350012 1 22652 0 0
+/_wdt/b65d45 1 21120 0 0
+/_wdt/1203d5 1 17772 0 0
+/_wdt/76490b 1 23037 0 0
+/dys/dyschronie/edit 1 58788 0 0
+/_wdt/2f83eb 1 22917 0 0
+/_wdt/b086a6 1 21461 0 0
+/_wdt/02fdbc 1 19188 0 0
+/_wdt/a5ecfe 1 17784 0 0
+/_wdt/f629e2 1 20234 0 0
+/_wdt/a6c562 1 15989 0 0
+/_wdt/50ca25 1 17760 0 0
+/_wdt/78c3af 1 19188 0 0
+/_wdt/89df8d 1 16227 0 1
+/_wdt/384d14 1 19138 0 0
+/_wdt/fd4eec 1 22833 0 0
+/_wdt/9f5f9a 1 21472 0 0
+/_wdt/ea989c 1 21457 0 0
+/lyc%C3%A9e/Svt 10 159110 0 0
+/_wdt/eb116b 1 21447 0 0
+/_wdt/60dff0 1 19675 0 0
+/_wdt/ffeb7f 1 18884 0 0
+/_wdt/f51e00 1 16227 0 0
+/lyc%C3%A9e/histoire-g%C3%A9ographie 9 206770 0 0
+/_wdt/a7cd29 1 21477 0 0
+/_wdt/eb7132 1 22653 0 0
+/_wdt/fcefcb 1 22928 0 0
+/_wdt/82100c 1 21447 0 0
+/_wdt/ee5d71 1 21458 0 0
+/lyc%C3%A9e/physique-chimie/edit 1 6495 0 0
+/_wdt/88045d 1 16913 0 0
+/_wdt/aa2f45 1 20983 0 0
+/_wdt/ce4301 1 21447 0 0
+/_wdt/66f50c 1 21121 0 0
+/_wdt/d17841 1 19132 0 0
+/_wdt/92b808 1 21461 0 0
+/_wdt/3708c1 1 17405 0 0
+/_wdt/1ae8be 1 19120 0 0
+/_wdt/5d2943 1 17367 0 0
+/charger/mission/edit 3 27077 0 0
+/_wdt/a9cd7b 1 21134 0 0
+/_wdt/17f101 1 19150 0 0
+/_wdt/960b4c 1 19120 0 0
+/_wdt/66e001 1 21449 0 0
+/_wdt/201ef7 1 24616 0 0
+/_wdt/434442 1 19120 0 0
+/tesCap29.fr/lycee 2 116443 0 0
+/test/src/Service/ 1 1196 0 0
+/_wdt/48dafc 1 17760 0 0
+/_wdt/5b586b 1 17772 0 0
+/_wdt/e79f65 1 20994 0 0
+/_wdt/ece962 1 21482 0 0
+/_wdt/b06a85 1 19700 0 0
+/_wdt/4064ca 1 19678 0 0
+/_wdt/8d6965 1 21459 0 0
+/_wdt/a38186 1 19116 0 0
+/_wdt/be8e62 1 21480 0 0
+/_wdt/819e45 1 17361 0 0
+/_wdt/5c0ca4 1 19677 0 0
+/_wdt/7d7d42 1 22649 0 0
+/_wdt/b2c54f 1 15984 0 0
+/_wdt/d799fd 1 15984 0 0
+/_wdt/5c45a8 1 18884 0 0
+/_wdt/826db3 1 17337 0 0
+/_wdt/f27f1e 1 18717 0 0
+/_wdt/8523a2 1 24681 0 0
+/_wdt/a3ec25 1 21111 0 0
+/_wdt/cff896 1 22833 0 0
+/_wdt/eefa4d 1 19138 0 0
+/_wdt/08a665 1 20946 0 0
+/_wdt/a7257f 1 19150 0 0
+/_wdt/791502 1 22653 0 0
+/_wdt/96e121 1 17772 0 0
+/autres/lien/dys/edit 2 118613 0 0
+/_wdt/a814b4 1 22902 0 0
+/_wdt/26ea96 1 24615 0 0
+/tesCap29.fr/benevoles/inscription 12 799091 1 1
+/_wdt/67c45e 1 17772 0 0
+/_wdt/a7dbd9 1 19676 0 0
+/_wdt/54026e 1 22832 0 0
+/_wdt/6d58bc 1 20231 0 0
+/_wdt/274ffc 1 18765 0 0
+/_wdt/0fcc82 1 17663 0 0
+/_wdt/e05dbd 1 19108 0 0
+/service/snu 11 216075 5 4
+/_wdt/588cc1 1 19188 0 0
+/_wdt/7ca6e2 1 17663 0 0
+/_wdt/fa50e9 1 20994 0 0
+/_wdt/4ed258 1 18717 0 0
+/_wdt/786ec8 1 20219 0 0
+/_wdt/1d83fb 1 20941 0 0
+/_wdt/2b1779 1 19676 0 0
+/_wdt/eec6a9 1 21025 0 0
+/_wdt/bf1180 1 16024 0 0
+/_wdt/2c9d01 1 18038 0 0
+/_wdt/396372 1 16227 0 0
+/_wdt/7eb143 1 19138 0 0
+/_wdt/250f27 1 17760 0 0
+/_wdt/d13a5f 1 15989 0 0
+/_wdt/2c9083 1 22836 0 0
+/_wdt/9cbde6 1 19150 0 0
+/_wdt/3c33cb 1 23916 0 0
+/_wdt/21e060 1 21101 0 0
+/_wdt/73ddeb 1 21049 0 0
+/_wdt/43619d 1 19150 0 0
+/_wdt/144f71 1 25951 0 0
+/_wdt/717b39 1 20240 0 0
+/_wdt/c99ff2 1 21049 0 0
+/_wdt/01de0e 1 21449 0 0
+/_wdt/26a1b6 1 19150 0 0
+/_wdt/df16fa 1 21064 0 0
+/tesCap29.fr/association 2 115987 0 0
+/_wdt/3fff3a 1 19166 0 0
+/_wdt/243cab 1 21125 0 0
+/_wdt/26be7d 1 20994 0 0
+/_wdt/c5416a 1 21447 0 0
+/_wdt/1047f5 1 21483 0 0
+/_wdt/cde240 1 17760 0 0
+/_wdt/490b42 1 18039 0 0
+/_wdt/503475 1 22935 0 0
+/lyc%C3%A9e/langues 16 197212 0 0
+/_wdt/1b91ed 1 17681 0 0
+/_wdt/39f06b 1 17349 0 0
+/_wdt/951d45 1 17403 0 0
+/_wdt/fb5716 1 22895 0 0
+/_wdt/625100 1 19185 0 0
+/tesCap29.fr/dys/dysorthographie 8 256194 1 0
+/_wdt/2c2882 1 16255 0 0
+/_wdt/14f1bd 1 18040 0 0
+/_wdt/d645a1 1 21069 0 0
+/_wdt/19d791 1 18737 0 0
+/_wdt/50d9b1 1 19164 0 0
+/_wdt/bbd7fb 1 19116 0 0
+/_wdt/3ebcfc 1 19152 0 0
+/_wdt/fd71b5 1 21482 0 0
+/_wdt/67699b 1 17772 0 0
+/_wdt/8964e4 1 19150 0 0
+/_wdt/5ddc80 1 21070 0 0
+/_wdt/c179b8 1 19629 0 0
+/_wdt/e48cd4 1 22652 0 0
+/_wdt/f6aefe 1 16913 0 0
+/_wdt/65fd02 1 21460 0 0
+/_wdt/01520d 1 21140 0 0
+/_wdt/8445c9 1 19135 0 0
+/_wdt/86d021 1 17760 0 0
+/test.php 1 108311 1 1
+/_wdt/7681ec 1 19108 0 0
+/_wdt/cfa4a2 1 18039 0 0
+/_wdt/ed650c 1 19187 0 0
+/_wdt/188135 1 21130 0 0
+/_wdt/613f52 1 21448 0 0
+/_wdt/bb3335 1 21118 0 0
+/_wdt/20bfce 1 17772 0 0
+/tesCap29.fr/autres/lien/dys/edit 2 66632 0 0
+/_wdt/f768c5 1 19144 0 0
+/_wdt/2113a4 1 21447 0 0
+/_wdt/4604de 1 15984 0 0
+/_wdt/5ff5b6 1 17772 0 0
+/_wdt/bdbc35 1 22928 0 0
+/_wdt/3fbb4e 1 15989 0 0
+/_wdt/2b5d1c 1 21481 0 0
+/_wdt/0c1593 1 21448 0 0
+/_wdt/62ec0a 1 20946 0 0
+/_wdt/e6d221 1 20985 0 0
+/_wdt/a7c2da 1 19150 0 0
+/_wdt/0435f0 1 15989 0 0
+/_wdt/b0de99 1 15989 0 0
+/_wdt/bb67f3 1 18717 0 0
+/_wdt/3df3cc 1 25951 0 0
+/_wdt/0c86aa 1 16913 0 0
+/_wdt/2a1044 1 21480 0 0
+/_wdt/691b58 1 17772 0 0
+/_wdt/21afa9 1 21093 0 0
+/_wdt/ecb004 1 21480 0 0
+/_wdt/5af159 1 15984 0 0
+/_wdt/546014 1 21461 0 0
+/_wdt/fe049d 1 20994 0 0
+/_wdt/c211d3 1 19108 0 0
+/_wdt/d5758a 1 24681 0 0
+/_wdt/79703a 1 21068 0 0
+/_wdt/2da1d1 1 19108 0 0
+/_wdt/fae51a 1 22653 0 0
+/_wdt/b13080 1 17337 0 0
+/_wdt/b8dc6c 1 24583 0 0
+/_wdt/156381 1 21068 0 0
+/_wdt/6bd692 1 21035 0 0
+/_wdt/754627 1 19150 0 0
+/_wdt/848eb1 1 15989 0 0
+/_wdt/3fdf45 1 24682 0 0
+/_wdt/7504e8 1 21056 0 0
+/_wdt/ed9f8d 1 19147 0 0
+/_wdt/d4d3ac 1 16227 0 0
+/_wdt/60f74a 1 19108 0 0
+/_wdt/e04b06 1 21097 0 0
+/_wdt/7037f1 1 21447 0 0
+/_wdt/d6dcc9 1 17772 0 0
+/_wdt/b3748f 1 21541 0 0
+/_wdt/6ee162 1 18039 0 0
+/_wdt/f6c3bd 1 17767 0 0
+/_wdt/d7101a 1 21127 0 0
+/_wdt/4a0bec 1 17793 0 0
+/_wdt/f9c580 1 19188 0 0
+/lyc%C3%A9e/langues/edit 6 39706 0 0
+/_wdt/b47248 1 19135 0 0
+/_wdt/a5b285 1 22839 0 0
+/_wdt/81b8b2 1 21159 0 0
+/_wdt/5eb12c 1 17760 0 0
+/_wdt/d126b4 1 19126 0 0
+/_wdt/9b2daa 1 21058 0 0
+/_wdt/df03a6 1 20231 0 0
+/_wdt/6f6e4c 1 21135 0 0
+/_wdt/21396d 1 19676 0 0
+/_wdt/8894e7 1 19150 0 0
+/_wdt/750cc4 1 15989 0 0
+/_wdt/2628ea 1 17405 0 0
+/_wdt/66a928 1 24683 0 0
+/_wdt/3ef862 1 20240 0 0
+/_wdt/3828c8 1 22929 0 0
+/benevole/modifier/22 1 9455 0 0
+/_wdt/bce1c3 1 17760 0 0
+/_wdt/513b3e 1 19120 0 0
+/_wdt/34aa47 1 19150 0 0
+/_wdt/838cc5 1 19188 0 0
+/_wdt/8dbd45 1 22820 0 0
+/_wdt/54be91 1 19187 0 0
+/_wdt/84105a 1 22934 0 0
+/_wdt/b9630d 1 18039 0 0
+/_wdt/e8cfb3 1 21471 0 0
+/_wdt/6a4d59 1 21446 0 0
+/_wdt/b0a87d 1 22830 0 0
+/_wdt/b7ebcd 1 17663 0 0
+/accueil/edit 2 116267 0 0
+/coll%C3%A8ge/physique-chimie 15 352731 1 1
+/_wdt/b620df 1 21110 0 0
+/_wdt/81f8c1 1 15989 0 1
+/_wdt/9b3bdd 1 21128 0 0
+/test/src/Twig/ 3 2994 0 1
+/_wdt/a58127 1 19144 0 0
+/_wdt/9fd7a1 1 17404 0 0
+/_wdt/09e7b6 1 19144 0 0
+/_wdt/397feb 1 21095 0 0
+/_wdt/607a96 1 21447 0 0
+/charg%C3%A9e/mission/%C3%A9dit 14 177954 0 0
+/_wdt/74a784 1 18701 0 0
+/_wdt/b53012 1 18743 0 0
+/_wdt/354f05 1 19677 0 0
+/_wdt/6f2491 1 21448 0 0
+/_wdt/9ae910 1 21152 0 0
+/_wdt/e07e93 1 22649 0 0
+/_wdt/02ac58 1 21146 0 0
+/mentions/legales/edit 1 69687 0 0
+/dys/dysphasie 8 360685 1 1
+/_wdt/f5a1f3 1 19163 0 0
+/service/civique 16 773290 0 1
+/_wdt/fd0f60 1 17772 0 0
+/tesCap29.fr/benevoles/liste 5 310969 0 0
+/_wdt/0288f4 1 17663 0 0
+/dys/dysorthographie 8 361326 1 1
+/_wdt/479480 1 21461 0 0
+/_wdt/f40339 1 19710 0 0
+/_wdt/252917 1 19138 0 0
+/_wdt/0a973b 1 17760 0 0
+/_wdt/a14980 1 24638 0 0
+/_wdt/2301f2 1 18884 0 0
+/_wdt/8cc596 1 21429 0 0
+/tesCap29.fr/charger/mission 17 1019347 0 0
+/_wdt/147336 1 16001 0 0
+/_wdt/cfedee 1 24683 0 0
+/tesCap29.fr/college/Techno 1 57446 0 0
+/_wdt/fb2b60 1 21483 0 0
+/_wdt/51e99b 1 17349 0 0
+/_wdt/ff3801 1 19132 0 0
+/_wdt/673704 1 21132 0 0
+/src/Controller/AccueilController.php 1 333 0 0
+/_wdt/e21ad2 1 17772 0 0
+/_wdt/3e3f9b 1 21460 0 0
+/tesCap29.fr/primaire/anglais/edit 5 293750 0 0
+/_wdt/e5b1da 1 19710 0 0
+/_wdt/1b5cf4 1 18039 0 0
+/college/techno/edit 1 58402 0 0
+/_wdt/a343c3 1 22833 0 0
+/_wdt/6b7ab7 1 22834 0 0
+/_wdt/49adf0 1 22817 0 0
+/_wdt/b88029 1 21461 0 0
+/_wdt/d8d4e0 1 18040 0 0
+/_wdt/10111a 1 16227 0 0
+/_wdt/968d65 1 21461 0 0
+/_wdt/133816 1 21541 0 0
+/_wdt/ffa45d 1 15984 0 0
+/_wdt/c22bc4 1 17760 0 0
+/_wdt/33191f 1 17755 0 0
+/_wdt/36b9d1 1 21480 0 0
+/_wdt/d83346 1 17760 0 0
+/_wdt/fe3316 1 21126 0 0
+/_wdt/e85dd4 1 21461 0 0
+/_wdt/f7ce4a 1 19161 0 0
+/_wdt/94d3b6 1 17772 0 0
+/tesCap29.fr/coll%C3%A8ge/physique-chimie 1 57923 0 0
+/_wdt/979db7 1 16913 0 0
+/_wdt/047374 1 21125 0 0
+/_wdt/4ba554 1 17399 0 0
+/tesCap29.fr/college/Svt 1 57443 0 0
+/_wdt/e45dac 1 18574 0 0
+/_wdt/3bb45b 1 20948 0 0
+/_wdt/53773f 1 20994 0 0
+/_wdt/c8963f 1 15989 0 0
+/_wdt/83220f 1 22908 0 0
+/_wdt/d86d25 1 18743 0 0
+/_wdt/99b29d 1 25951 0 0
+/_wdt/a82de2 1 22585 0 0
+/_wdt/4c441f 1 21447 0 0
+/_wdt/fe0005 1 24583 0 0
+/_wdt/51849d 1 21152 0 0
+/_wdt/135d6f 1 17760 0 0
+/_wdt/95cb43 1 17767 0 0
+/_wdt/439557 1 18053 0 0
+/lyc%C3%A9e/Loisir-cr%C3%A9atif/edit 3 19054 0 0
+/_wdt/1511e0 1 17772 0 0
+/_wdt/95d055 1 18753 0 0
+/_wdt/93ac97 1 21428 0 0
+/_wdt/624820 1 17772 0 0
+/_wdt/cecb39 1 20234 0 0
+/_wdt/3ac9db 1 17767 0 0
+/_wdt/85218b 1 17772 0 0
+/_wdt/b82594 1 24711 0 0
+/primaire/mathematique/%C3%A9dit 1 58428 0 0
+/_wdt/c4ab35 1 17764 0 0
+/_wdt/faae86 1 21050 0 0
+/_wdt/7c58f0 1 21459 0 0
+/_wdt/30d408 1 21033 0 0
+/_wdt/ea01e4 1 23049 0 0
+/_wdt/d5b5bb 1 15984 0 0
+/_wdt/a9f019 1 20234 0 0
+/_wdt/a4b0e9 1 15989 0 0
+/_wdt/9f2e52 1 18854 0 0
+/_wdt/d7e0c2 1 19147 0 0
+/_wdt/609d19 1 19678 0 0
+/_wdt/5d615b 1 22620 0 0
+/_wdt/bedc81 1 21125 0 0
+/_wdt/574bc0 1 21047 0 0
+/_wdt/7c36ff 1 19150 0 0
+/_wdt/46343a 1 15989 0 0
+/_wdt/6c68e0 1 18701 0 0
+/_wdt/c8fb1b 1 21481 0 0
+/_wdt/6d00f7 1 19710 0 0
+/_wdt/926f1b 1 17760 0 0
+/_wdt/a436b3 1 19173 0 0
+/tesCap29.fr/primaire/francais/edit 3 176003 0 0
+/_wdt/d1d1e5 1 24681 0 0
+/_wdt/f9b6b0 1 22934 0 0
+/_wdt/ae5271 1 22836 0 0
+/_wdt/82a00d 1 21493 0 0
+/_wdt/71a80b 1 21450 0 0
+/_wdt/426982 1 16227 0 0
+/_wdt/d5ad65 1 17665 0 0
+/_wdt/2235d2 1 18463 0 0
+/src/Controller/ 1 6188 0 0
+/_wdt/f1376a 1 17772 0 0
+/_wdt/6d9cb5 1 16227 0 0
+/_wdt/3d717f 1 18039 0 0
+/_wdt/9965b8 1 19138 0 0
+/_wdt/c02fdf 1 19188 0 0
+/_wdt/f08a2b 1 19188 0 0
+/_wdt/7f578b 1 17772 0 0
+/_wdt/a25971 1 20948 0 0
+/_wdt/b09c6a 1 16255 1 0
+/_wdt/3a3616 1 22851 0 0
+/_wdt/d27c75 1 19147 0 0
+/_wdt/481e54 1 19144 0 0
+/_wdt/63b7ae 1 21091 0 0
+/_wdt/a3b685 1 17760 0 0
+/_wdt/90e09d 1 17760 0 0
+/_wdt/6c0034 1 21074 0 0
+/_wdt/f44b33 1 21447 0 0
+/_wdt/995170 1 17663 0 0
+/_wdt/647c33 1 19676 0 0
+/_wdt/1137c0 1 18717 0 0
+/_wdt/b7d164 1 21110 0 0
+/_wdt/3f30ba 1 21110 0 0
+/_wdt/24127c 1 15984 0 0
+/_wdt/d67a5f 1 19629 0 0
+/_wdt/c9d9dc 1 17772 0 0
+/_wdt/40ab3b 1 16227 0 0
+/_wdt/a2c206 1 18039 0 0
+/_wdt/822a6c 1 19144 0 0
+/_wdt/7f2046 1 20981 0 0
+/_wdt/f55687 1 19185 0 0
+/_wdt/ec11ae 1 21480 0 0
+/_wdt/aa3cb0 1 21048 0 0
+/mentions/legales 10 320738 2 2
+/_wdt/6bf765 1 21048 0 0
+/_wdt/3f57a9 1 17760 0 0
+/_wdt/3e0eb1 1 18039 0 0
+/tesCap29.fr/service/snu 17 508122 1 1
+/_wdt/93d568 1 21049 0 0
+/_wdt/ebe293 1 21122 0 0
+/_wdt/23de0e 1 19150 0 0
+/_wdt/24e4fa 1 17772 0 0
+/_wdt/3c3387 1 19138 0 0
+/_wdt/7f64db 1 19182 0 0
+/_wdt/f2b0e1 1 19138 0 0
+/_wdt/e2cb58 1 18717 0 0
+/_wdt/84bbd9 1 19676 0 0
+/_wdt/c8ff08 1 19150 0 0
+/_wdt/581ea7 1 19152 0 0
+/_wdt/d2e19b 1 18884 0 0
+/_wdt/65d4db 1 17772 0 0
+/_wdt/a011fc 1 19150 0 0
+/_wdt/e77aab 1 15981 0 0
+/_wdt/5bef4a 1 22831 0 0
+/_wdt/0c56a6 1 21110 0 0
+/_wdt/153cf7 1 22892 0 0
+/_wdt/b83ecb 1 22915 0 0
+/_wdt/59ef46 1 16255 0 0
+/_wdt/2f0061 1 21063 0 0
+/_wdt/8c0e26 1 17390 0 0
+/_wdt/b29fc7 1 20994 0 0
+/_wdt/50484d 1 21447 0 0
+/_wdt/96f494 1 22833 0 0
+/_wdt/0f0f7d 1 21447 0 0
+/primaire/Loisir-cr%C3%A9atif 13 278359 0 1
+/_wdt/013d95 1 17772 0 0
+/_wdt/e4b686 1 18038 0 0
+/_wdt/5abeb3 1 17772 0 0
+/_wdt/3b6988 1 19150 0 0
+/dys/tsa 6 242544 1 0
+/_wdt/4df57f 1 19108 0 0
+/_wdt/201481 1 19188 0 0
+/_wdt/b01e5a 1 17665 0 0
+/_wdt/81a08b 1 22833 0 0
+/_wdt/a40e6a 1 19120 0 0
+/college/Loisir-cr%C3%A9atif/edit 2 64425 0 0
+/_wdt/4a31c7 1 25951 0 0
+/_wdt/2f3f62 1 17687 0 0
+/_wdt/1d57f0 1 22929 0 0
+/_wdt/9b3f04 1 21049 0 0
+/_wdt/7e750b 1 21460 0 0
+/_wdt/2dd6ff 1 19132 0 0
+/_wdt/9ebb74 1 20994 0 0
+/tesCap29.fr/dys/dysgraphie 16 559787 0 1
+/_wdt/235fde 1 19143 0 0
+/_wdt/a98451 1 17760 0 0
+/_wdt/0a9eb4 1 19675 0 0
+/_wdt/b89a03 1 19132 0 0
+/_wdt/a2b345 1 20219 0 0
+/_wdt/5e0d21 1 17772 0 0
+/_wdt/460d05 1 21476 0 0
+/_wdt/baba2a 1 22892 0 0
+/_wdt/17bab9 1 21134 0 0
+/_wdt/a16fe1 1 22898 0 0
+/_wdt/dd9cd0 1 21447 0 0
+/_wdt/015f53 1 16001 0 0
+/tesCap29.fr/photos/new 12 282085 0 0
+/_wdt/d58735 1 18039 0 0
+/_wdt/056551 1 21088 0 0
+/_wdt/538ec2 1 22833 0 0
+/_wdt/aef3a5 1 19150 0 0
+/_wdt/79ab54 1 25951 0 0
+/_wdt/202829 1 21461 0 0
+/_wdt/4a30a0 1 16227 0 0
+/_wdt/d13852 1 21483 0 0
+/_wdt/ac86b4 1 22831 0 0
+/_wdt/320e1d 1 16227 0 0
+/_wdt/d183fe 1 20984 0 0
+/_wdt/c0ec91 1 17101 0 0
+/_wdt/7828ed 1 24579 0 0
+/_wdt/21fceb 1 18574 0 0
+/_wdt/71cf1c 1 21447 0 0
+/_wdt/c57fac 1 18701 0 0
+/_wdt/843bef 1 18039 0 0
+/_wdt/ece9f7 1 24683 0 0
+/_wdt/e10b82 1 19150 0 0
+/_wdt/87ab49 1 21459 0 0
+/_wdt/80b7a6 1 18726 0 0
+/_wdt/9bbdff 1 19116 0 0
+/_wdt/9b61d9 1 21551 0 0
+/_wdt/b42e81 1 22821 0 0
+/service/civique/edit 1 58101 0 0
+/_wdt/2f9787 1 19163 0 0
+/_wdt/d4a6ba 1 17681 0 0
+/_wdt/081f16 1 21481 0 0
+/_wdt/efed4a 1 25951 0 0
+/_wdt/9652dd 1 20946 0 0
+/_wdt/a29dd6 1 21159 0 0
+/_wdt/fcecc1 1 19677 0 0
+/tesCap29.fr/mentions/legales 20 690857 1 2
+/_wdt/fc656a 1 22929 0 0
+/_wdt/57dbcd 1 22908 0 0
+/_wdt/90dee0 1 16255 0 0
+/_wdt/303164 1 21118 0 0
+/_wdt/395260 1 20941 0 0
+/_wdt/fd8d0a 1 22903 0 0
+/_wdt/cd33b1 1 24581 0 0
+/_wdt/276d5f 1 16227 0 0
+/lyc%C3%A9e/physique-chimie 18 254962 1 5
+/_wdt/9d8cd8 1 21479 0 0
+/_wdt/fad482 1 19156 0 0
+/dys/dysphasie/edit 1 58872 0 0
+/_wdt/788e2d 1 21482 0 0
+/_wdt/837d62 1 24682 0 0
+/_wdt/7334a0 1 21109 0 0
+/_wdt/c982b3 1 24581 0 0
+/_wdt/40e6ad 1 17772 0 0
+/_wdt/c4fc5a 1 17760 0 0
+/_wdt/557873 1 22833 0 0
+/_wdt/3a46e2 1 21480 0 0
+/_wdt/8b66ec 1 17772 0 0
+/_wdt/0a7e20 1 16227 0 0
+/_wdt/f6f38f 1 19122 0 0
+/_wdt/0d359d 1 19150 0 0
+/_wdt/9d3ef7 1 17687 0 0
+/_wdt/b5718d 1 24093 0 0
+/_wdt/1970f6 1 20219 0 0
+/_wdt/daaf93 1 20944 0 0
+/_wdt/f8a51c 1 19108 0 0
+/_wdt/964776 1 21152 0 0
+/_wdt/e8a381 1 21049 0 0
+/_wdt/993c5d 1 21481 0 0
+/_wdt/1f3bff 1 21108 0 0
+/_wdt/afc175 1 17772 0 0
+/_wdt/ed76ce 1 19709 0 0
+/_wdt/ce1bc1 1 18884 0 0
+/_wdt/2dcdc0 1 21063 0 0
+/_wdt/5e5ce1 1 17772 0 0
+/_wdt/77f58e 1 19150 0 0
+/_wdt/01d5c1 1 17772 0 0
+/coll%C3%A8ge/francais 22 590802 4 4
+/primaire/francais/%C3%A9dit 4 130692 0 0
+/_wdt/013da6 1 21025 0 0
+/_wdt/216133 1 21447 0 0
+/_wdt/9654b2 1 22830 0 0
+/dys/tsa/edit 1 58706 0 0
+/_wdt/524fe5 1 21458 0 0
+/_wdt/0c12a4 1 21057 0 0
+/_wdt/37c145 1 17772 0 0
+/_wdt/2a97f8 1 19108 0 0
+/_wdt/9d8cd6 1 17760 0 0
+/_wdt/b3ecd3 1 17760 0 0
+/_wdt/f39348 1 20333 0 0
+/_wdt/c77175 1 21459 0 0
+/_wdt/bb9216 1 21449 0 0
+/_wdt/e5e9ef 1 17681 0 0
+/_wdt/348504 1 17772 0 0
+/test/bin/phpunit 1 776 0 0
+/_wdt/f3ec1d 1 21447 0 0
+/_wdt/ff28e0 1 21459 0 0
+/_wdt/d4f4f2 1 15989 0 0
+/_wdt/bff649 1 21458 0 0
+/college/mathematique/edit 4 77539 0 0
+/_wdt/5cf930 1 17760 0 0
+/_wdt/fc9a4f 1 22905 0 0
+/_wdt/e5a325 1 21458 0 0
+/_wdt/089d92 1 19150 0 0
+/_wdt/fe1ed2 1 22815 0 0
+/_wdt/f68f51 1 20983 0 0
+/_wdt/25c6df 1 22652 0 0
+/_wdt/cf267e 1 17772 0 0
+/_wdt/2fa7f3 1 21035 0 0
+/_wdt/910a47 1 21069 0 0
+/_wdt/a9f88e 1 22653 0 0
+/_wdt/2b1069 1 20944 0 0
+/_wdt/830630 1 24581 0 0
+/dys/tdah/edit 1 58695 0 0
+/_wdt/fd7dcd 1 20231 0 0
+/_wdt/a0c928 1 22805 0 0
+/_wdt/be627c 1 19132 0 0
+/benevoles/22/generate-pdf 2 5864 0 0
+/_wdt/5f0e0a 1 19678 0 0
+/_wdt/e44c54 1 21428 0 0
+/_wdt/f2ec4e 1 19678 0 0
+/_wdt/9a5e67 1 17772 0 0
+/_wdt/1a5d4e 1 17664 0 0
+/college/histoire-geographie/edit 2 65428 0 0
+/_wdt/5e1436 1 21448 0 0
+/_wdt/7a71bd 1 19168 0 0
+/_wdt/793eee 1 19150 0 0
+/_wdt/bd618b 1 18701 0 0
+/_wdt/2f95f7 1 21480 0 0
+/_wdt/302576 1 19768 0 0
+/dys/dysgraphie 6 242222 0 0
+/_wdt/31f679 1 15984 0 0
+/_wdt/bdcc86 1 22935 0 0
+/_wdt/ef4b29 1 22904 0 0
+/_wdt/6d219d 1 19150 0 0
+/_wdt/ae0e51 1 19676 0 0
+/_wdt/ba8eac 1 19150 0 0
+/_wdt/067eb1 1 19147 0 0
+/_wdt/bc1ee1 1 16227 0 0
+/_wdt/1203f7 1 21446 0 0
+/_wdt/f15ecb 1 17395 0 0
+/_wdt/48a06b 1 21481 0 0
+/_wdt/590efc 1 17772 0 0
+/_wdt/28062f 1 17663 0 0
+/_wdt/be4430 1 15981 0 0
+/_wdt/b18b9a 1 17096 0 0
+/_wdt/026e66 1 22897 0 0
+/_wdt/57a839 1 22525 0 0
+/_wdt/ce8b33 1 21449 0 0
+/_wdt/da79f4 1 21127 0 0
+/_wdt/b5244a 1 17681 0 0
+/_wdt/cddcbd 1 21089 0 0
+/_wdt/f9c20b 1 22649 0 0
+/_wdt/5bb5bb 1 24581 0 0
+/_wdt/81a48f 1 16255 0 0
+/_wdt/110198 1 21447 0 0
+/_wdt/c287b4 1 19768 0 0
+/_wdt/40ffdc 1 24580 0 0
+/_wdt/ddd2f4 1 20775 0 0
+/_wdt/dbd525 1 17772 0 0
+/_wdt/5cee7e 1 21480 0 0
+/_wdt/b36b44 1 25953 0 0
+/_wdt/4c5fce 1 17772 0 0
+/_wdt/41f342 1 16913 0 0
+/_wdt/7b3332 1 19138 0 0
+/_wdt/50ad47 1 16227 0 0
+/_wdt/789148 1 21150 0 0
+/_wdt/f9ded4 1 19188 0 0
+/_wdt/9f98d9 1 17760 0 0
+/_wdt/39f686 1 21471 0 0
+/_wdt/99fe81 1 21480 0 0
+/_wdt/329491 1 25951 0 0
+/_wdt/7fddc9 1 19174 0 0
+/_wdt/ddd123 1 22796 0 0
+/_wdt/878912 1 18038 0 0
+/_wdt/7e3719 1 17760 0 0
+/_wdt/bd85e5 1 21480 0 0
+/_wdt/ee92b9 1 21109 0 0
+/_wdt/18cd40 1 19150 0 0
+/tesCap29.fr/dys/dyslexie/edit 1 59235 0 0
+/_wdt/c6ea1f 1 19132 0 0
+/_wdt/df4284 1 16227 0 0
+/_wdt/7576ea 1 21110 0 0
+/_wdt/4d1d4a 1 17767 0 0
+/_wdt/7a8ff8 1 21459 0 0
+/_wdt/ad257b 1 19678 0 0
+/_wdt/3bb767 1 17793 0 0
+/_wdt/842912 1 21447 0 0
+/tesCap29.fr/primaire/anglais 11 640079 0 0
+/_wdt/ef20f7 1 17367 0 0
+/_wdt/1382f4 1 22652 0 0
+/_wdt/a17fa3 1 19132 0 0
+/_wdt/ea3de6 1 18717 0 0
+/_wdt/9359d9 1 19186 0 0
+/_wdt/c642cf 1 15989 1 0
+/_wdt/ac28be 1 22830 0 0
+/_wdt/9d392c 1 19108 0 0
+/_wdt/4a123a 1 20231 0 0
+/_wdt/c739c4 1 24679 0 0
+/_wdt/2e09de 1 18448 0 0
+/_wdt/f43e3f 1 19175 0 0
+/_wdt/d8c17e 1 24687 0 0
+/_wdt/027ff2 1 17683 0 0
+/college/Svt/edit 1 58397 0 0
+/_wdt/aa2fb7 1 15989 0 0
+/_wdt/88ae9b 1 22929 0 0
+/_wdt/29809c 1 21447 0 0
+/_wdt/be6bd1 1 21125 0 0
+/_wdt/bc3903 1 18040 0 0
+/_wdt/fbc2a5 1 22903 0 0
+/_wdt/08061e 1 19120 0 0
+/_wdt/e7c8b2 1 21448 0 0
+/_wdt/25d923 1 18040 0 0
+/_wdt/86ea8f 1 16001 0 0
+/_wdt/c81a7f 1 22832 0 0
+/_wdt/804421 1 22747 0 0
+/_wdt/2b2086 1 22929 0 0
+/_wdt/190cbe 1 18040 0 0
+/_wdt/f2c900 1 19147 0 0
+/_wdt/6927f1 1 22928 0 0
+/_wdt/5c7373 1 17772 0 0
+/_wdt/0d017d 1 16227 1 0
+/_wdt/dce58e 1 18743 0 0
+/_wdt/d72c34 1 16930 0 0
+/_wdt/ba7261 1 19150 0 0
+/_wdt/90e24f 1 19150 0 0
+/_wdt/062ecc 1 19185 0 0
+/_wdt/09397e 1 16227 0 0
+/_wdt/3e7d1f 1 21032 0 0
+/_wdt/43b247 1 22831 0 0
+/_wdt/94b37e 1 22833 0 0
+/_wdt/00cd6d 1 17353 0 0
+/_wdt/2ac295 1 19132 0 0
+/_wdt/1008e7 1 20976 0 0
+/_wdt/b41153 1 24631 0 0
+/tesCap29.fr/coll%C3%A8ge/anglais 1 58215 0 0
+/_wdt/0f56db 1 17680 0 0
+/tesCap29.fr/dys/dysphasie 7 197709 0 1
+/_wdt/a7d80e 1 22899 0 0
+/_wdt/01dabd 1 24243 0 0
+/_wdt/c60d5e 1 21459 0 0
+/_wdt/556e3a 1 22653 0 0
+/_wdt/c480d1 1 21447 0 0
+/_wdt/5d6489 1 17665 0 0
+/_wdt/f569e8 1 19150 0 0
+/primaire/Histoire-G%C3%A9ographie/edit 1 58686 0 0
+/_wdt/988ed8 1 19144 0 0
+/dys/dyslexie 13 601336 0 0
+/tesCap29.fr/dys/Tsa 12 381936 1 2
+/_wdt/d3a345 1 21144 0 0
+/_wdt/f89b32 1 22832 0 0
+/_wdt/fabc6a 1 21121 0 0
+/_wdt/6dba4e 1 15989 1 0
+/_wdt/dc9500 1 21458 0 0
+/_wdt/3b7a7f 1 16227 0 0
+/_wdt/38e4b2 1 20948 0 0
+/lyc%C3%A9e/Techno 12 220624 0 0
+/_wdt/880632 1 19147 0 0
+/_wdt/b641c6 1 17687 0 0
+/_wdt/a7fb89 1 18717 0 0
+/_wdt/8fd49b 1 19132 0 0
+/_wdt/243331 1 18040 0 0
+/_wdt/a1caff 1 17680 0 0
+/_wdt/a061c8 1 15981 0 0
+/_wdt/2dc38b 1 17349 0 0
+/_wdt/8c10b1 1 21447 0 0
+/_wdt/c2d7a7 1 19150 0 0
+/_wdt/c97af0 1 17688 0 0
+/coll%C3%A8ge/anglais 16 363266 0 0
+/_wdt/905b1b 1 21447 0 0
+/_wdt/4422eb 1 18039 0 0
+/_wdt/ba826e 1 21447 0 0
+/_wdt/e0bfca 1 21058 0 0
+/_wdt/ac39fc 1 25951 0 0
+/_wdt/5f8ac7 1 23916 0 0
+/_wdt/dda4ea 1 15989 0 0
+/_wdt/3140fd 1 22898 0 0
+/_wdt/129d42 1 22842 0 0
+/_wdt/af8c2f 1 16255 0 0
+/_wdt/687111 1 18766 0 0
+/tesCap29.fr/dys/dyslexie 10 269526 0 0
+/_wdt/cad61a 1 24681 0 0
+/dys/tdah 4 127384 0 1
+/_wdt/f91a5b 1 21057 0 0
+/_wdt/e096a1 1 21150 0 0
+/_wdt/081ddd 1 16255 0 0
+/_wdt/fe0f40 1 19211 0 0
+/tesCap29.fr/primaire/histoire-geographie/edit 1 58690 0 0
+/_wdt/284951 1 15984 0 0
+/_wdt/8d5c7d 1 21447 0 0
+/_wdt/e236f1 1 18743 0 0
+/_wdt/d671c2 1 18717 0 0
+/_wdt/dad7da 1 17772 0 0
+/_wdt/f9a684 1 17772 0 0
+/_wdt/71cba5 1 25951 0 0
+/login 12 237645 1 2
+/_wdt/c7f3d9 1 25953 0 0
+/_wdt/a496ef 1 21551 0 0
+/_wdt/aa07a4 1 22836 0 0
+/_wdt/4bc5e7 1 18881 0 0
+/_wdt/88d9bc 1 17760 0 0
+/_wdt/af9604 1 19108 0 0
+/service/snu/edit 1 57579 0 0
+/_wdt/de7f99 1 19126 0 0
+/_wdt/dad7e9 1 21069 0 0
+/_wdt/5ea320 1 17772 0 0
+/_wdt/d444db 1 21121 0 0
+/_wdt/265d7e 1 21050 0 0
+/_wdt/ad3dbe 1 15989 0 0
+/tesCap29.fr/college/histoire-geographie 2 116073 0 0
+/_wdt/bcf168 1 21447 0 0
+/_wdt/49999f 1 19150 0 0
+/tesCap29.fr/coll%C3%A8ge/physique-chimie/edit 1 58774 0 0
+/_wdt/c2ec20 1 21049 0 0
+/_wdt/356a54 1 24582 0 0
+/_wdt/092327 1 19156 0 0
+/_wdt/50badd 1 19150 0 0
+/_wdt/0b6a6d 1 19173 0 0
+/_wdt/fbc633 1 17767 0 0
+/_wdt/5d9eb9 1 16913 0 0
+/_wdt/cde550 1 19173 0 0
+/_wdt/018512 1 22893 0 0
+/dys/dyspraxie 3 69965 0 1
+/_wdt/fbe59b 1 19132 0 0
+/_wdt/d49fbd 1 20219 0 0
+/_wdt/a1d51c 1 19702 0 0
+/_wdt/8ca057 1 19138 0 0
+/_wdt/5479ef 1 16934 0 0
+/tesCap29.fr/primaire/histoire-geographie 1 57680 0 0
+/_wdt/418366 1 21146 0 0
+/_wdt/777204 1 21447 0 0
+/_wdt/0b29dc 1 18463 0 1
+/_wdt/f1aad6 1 16255 0 0
+/_wdt/8dfaef 1 20994 0 0
+/_wdt/1b45a4 1 15989 0 0
+/_wdt/7c1741 1 19144 0 0
+/_wdt/76baca 1 19122 0 0
+/_wdt/678fa9 1 17665 0 0
+/_wdt/ff47ef 1 19767 0 0
+/_wdt/2b475e 1 19138 0 0
+/_wdt/c68b53 1 17337 0 0
+/_wdt/a0a39f 1 17772 0 0
+/_wdt/425077 1 17760 0 0
+/_wdt/6cc7c8 1 17772 0 0
+/_wdt/ffbe90 1 19147 0 0
+/_wdt/43b854 1 19150 0 0
+/_wdt/86cf3d 1 18701 0 0
+/_wdt/977c1f 1 21095 0 0
+/_wdt/547280 1 22893 0 0
+/_wdt/020533 1 21446 0 0
+/_wdt/594b18 1 21449 0 0
+/_wdt/a08a5b 1 19675 0 0
+/_wdt/a612df 1 17772 0 0
+/dys/dysgraphie/edit 2 117281 0 0
+/_wdt/186cec 1 21489 0 0
+/_wdt/412566 1 21069 0 0
+/_wdt/7fe9b7 1 21446 0 0
+/_wdt/da3d49 1 21446 0 0
+/_wdt/22aba5 1 22903 0 0
+/_wdt/c912de 1 22911 0 0
+/_wdt/39096c 1 15996 0 0
+/_wdt/74c119 1 17662 0 0
+/tesCap29.fr/autres/lien/dys 22 399965 2 1
+/_wdt/65922d 1 19188 0 0
+/_wdt/4b66f7 1 19164 0 0
+/_wdt/2d9d8e 1 17360 0 0
+/_wdt/956e9d 1 21458 0 0
+/_wdt/e53894 1 21480 0 0
+/_wdt/0703d6 1 21441 0 0
+/_wdt/368e1c 1 18880 0 0
+/_wdt/48377c 1 20938 0 0
+/_wdt/004c05 1 22833 0 0
+/_wdt/f3d2e8 1 17793 0 0
+/_wdt/599386 1 22907 0 0
+/_wdt/ec77e6 1 16929 1 1
+/_wdt/f418bf 1 19676 0 0
+/_wdt/52a962 1 17665 0 0
+/_wdt/333eb9 1 18039 0 0
+/test/src/DataFixtures/ 1 1202 0 0
+/_wdt/c1bc81 1 19138 0 0
+/_wdt/4601c5 1 21049 0 0
+/_wdt/0dafc2 1 18717 0 0
+/_wdt/0f86de 1 16930 0 0
+/_wdt/ab36fe 1 19678 0 0
+/_wdt/75bdea 1 21129 0 0
+/_wdt/cbbacd 1 21085 0 0
+/_wdt/8e9b16 1 22795 0 0
+/_wdt/95a944 1 21449 0 0
+/_wdt/d6dc0f 1 22832 0 0
+/_wdt/e5860f 1 22832 0 0
+/_wdt/2f6627 1 17772 0 0
+/_wdt/39866d 1 15984 0 0
+/lyc%C3%A9e/Techno/edit 1 6398 0 0
+/_wdt/01f021 1 21480 0 0
+/_wdt/78b3a3 1 21063 0 0
+/_wdt/6819bf 1 19150 0 0
+/_wdt/99fc1c 1 21159 0 0
+/_wdt/c6038f 1 16227 0 0
+/_wdt/75e0e5 1 19120 0 0
+/_wdt/64f941 1 22833 0 0
+/_wdt/2061a6 1 19175 0 0
+/_wdt/3a41a5 1 15989 0 0
+/_wdt/fa43a0 1 21086 0 0
+/_wdt/0256dc 1 20944 0 0
+/test/src/Command/ 1 1034 0 0
+/test/bin/ 1 961 0 0
+/_wdt/d0e04f 1 18753 0 0
+/_wdt/05a481 1 25953 0 0
+/_wdt/585318 1 22798 0 0
+/_wdt/c37eca 1 16227 0 0
+/_wdt/7e9984 1 17793 0 0
+/_wdt/5f6259 1 19108 0 0
+/_wdt/2461bd 1 19211 0 0
+/_wdt/f657e0 1 19144 0 0
+/_wdt/bcdc64 1 20240 0 0
+/_wdt/7822a5 1 16227 0 0
+/_wdt/9f4efe 1 18040 0 0
+/_wdt/f19930 1 24689 0 0
+/tesCap29.fr/coll%C3%A8ge/francais 2 115152 0 0
+/_wdt/6da1bb 1 20985 0 0
+/college/Loisir-cr%C3%A9atif 13 278580 1 0
+/_wdt/26f478 1 17772 0 0
+/_wdt/c0947f 1 24583 0 0
+/_wdt/e544b8 1 20979 0 0
+/_wdt/dd3eda 1 15989 0 0
+/_wdt/5007e7 1 22833 0 0
+/_wdt/910d6b 1 19165 0 0
+/_wdt/ecf2cc 1 17772 0 0
+/_wdt/d19846 1 21142 0 0
+/_wdt/3032c8 1 21057 0 0
+/_wdt/173bac 1 19120 0 0
+/_wdt/4b3ec7 1 18040 0 0
+/_wdt/c78df7 1 15989 0 0
+/_wdt/03599a 1 17772 0 0
+/_wdt/6e3eb0 1 20941 0 0
+/_wdt/d42f05 1 20966 0 0
+/_wdt/8463de 1 18040 0 0
+/_wdt/5e8038 1 17772 0 0
+/_wdt/e7b64f 1 19147 0 0
+/_wdt/902298 1 21071 0 0
+/_wdt/3b1e89 1 20983 0 0
+/_wdt/a4b44f 1 21050 0 0
+/_wdt/7d35f2 1 15989 0 0
+/_wdt/2dac01 1 21109 0 0
+/_wdt/7f63d3 1 24486 0 0
+/_wdt/82c667 1 21480 0 0
+/_wdt/e42f28 1 17760 0 0
+/_wdt/7a6c43 1 17760 0 0
+/_wdt/741795 1 17760 0 0
+/_wdt/2f850c 1 21146 0 0
+/_wdt/0a0a8c 1 17772 0 0
+/_wdt/6a9854 1 22653 0 0
+/_wdt/f48837 1 21427 0 0
+/_wdt/e2edf3 1 19144 0 0
+/_wdt/198d1c 1 15989 0 0
+/_wdt/e67ebf 1 17760 0 0
+/_wdt/3ca8a2 1 16227 0 0
+/dys/dyslexie/edit 7 414599 0 0
+/_wdt/cde488 1 22815 0 0
+/_wdt/0b2a06 1 22832 0 0
+/_wdt/6b28b2 1 19144 0 0
+/_wdt/005126 1 19138 0 0
+/_wdt/b032b6 1 17345 0 0
+/_wdt/e8847f 1 15989 0 0
+/_wdt/05d17a 1 24696 0 0
+/_wdt/e32414 1 24730 0 0
+/_wdt/d3d64a 1 21132 0 0
+/_wdt/a2ca60 1 21481 0 0
+/_wdt/810642 1 17760 0 0
+/dys/dyscalculie 18 844742 0 0
+/_wdt/0f3244 1 17089 0 0
+/_wdt/025251 1 21470 0 0
+/_wdt/49c0ff 1 21459 0 0
+/_wdt/86b466 1 19710 0 0
+/_wdt/357b99 1 19710 0 0
+/_wdt/c3041b 1 19147 0 0
+/_wdt/60d867 1 16255 0 0
+/_wdt/cd70be 1 15984 0 0
+/_wdt/a57eaf 1 19150 0 0
+/_wdt/7e16ec 1 19150 0 0
+/_wdt/af1643 1 19150 0 0
+/_wdt/351d81 1 17760 0 0
+/_wdt/633dea 1 19150 0 0
+/_wdt/bc975d 1 18753 0 0
+/_wdt/32b6d0 1 15989 0 1
+/_wdt/f27be3 1 19144 0 0
+/_wdt/1f4718 1 19150 0 0
+/tesCap29.fr/college/Loisir-cr%C3%A9atif 1 57192 0 0
+/_wdt/71faf4 1 22831 0 0
+/_wdt/016de7 1 24615 0 0
+/_wdt/7594c1 1 19185 0 0
+/_wdt/41895a 1 22830 0 0
+/_wdt/3ed09f 1 19168 0 0
+/_wdt/c1b898 1 16001 0 0
+/_wdt/f80876 1 22934 0 0
+/_wdt/8efbd6 1 19150 0 0
+/_wdt/743dc9 1 21479 0 0
+/_wdt/4177e4 1 19143 0 0
+/_wdt/ac27d7 1 19150 0 0
+/college/histoire-geographie 12 281095 1 0
+/_wdt/0ccf82 1 21069 0 0
+/_wdt/26a6a6 1 17772 0 0
+/_wdt/fdf4f9 1 21120 0 0
+/_wdt/856886 1 17405 0 0
+/_wdt/5e176a 1 22931 0 0
+/_wdt/6eeda8 1 18039 0 0
+/_wdt/a017ed 1 21447 0 0
+/_wdt/1e7666 1 21122 0 0
+/tesCap29.fr/service/civique/edit 4 232419 0 0
+/_wdt/e62a95 1 19700 0 0
+/_wdt/ea87fc 1 21447 0 0
+/_wdt/aa5e6d 1 17760 0 0
+/_wdt/5a0526 1 16227 0 0
+/_wdt/c7db63 1 16227 0 0
+/_wdt/978766 1 21459 0 0
+/_wdt/d368df 1 17663 0 0
+/dys/dysorthographie/edit 2 117952 0 0
+/_wdt/a44625 1 19147 0 0
+/_wdt/36d398 1 19147 0 0
+/_wdt/361ea8 1 22831 0 0
+/_wdt/3420f0 1 17089 0 0
+/_wdt/689d4d 1 22839 0 0
+/_wdt/5668b2 1 17760 0 0
+/_wdt/2fff84 1 19676 0 0
+/_wdt/9bc8b1 1 15989 0 0
+/_wdt/373454 1 18039 0 0
+/_wdt/ff4ea0 1 21447 0 0
+/_wdt/b46ec6 1 19108 0 0
+/_wdt/00267b 1 19144 0 0
+/_wdt/011807 1 17772 0 0
+/_wdt/1eb265 1 17367 0 0
+/_wdt/dc241d 1 20946 0 0
+/_wdt/2b7e21 1 19150 0 0
+/coll%C3%A8ge/physique-chimie/edit 1 58789 0 0
+/_wdt/7fab88 1 17681 0 0
+/_wdt/42c990 1 19186 0 0
+/_wdt/edb661 1 21117 0 0
+/_wdt/4bf752 1 18039 0 0
+/tesCap29.fr/dys/dyspraxie 12 334343 0 1
+/_wdt/dc39b1 1 23037 0 0
+/_wdt/235df6 1 19120 0 0
+/_wdt/3110b2 1 21047 0 0
+/_wdt/6c2915 1 20907 0 0
+/dys/autres/lien/dys 11 436290 0 0
+/_wdt/50f0bc 1 19150 0 0
+/_wdt/be46b8 1 15989 0 0
+/_wdt/558c7d 1 22536 0 0
+/_wdt/6d962e 1 15989 0 0
+/_wdt/fcfa8d 1 21447 0 0
+/_wdt/623a4e 1 18040 0 0
+/_wdt/8498bd 1 24688 0 0
+/_wdt/2f48d1 1 17772 0 0
+/_wdt/745dfb 1 21481 0 0
+/_wdt/367c17 1 21447 0 0
+/_wdt/11132d 1 17772 0 0
+/_wdt/efc3a4 1 22688 0 0
+/_wdt/4e7c6a 1 21122 0 0
+/_wdt/fb0f5f 1 18039 0 0
+/_wdt/7afc03 1 19144 0 0
+/tesCap29.fr/service/civique 17 462396 0 1
+/_wdt/81aff9 1 19132 0 0
+/_wdt/781a91 1 20225 0 0
+/_wdt/71994b 1 21131 0 0
+/_wdt/b0b020 1 24581 0 0
+/_wdt/bf1a90 1 22893 0 0
+/_wdt/e6cdf9 1 17755 0 0
+/_wdt/b3aba6 1 22929 0 0
+/_wdt/e39ee3 1 25951 0 0
+/_wdt/8c696f 1 18872 0 0
+/_wdt/e2c463 1 20776 0 0
+END_SIDER
+
+# Payload Range - Payload Frequency
+BEGIN_FILESIZE 6
+100-500 936
+2K-5K 235
+1K-2K 424
+5K+ 7899
+0-44 134
+500-1K 1304
+END_FILESIZE

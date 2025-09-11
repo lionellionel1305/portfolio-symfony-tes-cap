@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Physique chimie{% endblock %}
+
+{% block body %}
+    <div class="container">
+        {% if PhysiqueChimie is not empty %}
+            {% for key, PhysiqueChimie in PhysiqueChimie %}
+                <div class="col-11">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <div>
+                                <h1 class="custom-title">{{ PhysiqueChimie.editableTitle | default('Titre non défini') }}</h1>
+                            </div>
+
+                            <div class="container_dys_description">
+                                <h5>{{ PhysiqueChimie.description | default('') | linkify | nl2br }}</h5>
+                                <h5>{{ PhysiqueChimie.description1 | default('') | linkify | nl2br }}</h5>
+                                <h5>{{ PhysiqueChimie.description2 | default('') | linkify | nl2br }}</h5>
+                                <h5>{{ PhysiqueChimie.description3 | default('') | linkify | nl2br }}</h5>
+                                <h5>{{ PhysiqueChimie.description4 | default('') | linkify | nl2br }}</h5>
+                                <h5>{{ PhysiqueChimie.description5 | default('') | linkify | nl2br }}</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>Aucune entrée trouvée pour physique ou chimie.</p>
+        {% endif %}
+
+        <div class="buton_modifier_dys">
+            <div class="col-12">
+                {% if is_granted('ROLE_ADMIN') or is_granted('ROLE_BUREAU') %}
+                    <div class="container_dys_description_button text-center">
+                        <a href="{{ path('app_collegePhysique_edit') }}" class="boutton_dys btn btn-primary btn-lg">Modifier</a>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,549 @@
+AWSTATS DATA FILE 7.9 (build 20230108)
+# If you remove this file, all statistics for date 202507 will be lost/reset.
+# Last config file used to build this data file was /home/cudi8490/tmp/awstats/awstats.addon-tescap29.fr.cudi8490.odns.fr.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2065                
+POS_TIME 2737                
+POS_VISITOR 9072                
+POS_DAY 13587               
+POS_DOMAIN 3530                
+POS_LOGIN 3970                
+POS_ROBOT 4125                
+POS_WORMS 4783                
+POS_EMAILSENDER 4914                
+POS_EMAILRECEIVER 5057                
+POS_SESSION 14342               
+POS_FILESIZE 15904               
+POS_SIDER 14533               
+POS_FILETYPES 5192                
+POS_DOWNLOADS 5394                
+POS_OS 5978                
+POS_BROWSER 6229                
+POS_SCREENSIZE 7173                
+POS_UNKNOWNREFERER 7247                
+POS_UNKNOWNREFERERBROWSER 7599                
+POS_ORIGIN 7860                
+POS_SEREFERRALS 7997                
+POS_PAGEREFS 8175                
+POS_SEARCHWORDS 8359                
+POS_KEYWORDS 8511                
+POS_MISC 2400                
+POS_ERRORS 8570                
+POS_CLUSTER 3826                
+POS_SIDER_404 8684                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20250801013622 1 0 9448506116464
+FirstTime 20250701035330
+LastTime 20250731104137
+LastUpdate 20250802000849 1 0 0 0 0
+TotalVisits 127                 
+TotalUnique 103                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 118                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+JavaEnabled 0 0 0
+RealPlayerSupport 0 0 0
+DirectorSupport 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+JavascriptDisabled 0 0 0
+FlashSupport 0 0 0
+QuickTimeSupport 0 0 0
+TotalMisc 0 0 0
+AddToFavourites 0 20 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 2 2 23546 28 36 173701
+1 6 6 70983 52 66 551212
+2 8 10 160444 55 63 277027
+3 9 10 141496 42 50 229700
+4 9 11 176062 85 101 873150
+5 23 29 1078687 10 71 1050068
+6 22 50 8030767 11 22 102190
+7 3 10 561359 14 17 71406
+8 28 32 1040642 6 10 28845
+9 5 22 1091843 28 59 15921954
+10 20 47 4293681 38 46 183392
+11 17 28 605196 60 85 15833950
+12 9 11 182164 29 45 441965
+13 9 25 2072440 30 38 202686
+14 23 75 22679393 33 48 178927
+15 23 31 887389 33 35 144638
+16 4 4 47395 20 35 109963
+17 3 3 35622 9 11 28055
+18 3 3 31962 28 39 197919
+19 5 13 409596 50 64 322980
+20 23 23 199733 40 67 298225
+21 0 1 234685 15 29 133267
+22 2 9 339437 30 50 3236087
+23 3 3 35563 28 35 147618
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 16
+us 106 191 23447142
+gb 61 104 10297763
+fr 51 116 9804005
+cl 21 21 176086
+jp 4 4 38525
+se 3 3 35542
+hn 2 2 20168
+dk 2 2 23748
+gr 2 2 23748
+ar 1 1 6853
+sc 1 1 11773
+ru 1 7 503111
+lv 1 1 6374
+ir 1 1 11874
+lt 1 1 11499
+de 1 1 11874
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 14
+AhrefsBot/ 111 34564314 20250731142431 12
+Barkrowler 57 418605 20250724043835 4
+facebookexternalhit/ 52 968691 20250729030814 21
+Googlebot/ 48 310711 20250730233639 11
+BW/ 31 142189 20250719165808 5
+Applebot/ 30 661635 20250729060221 7
+SemrushBot/ 19 95816 20250727020856 7
+unknown 14 350 20250731072050 14
+CFNetwork 8 277576 20250710122633 0
+bot[\s_+:,\.\;\/\\-] 3 23672 20250731072051 1
+Googlebot\-Image/ 2 69394 20250724201432 0
+robot 2 50 20250731124143 2
+trendiction 2 11920 20250707065242 1
+Velen 1 25 20250722225630 1
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 7
+pdf 16 3163477 0 0
+webp 50 12067134 0 0
+png 66 10030163 0 0
+Unknown 259 2956806 0 0
+js 28 18284 0 0
+jpg 21 15936821 0 0
+css 18 257400 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 8
+/uploads/pdfs/reglement/reglement.pdf 4 0 661276
+/uploads/pdfs/reglement/statuts.pdf 4 0 938740
+/uploads/pdfs/benevole/formulaire_benevole.pdf 2 0 431486
+/uploads/pdfs/famille/formulaire_famille.pdf 2 0 398950
+/uploads/documents/La-peur-d-apprendre-67b5982d4f2d5.pdf 1 0 103564
+/uploads/documents/lieux-d-ecoute-pour-ados-en-difficulte-67b5a10a629af.pdf 1 0 161371
+/uploads/documents/Soins-pedopsychiatriques-67b5a5ad392bb.pdf 1 0 226943
+/uploads/documents/Dispositifs-eleves-decrocheurs-ou-phobie-scolaire-67b59dc25ada2.pdf 1 0 241147
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 13
+ios_iphone 31 9
+macosx15 12 12
+linux 32 16
+win7 4 4
+win8.1 16 3
+ios_ipad 23 9
+android13 1 1
+win11 1 1
+Unknown 17 15
+androidmarshmallow 2 0
+win10 241 164
+androidoreo 9 2
+android10 69 23
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 44
+chrome83.0.4103.97 2 2
+Unknown 13 13
+chrome74.0.3729.169 29 29
+chrome113.0.0.0 3 3
+chrome138.0.0.0 26 11
+firefox88.0 1 1
+firefox60.0 5 5
+chrome58.0.3029.110 1 1
+safari16.6.1 7 1
+chrome63.0.3239.111 9 2
+edge18 9 2
+chrome109.0.0.0 17 4
+chrome79.0.3945.88 3 3
+chrome103.0.5060.66 1 1
+chrome125.0.0.0 6 1
+chrome91.0.4472.124 7 1
+firefox137.0 11 6
+chrome114.0.0.0 22 22
+safari 47 17
+safari17.4 2 2
+chrome112.0.5615.136 1 1
+chrome127.0.0.0 3 3
+chrome120.0.0.0 1 1
+chrome137.0.0.0 63 20
+safari15.6 1 1
+chrome117.0.5938.132 8 1
+netscape5.0 2 2
+chrome126.0.0.0 1 1
+chrome88.0.4240.193 2 2
+chrome95.0.4638.54 101 58
+chrome123.0.6312.86 6 0
+chrome78.0.3904.108 1 1
+chrome137.0.7151.103 2 0
+chrome66.0.3359.181 7 7
+opera117.0.0.0 1 1
+chrome86.0.4240.75 1 1
+safari17.10 1 1
+chrome107.0.0.0 3 3
+mozilla 4 2
+chrome134.0.0.0 2 2
+chrome105.0.0.0 3 3
+firefox115 1 1
+chrome110.0.0.0 1 1
+chrome87.0.4280.88 21 19
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 7
+python-requests/2.32.4 20250723050218
+GoogleOther 20250707125716
+python-requests/2.32.3 20250727020131
+Ruby 20250711024959
+axios/1.10.0 20250724165648
+GuzzleHttp/7 20250725111908
+Mozilla/5.0_(compatible;_CensysInspect/1.1;__https://about.censys.io/) 20250726055407
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 6
+python-requests/2.32.3 20250727020131
+Ruby 20250711024959
+python-requests/2.32.4 20250723050218
+axios/1.10.0 20250724165648
+GuzzleHttp/7 20250725111908
+GoogleOther 20250707125716
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 158 201
+From1 3 3
+From2 2 2
+From3 0 2
+From4 96 250
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 2
+www_google_com 1 1
+google_com 1 1
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 1
+http://mail.tescap29.fr/accueil 0 2
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 3
+500 475 3054031
+301 244 57124
+404 3 0
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 2
+/.well-known/acme-challenge/file 2 -
+/.well-known/acme-challenge/index_php 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 118
+51.15.83.26 41 73 8992862 20250711061456
+191.101.31.228 21 21 176086 20250718200016
+82.96.152.255 19 21 560996 20250711152456
+51.159.131.92 16 20 941897 20250719084916
+176.180.86.130 10 24 2568138 20250701143918
+88.168.58.25 9 23 756250 20250711100934
+81.53.79.123 8 24 3619904 20250706102907
+34.83.1.150 7 7 83118 20250730200307
+34.105.90.22 5 5 59475 20250706111610
+34.168.195.125 5 5 59475 20250708231140
+208.115.211.74 5 28 19353916 20250704140711
+13.40.129.183 4 4 47092 20250723050218
+34.134.68.12 4 4 99573 20250704040445
+66.249.93.142 3 5 53683 20250711100936
+66.249.93.128 3 6 60741 20250711100936
+86.253.56.80 3 16 1996114 20250705145231
+43.157.52.189 3 3 26630 20250723114904
+193.149.185.142 2 2 23748 20250727031859
+104.28.215.220 2 2 23546 20250723193645
+44.244.222.190 2 2 23546 20250721140428
+34.217.49.193 2 16 654882 20250721141415
+193.32.162.6 2 2 23546 20250711142913
+23.229.113.138 2 2 20189 20250704184234
+178.128.90.6 2 2 23748 20250731104137
+35.226.44.177 1 1 11773 20250711024959
+185.117.225.2 0 3 246198 
+34.132.248.238 1 1 11773 20250724003647
+137.184.11.157 1 2 46597 20250707124642
+34.58.255.164 1 1 11895 20250705021749
+34.83.201.159 1 1 11773 20250714042609
+44.247.210.249 1 1 11773 20250718121559
+199.244.88.228 1 1 11773 20250720013451
+34.220.66.104 1 1 11773 20250710203528
+192.177.8.207 1 1 7251 20250706081635
+93.158.98.56 1 1 11773 20250715131917
+34.83.65.140 1 1 11895 20250710013344
+165.227.174.59 1 2 46470 20250711034112
+205.169.39.58 1 8 327563 20250706190934
+44.197.239.113 1 1 11874 20250725154521
+74.125.210.96 0 1 236 
+51.44.20.253 1 1 11895 20250705230207
+104.28.211.190 1 1 11773 20250721103039
+44.246.193.79 1 1 11773 20250714104618
+204.217.220.63 1 1 7481 20250706080235
+66.220.149.14 0 3 84871 
+165.231.182.57 1 1 11773 20250717180840
+35.233.232.84 1 1 11874 20250726040635
+185.210.206.239 1 1 10715 20250706073722
+173.252.95.4 1 1 11773 20250713092336
+84.32.212.218 1 1 11499 20250706083532
+44.246.143.166 0 1 31596 
+66.220.149.2 1 2 225093 20250713092244
+199.244.88.229 1 1 11895 20250703035708
+208.240.30.123 1 1 8155 20250706084622
+137.184.127.27 1 2 46470 20250719101140
+34.133.149.219 1 1 11773 20250718024935
+173.252.95.112 0 3 84871 
+167.94.138.43 1 2 46475 20250716120155
+159.203.9.134 1 2 46470 20250719021629
+50.117.28.106 1 1 11874 20250729115422
+154.30.87.137 1 1 6563 20250706082130
+167.94.138.32 1 2 46576 20250726055357
+43.165.61.157 1 1 11895 20250706112830
+66.220.149.114 0 1 31596 
+138.197.104.147 1 2 46470 20250715050945
+157.245.126.215 1 2 46592 20250703044929
+152.53.126.116 1 1 11773 20250723081308
+191.102.181.21 1 1 8294 20250727020131
+66.220.149.19 0 1 34697 
+192.71.3.222 1 1 11895 20250703042420
+206.81.6.46 1 2 46475 20250721075627
+190.106.180.158 1 1 6853 20250706084252
+66.220.149.11 0 1 36568 
+66.220.149.113 1 2 30351 20250713092248
+93.158.91.34 1 1 11874 20250729113533
+34.221.7.52 1 1 12190 20250701035330
+146.190.163.97 1 2 46470 20250717022637
+147.182.242.133 1 2 46592 20250705192124
+52.90.218.10 1 1 11874 20250728172946
+66.249.93.129 1 2 6867 20250704133511
+173.252.95.13 0 1 213320 
+34.212.223.227 1 1 11773 20250723011332
+34.82.187.29 1 1 11773 20250712045313
+44.247.114.39 1 1 11773 20250721094632
+85.190.14.34 1 1 11874 20250725111908
+74.125.210.97 1 1 11773 20250710112442
+52.213.132.210 1 1 11895 20250706135640
+52.49.153.171 1 1 11874 20250729175833
+173.252.95.5 0 2 50868 
+34.169.252.170 1 1 11773 20250717033020
+34.42.96.166 1 1 11773 20250722005203
+185.117.225.206 0 3 246198 
+104.222.169.252 1 1 6822 20250706083239
+34.83.175.183 1 1 11773 20250711041348
+176.145.83.80 1 7 290729 20250702151051
+18.201.19.164 1 1 11895 20250705112525
+34.222.52.43 1 1 11773 20250710104132
+66.249.70.97 0 1 234685 
+173.236.196.141 1 1 11773 20250711075800
+35.232.218.244 1 1 11773 20250721013213
+54.91.228.103 1 1 11773 20250716062428
+151.240.19.48 1 1 11874 20250729164826
+45.95.25.198 1 1 5907 20250706083814
+62.4.31.160 1 1 11874 20250724165648
+66.249.70.110 1 2 177214 20250707125716
+45.56.185.28 1 1 8294 20250706084915
+85.254.125.109 1 1 6374 20250706084750
+44.251.55.98 1 1 11874 20250726162614
+191.102.154.107 1 1 11874 20250727020125
+66.220.149.6 0 2 50868 
+66.220.149.21 0 1 213320 
+74.125.210.110 0 2 15370 
+34.70.106.228 1 1 11773 20250719030149
+34.121.134.182 1 1 11773 20250722235824
+164.92.72.19 1 2 46592 20250705045425
+163.172.183.74 1 8 327563 20250707221309
+54.187.190.217 1 1 11895 20250702153910
+34.221.114.195 1 1 11874 20250724170758
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 31
+20250701 11 25 2580328 2
+20250702 3 9 314519 3
+20250703 7 8 169955 7
+20250704 11 37 19426763 6
+20250705 9 24 2136878 7
+20250706 23 46 4069066 16
+20250707 5 13 409845 5
+20250708 3 3 35685 3
+20250709 0 1 165319 0
+20250710 12 24 743257 7
+20250711 72 116 10062114 10
+20250712 1 1 11773 1
+20250713 3 20 1068196 3
+20250714 2 2 23546 2
+20250715 2 3 58243 2
+20250716 2 3 58248 2
+20250717 3 5 101612 3
+20250718 23 23 199632 3
+20250719 19 25 1046610 4
+20250720 1 4 257971 1
+20250721 9 24 771995 7
+20250722 4 4 47092 4
+20250723 8 8 85495 5
+20250724 3 3 35521 3
+20250725 2 2 23748 2
+20250726 3 4 70324 3
+20250727 4 4 43916 3
+20250728 3 3 35622 3
+20250729 7 7 83118 7
+20250730 2 2 23748 2
+20250731 2 5 269946 1
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 5
+0s-30s 120
+5mn-15mn 2
+30mn-1h 2
+30s-2mn 2
+15mn-30mn 1
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 45
+/accueil 126 1594759 110 99
+/contact 9 74646 2 3
+/primaire 9 165663 1 2
+/familles 7 115819 0 0
+/lycee 6 44886 1 1
+/vie/association/photos 6 64290 1 2
+/dys 6 48930 1 1
+/partenaires 6 39786 2 2
+/inscription/enfant 6 124494 2 3
+/dys/information/documents 6 40932 1 2
+/mentions/legales 5 57495 1 1
+/login 5 42576 1 1
+/primaire/francais 5 83748 0 1
+/charg%C3%A9e/mission 5 43445 0 1
+/service/civique 5 31870 1 1
+/association 5 32815 1 2
+/service/snu 5 29535 1 2
+/college 4 29004 1 1
+/autres/liens/dys 4 27172 0 0
+/lycee/francais 3 19842 0 0
+/lycee/langues 2 12414 0 0
+/college/mathematique 1 6848 0 0
+/primaire/loisir-creatif 1 5901 0 0
+/college/Svt 1 6149 0 1
+/_wdt/1a12d7 1 19586 0 0
+/college/loisir-creatif 1 5891 0 0
+/_wdt/bc41e5 1 18199 0 0
+/college/physique-chimie 1 6655 0 0
+/lycee/loisir-creatif 1 5891 0 0
+/_wdt/627dcb 1 19617 0 1
+/college/histoire-geographie 1 12486 0 0
+/primaire/anglais 1 6577 0 0
+/primaire/Histoire-G%C3%A9ographie 1 6417 0 0
+/lycee/histoire-g%C3%A9ographie 1 6631 0 0
+/_wdt/44ac3e 1 19591 0 0
+/college/anglais 1 6277 0 0
+/lycee/physique-chimie 1 5984 0 0
+/lycee/Svt 1 5908 0 0
+/college/techno 1 6161 0 0
+/lycee/techno 1 5820 0 0
+/college/francais 1 6255 0 0
+/_wdt/f2973f 1 19620 0 0
+/lycee/mathematique 1 6725 0 0
+/benevoles/inscription 1 17061 0 0
+/primaire/mathematique 1 6435 0 0
+END_SIDER
+
+# Payload Range - Payload Frequency
+BEGIN_FILESIZE 5
+2K-5K 475
+100-500 280
+0-44 89
+1K-2K 31
+5K+ 705
+END_FILESIZE

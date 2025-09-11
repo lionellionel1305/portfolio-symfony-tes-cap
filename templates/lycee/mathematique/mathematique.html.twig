@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mathématique{% endblock %}
+
+{% block body %}
+    <div class="container">
+        {% if LyceeMath is not empty %}
+            {% for key, LyceeMath in LyceeMath %}
+                <div class="col-11">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <div>
+                                <h1 class="custom-title">{{ LyceeMath.editableTitle | default('Titre non défini') }}</h1>
+                            </div>
+
+                            <div class="container_dys_description">
+                                <h5>{{ LyceeMath.description | default('') | linkify | nl2br }}</h5>
+                                <h5>{{ LyceeMath.description1 | default('') | linkify | nl2br }}</h5>
+                                <h5>{{ LyceeMath.description2 | default('') | linkify | nl2br }}</h5>
+                                <h5>{{ LyceeMath.description3 | default('') | linkify | nl2br }}</h5>
+                                <h5>{{ LyceeMath.description4 | default('') | linkify | nl2br }}</h5>
+                                <h5>{{ LyceeMath.description5 | default('') | linkify | nl2br }}</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>Aucune entrée trouvée pour Mathématique.</p>
+        {% endif %}
+
+        <div class="buton_modifier_dys">
+            <div class="col-12">
+                {% if is_granted('ROLE_ADMIN') or is_granted('ROLE_BUREAU') %}
+                    <div class="container_dys_description_button text-center">
+                        <a href="{{ path('app_lyceeMath_edit') }}" class="boutton_dys btn btn-primary btn-lg">Modifier</a>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

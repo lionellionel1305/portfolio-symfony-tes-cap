@@ -1,0 +1,449 @@
+{# templates/enfants/liste.html.twig #}
+{% extends 'baseedit.html.twig' %}
+
+{% block body %}
+    <style>
+        <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border: 2px solid #141010;
+            line-height: 1.5;
+        }
+
+        th {
+            background-color: #a0eecc;
+            font-weight: bold;
+        }
+
+        td a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        td a:hover {
+            text-decoration: underline;
+        }
+
+        th:nth-child(1), td:nth-child(1) {
+            width: 1%;
+        }
+
+        th:nth-child(2), td:nth-child(2) {
+            width: 1%;
+        }
+
+        th:nth-child(3), td:nth-child(3) {
+            width: 1%;
+        }
+
+        th:nth-child(4), td:nth-child(4) {
+            width: 8%;
+        }
+        th:nth-child(5), td:nth-child(5) {
+            width: 20%;
+        }
+        th:nth-child(6), td:nth-child(6) {
+            width: 1%;
+        }
+         th:nth-child(7), td:nth-child(7) {
+            width: 1%;
+        }
+         th:nth-child(8), td:nth-child(8) {
+            width: 1%;
+        } 
+        th:nth-child(9), td:nth-child(9) {
+            width: 1%;
+        }
+         th:nth-child(10), td:nth-child(10) {
+            width: 1%;
+        }
+         th:nth-child(11), td:nth-child(11) {
+            width: 5%;
+        }
+         th:nth-child(12), td:nth-child(12) {
+            width: 1%;
+        }
+        th:nth-child(13), td:nth-child(13) {
+            width: 1%;
+        }
+        th:nth-child(14), td:nth-child(14) {
+            width: 1%;
+        }
+        th:nth-child(15), td:nth-child(15) {
+            min-width: 1%;
+        }
+         th:nth-child(16), td:nth-child(16) {
+            min-width: 5%;
+        }
+         th:nth-child(17), td:nth-child(17) {
+            width: 5%;
+        }
+        th:nth-child(21), td:nth-child(21) {
+            width: 1%;
+        }
+        .numero-ligne {
+        background-color: #a0eecc; 
+        font-weight: bold;
+        }
+        @media print {
+        /* Cacher les éléments inutiles à l'impression */
+        button, .no-print, nav, .actions {
+            display: none !important;
+        }
+    
+        /* Optionnel : adapter la mise en page imprimée */
+        body {
+            font-size: 8pt;
+            color: #000;
+        }
+    
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+    
+        table, th, td {
+            border: 1px solid #333;
+            padding: 5px;
+        }
+        tr {
+        page-break-inside: avoid;
+    }
+    }
+     /* Bouton retour en haut */
+        #backToTop {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #a0eecc;
+            color: #000;
+            border: none;
+            border-radius: 50%;
+            padding: 12px 16px;
+            font-size: 20px;
+            cursor: pointer;
+            display: none; /* caché par défaut */
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+            z-index: 999;
+        }
+
+        #backToTop:hover {
+            background-color: #7ddfc3;
+        }
+    </style>
+
+        
+        
+    </style>
+<form method="get" action="{{ path('app_enfant_liste') }}"  class="no-print">
+    {% set existingFields = (app.request.query.all('field') ?? []) %}
+    {% set existingSearches = (app.request.query.all('search') ?? []) %}
+
+    <div id="criteria-container">
+        {% if existingFields is iterable and existingFields|length > 0 %}
+            {% for i in 0..(existingFields|length - 1) %}
+                {% set f = existingFields[i] %}
+                {% set s = existingSearches[i] is defined ? existingSearches[i] : '' %}
+                <div class="criteria-row" style="margin-bottom:8px;">
+                    <select name="field[]">
+                        <option value="secteur" {{ f == 'secteur' ? 'selected' : '' }}>Secteur</option>
+                        <option value="genre" {{ f == 'genre' ? 'selected' : '' }}>Genre</option>
+                        <option value="nom_enfant" {{ f == 'nom_enfant' ? 'selected' : '' }}>Nom</option>
+                        <option value="prenom_enfant" {{ f == 'prenom_enfant' ? 'selected' : '' }}>Prénom</option>
+                        <option value="classe" {{ f == 'classe' ? 'selected' : '' }}>Classe</option>
+                        <option value="niveau_scolaire" {{ f == 'niveau_scolaire' ? 'selected' : '' }}>Niveau scolaire</option>
+                        <option value="ancien_accompagnement" {{ f == 'ancien_accompagnement' ? 'selected' : '' }}>Bénévole Accompagnement</option>
+                        <option value="nom_parent1" {{ f == 'nom_parent1' ? 'selected' : '' }}>Nom parent1</option>
+                        <option value="prenom_parent1" {{ f == 'prenom_parent1' ? 'selected' : '' }}>Prénom parent1</option>
+                        <option value="email_parent1" {{ f == 'email_parent1' ? 'selected' : '' }}>Email Parent1</option>
+                        <option value="telephone_parent1" {{ f == 'telephone_parent1' ? 'selected' : '' }}>Tél Parent1</option>
+                        <option value="nom_parent2" {{ f == 'nom_parent2' ? 'selected' : '' }}>Nom parent2</option>
+                        <option value="prenom_parent2" {{ f == 'prenom_parent2' ? 'selected' : '' }}>Prénom parent2</option>
+                        <option value="email_parent2" {{ f == 'email_parent2' ? 'selected' : '' }}>Email Parent2</option>
+                        <option value="telephone_parent2" {{ f == 'telephone_parent2' ? 'selected' : '' }}>Tél Parent2</option>
+                        <option value="quotient_familial" {{ f == 'quotient_familial' ? 'selected' : '' }}>QF</option>
+                        <option value="paiment" {{ f == 'paiment' ? 'selected' : '' }}>Mode de paiement</option>
+                        <option value="protocole" {{ f == 'protocole' ? 'selected' : '' }}>Protocole (Oui/Non)</option>
+                    </select>
+                    <input type="text" name="search[]" placeholder="Valeur..." value="{{ s }}" />
+                    <button type="button" class="remove-criteria" onclick="this.parentElement.remove()">✖</button>
+                </div>
+            {% endfor %}
+        {% else %}
+            <div class="criteria-row" style="margin-bottom:8px;">
+                <select name="field[]">
+                    <option value="secteur">Secteur</option>
+                    <option value="genre">Genre</option>
+                    <option value="nom_enfant">Nom</option>
+                    <option value="prenom_enfant">Prénom</option>
+                    <option value="classe">Classe</option>
+                    <option value="niveau_scolaire">Niveau scolaire</option>
+                    <option value="ancien_accompagnement">Bénévole Accompagnement</option>
+                    <option value="nom_parent1">Nom parent1</option>
+                    <option value="prenom_parent1">Prénom parent1</option>
+                    <option value="email_parent1">Email Parent1</option>
+                    <option value="telephone_parent1">Tél Parent1</option>
+                    <option value="nom_parent2">Nom parent2</option>
+                    <option value="prenom_parent2">Prénom parent2</option>
+                    <option value="email_parent2">Email Parent2</option>
+                    <option value="telephone_parent2">Tél Parent2</option>
+                    <option value="quotient_familial">QF</option>
+                    <option value="paiment">Mode de paiement</option>
+                    <option value="protocole">Protocole (Oui/Non)</option>
+                </select>
+                <input type="text" name="search[]" placeholder="Valeur..." />
+                <button type="button" class="remove-criteria" onclick="this.parentElement.remove()">✖</button>
+            </div>
+        {% endif %}
+    </div>
+
+    <button type="button" id="add-criteria" style="margin-bottom:8px;">+ Ajouter un critère</button>
+
+    <script>
+    document.getElementById('add-criteria').addEventListener('click', function() {
+        const container = document.getElementById('criteria-container');
+        const div = document.createElement('div');
+        div.className = 'criteria-row';
+        div.style.marginBottom = '8px';
+        div.innerHTML = `
+            <select name="field[]">
+                <option value="secteur">Secteur</option>
+                <option value="genre">Genre</option>
+                <option value="nom_enfant">Nom</option>
+                <option value="prenom_enfant">Prénom</option>
+                <option value="classe">Classe</option>
+                <option value="niveau_scolaire">Niveau scolaire</option>
+                <option value="ancien_accompagnement">Bénévole Accompagnement</option>
+                <option value="nom_parent1">Nom parent1</option>
+                <option value="prenom_parent1">Prénom parent1</option>
+                <option value="email_parent1">Email Parent1</option>
+                <option value="telephone_parent1">Tél Parent1</option>
+                <option value="nom_parent2">Nom parent2</option>
+                <option value="prenom_parent2">Prénom parent2</option>
+                <option value="email_parent2">Email Parent2</option>
+                <option value="telephone_parent2">Tél Parent2</option>
+                <option value="quotient_familial">QF</option>
+                <option value="paiment">Mode de paiement</option>
+                <option value="protocole">Protocole (Oui/Non)</option>
+            </select>
+            <input type="text" name="search[]" placeholder="Valeur..." />
+            <button type="button" class="remove-criteria" onclick="this.parentElement.remove()">✖</button>
+        `;
+        container.appendChild(div);
+    });
+    </script>
+    <select name="year" onchange="this.form.submit()">
+        <option value="all" {{ year == 'all' ? 'selected' : '' }}>Année courante</option>
+        {% for availableYear in availableYears %}
+            {% if availableYear != 'all' %}
+                <option value="{{ availableYear }}" {{ year == availableYear ? 'selected' : '' }}>
+                    {{ availableYear }}
+                </option>
+            {% endif %}
+        {% endfor %}paiment
+    </select>
+   <div class="btn-group no-print" role="group" aria-label="Choix de la liste" style="position: relative; left: 40px; margin-top: -10px;">
+    <button type="submit" style="
+        font-size: 18px;       /* texte plus grand */
+        padding: 12px 30px;   /* plus de padding haut/bas et gauche/droite */
+        background-color: #a0eecc; /
+        color: white;          /* texte blanc */
+        border: none;          /* sans bordure */
+        border-radius: 4px;    /* coins arrondis */
+        cursor: pointer;       /* pointeur au survol */
+        min-width: 140px;      /* largeur mini */
+    ">
+        Rechercher
+    </button>
+</div>
+</form>
+    <div class="btn-group no-print" role="group" aria-label="Choix de la liste" style="position: relative; left: 400px; margin-top: 20px;">
+        <a href="{{ path('app_benevoles_liste') }}" 
+           class="btn btn-primary {% if app.request.get('_route') == 'app_benevoles_liste' %}active{% endif %}" 
+           style="padding: 12px 30px; font-size: 1rem; min-width: 150px;">
+            Liste Bénévoles
+        </a>
+        <a href="{{ path('app_enfant_liste') }}" 
+           class="btn btn-primary {% if app.request.get('_route') == 'app_enfant_liste' %}active{% endif %}" 
+           style="padding: 12px 30px; font-size: 1rem; min-width: 150px;">
+            Liste Enfants
+        </a>
+        
+           <div class="btn-group" role="group" aria-label="Choix de la liste" style="position: relative; left: 300px; margin-top: 10px;">
+        <button type="button" class="btn btn-primary" onclick="ouvrirEmail()">
+            📧 Envoyer un email groupé
+        </button>
+        <button onclick="window.print()" class="btn btn-primary">
+            🖨️ Imprimer la liste
+        </button>
+        </div>
+        </div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>N°</th>
+            <th class="no-print">Options</th>
+            <th>Secteur</th>
+            <th>Genre</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Date de naissance</th>
+            <th>Classe</th>
+            <th>Niveau scolaire</th>
+            <th>Établissement</th>
+            <th>Bénévole accompagnant</th>
+            <th>Nombre d'années suivies</th>
+            <th>Matières souhaitées</th>
+            <th>Diagnostic établi</th>
+            <th>Activités culturelles</th>
+            {#<th>Information complementaire</th>#}
+            <th>Parent 1 (Nom, Téléphone, Email)</th>
+            <th>Parent 2 (Nom, Téléphone, Email)</th>
+            <th>QF</th>
+            <th>PDF QF</th>
+            <th>Mode de paiement</th>
+            <th>Protocole</th>
+        </tr>
+        </thead>
+        <tbody>
+{% for enfant in enfants %}
+    <tr>
+        <td class="numero-ligne">
+           {{ loop.index }}
+            </td>
+        <td class="no-print">
+            <a href="{{ path('app_enfant_detail', { 'id': enfant.id }) }}"
+               class="btn btn-info btn-rounded"
+               style="background-color: #d59bf6; color: white; border: none; padding: 8px 20px; border-radius: 5px;" >
+                Identiter
+            </a><br>
+            <a href="{{ path('app_enfant_modifier', { 'id': enfant.id }) }}"
+               onclick="return confirm('Voulez-vous modifier cet enfant ?');"
+               class="btn btn-success"
+               style="background-color: #ff9a3c; color: white; border: none; padding: 8px 20px; border-radius: 5px;">
+                Modifier
+            </a><br>
+            <a href="{{ path('app_enfant_supprimer', { 'id': enfant.id }) }}"
+               onclick="return confirm('Voulez-vous supprimer cet enfant ?');"
+               class="btn btn-danger"
+               style="background-color: #ff0000; color: white; border: none; padding: 8px 13px; border-radius: 5px;">
+                Supprimer
+            </a>
+        </td>
+        <td>
+            {{ enfant.secteur }}<br>
+        </td>
+        <td class="col-genre">{{ enfant.genre }}</td>
+        <td>{{ enfant.nom_enfant }}</td>
+        <td>{{ enfant.prenom_enfant }}</td>
+        <td>{{ enfant.date_naissance ? enfant.date_naissance|date('d/m/Y') : '' }}</td>
+        
+        <td>{{ enfant.classe }}</td>
+        <td>{{ enfant.niveau_scolaire }}</td>
+        <td>{{ enfant.etablissement }}</td>
+        <td>{{ enfant.ancien_accompagnement }}</td>
+        <td>{{ enfant.nombre_annees_suivies is not null ? enfant.nombre_annees_suivies ~ ' ans' : '-' }}</td>
+        <td>
+            {% if enfant.matieres_souhaitees is iterable and enfant.matieres_souhaitees|length > 0 %}
+                {{ enfant.matieres_souhaitees|join(', ') }}
+            {% else %}
+                -
+            {% endif %}
+        </td>
+        <td>{{ enfant.diagnostic_etabli ? 'Oui' : 'Non' }}</td>
+        <td>{{ enfant.accepte_activites_culturelles ? 'Oui' : 'Non' }}</td>
+        {#<td>{{ enfant.informations_complementaires }}</td>#}
+        <td>
+            {{ enfant.nom_parent1 }}<br>
+            {{ enfant.prenom_parent1 }}<br>
+            {{ enfant.telephone_parent1 }}<br>
+            {{ enfant.ville_parent1 }}<br>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to={{ enfant.email_parent1 }}" target="_blank">
+                {{ enfant.email_parent1 }}
+            </a>
+
+        </td>
+        <td>
+            {% if enfant.nom_parent2 %}
+                {{ enfant.nom_parent2 }}<br>
+                {{ enfant.prenom_parent2 }}<br>
+                {{ enfant.telephone_parent2 }}<br>
+                {{ enfant.ville_parent2 }}<br>
+                
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to={{ enfant.email_parent2 }}" target="_blank">
+                {{ enfant.email_parent2 }}
+            </a>
+                -
+            {% endif %}
+        </td>
+        <td>
+            {{ enfant.quotient_familial }} <br>
+            {% if enfant.don_libre is not empty %}
+            {{ enfant.don_libre }}€ don
+  {% endif %}
+            
+        </td>
+        <td>
+             {% if enfant['quotient_familial_pdf'] %}
+          <a href="{{ asset('uploads/quotient_familial/' ~ enfant['quotient_familial_pdf']) }}" target="_blank">Voir PDF</a>
+        {% else %}
+          Pas de fichier
+        {% endif %}
+        </td>
+      
+
+        <td>
+            {{ enfant.paiment }}<br>
+        </td>
+        
+         <td>
+           {{ enfant.protocole ? 'Oui' : 'Non' }}
+        </td>
+        
+        </tr>
+{% else %}
+    <tr><td colspan="14">Aucun enfant inscrit trouvé.</td></tr>
+{% endfor %}
+</tbody>
+    </table>
+     <button onclick="scrollToTop()" id="backToTop" title="Remonter en haut">⬆️</button>
+<script>
+function ouvrirEmail() {
+    // Récupère toutes les adresses séparées par des virgules depuis Twig
+    const emails = "{{ emails|join(',') }}";
+
+    // Encode pour l'URL (utile si tu as des caractères spéciaux)
+    const emailsEncoded = encodeURIComponent(emails);
+
+    // URL Gmail avec les emails dans le champ "bcc" pour cacher les adresses
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&bcc=${emailsEncoded}`;
+
+    // Ouvre un nouvel onglet avec Gmail compose
+    window.open(gmailUrl, '_blank');
+}
+ // Afficher / cacher le bouton selon le scroll
+        window.onscroll = function() {
+            let btn = document.getElementById("backToTop");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+
+        // Fonction pour remonter en haut
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+</script>
+
+
+{% endblock %}

@@ -1,0 +1,70 @@
+# Définir le fichier index par défaut. Il agit comme une solution de secours lorsque
+# toutes les autres règles de réécriture/redirection échouent (par exemple, dans un environnement
+# avec alias sans mod_rewrite). Cela réduit également le processus de correspondance
+# pour la page d'accueil (chemin "/").
+DirectoryIndex index.php
+
+# Par défaut, Apache n'évalue pas les liens symboliques si cette option
+# n'est pas activée dans la configuration du serveur. Décommentez la ligne suivante si vous
+# installez des ressources comme des liens symboliques ou si vous rencontrez des problèmes
+# liés aux liens symboliques lors de la compilation des ressources LESS/Sass/CoffeScript.
+Options +SymLinksIfOwnerMatch
+
+# Désactiver MultiViews empêche une négociation indésirable, par exemple "/index" ne doit pas être
+# résolu vers le contrôleur frontal "/index.php", mais être réécrit en "/index.php/index".
+<IfModule mod_negotiation.c>
+    Options -MultiViews
+</IfModule>
+
+# Activer mod_rewrite si disponible
+<IfModule mod_rewrite.c>
+    # Cette option doit être activée pour RewriteRule, sinon une erreur sera affichée
+    # du type 'Options FollowSymLinks ou SymLinksIfOwnerMatch est désactivé, ce qui implique que 
+    # la directive RewriteRule est interdite'.
+    Options +SymLinksIfOwnerMatch
+
+    RewriteEngine On
+
+    # Redirection du domaine addon vers le domaine principal
+    RewriteCond %{HTTP_HOST} ^addon\-tescap29\.fr\.cudi8490\.odns\.fr$
+    RewriteRule ^(.*)$ https://tescap29.fr/accueil [R=301,L]
+
+    # Redirection www vers non-www
+    RewriteCond %{HTTP_HOST} ^www\.tescap29\.fr$
+    RewriteRule ^(.*)$ https://tescap29.fr/$1 [R=301,L]
+
+    # Redirection de la racine vers /accueil
+    RewriteCond %{REQUEST_URI} ^/$
+    RewriteRule ^$ /accueil [R=301,L]
+
+    # Déterminer automatiquement le RewriteBase et le définir comme variable d'environnement.
+    RewriteCond %{REQUEST_URI}::$0 ^(/.+)/(.*)::\2$
+    RewriteRule .* - [E=BASE:%1]
+
+    # Ajouter l'en-tête HTTP_AUTHORIZATION supprimé par Apache
+    RewriteCond %{HTTP:Authorization} .+
+    RewriteRule ^ - [E=HTTP_AUTHORIZATION:%0]
+
+    # Rediriger vers l'URI sans contrôleur frontal pour éviter les contenus dupliqués
+    RewriteCond %{ENV:REDIRECT_STATUS} =""
+    RewriteRule ^index\.php(?:/(.*)|$) %{ENV:BASE}/$1 [R=301,L]
+
+    # Si le fichier demandé existe, le servir directement.
+    # Sinon, rediriger toutes les requêtes vers le contrôleur frontal.
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ %{ENV:BASE}/index.php [L]
+</IfModule>
+
+# Si mod_rewrite n'est pas disponible
+<IfModule !mod_rewrite.c>
+    <IfModule mod_alias.c>
+        # Lorsque mod_rewrite n'est pas disponible, rediriger temporairement la page d'accueil
+        # vers le contrôleur frontal explicitement pour que le site web et les liens générés
+        # puissent toujours être utilisés.
+        RedirectMatch 307 ^/$ /index.php/
+    </IfModule>
+    <IfModule mod_headers.c>
+    Header unset X-Robots-Tag
+</IfModule>
+</IfModule>
+

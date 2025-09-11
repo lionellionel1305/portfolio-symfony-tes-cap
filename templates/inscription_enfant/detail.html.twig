@@ -1,0 +1,232 @@
+{% block body %}
+<style>
+    @media print {
+            .no-print {
+                display: none !important;
+            }
+        }
+    body {
+        font-family: DejaVu Sans, sans-serif;
+        font-size: 14px;
+        color: #333;
+        padding: 30px;
+        background-color: #fdfdfd;
+    }
+
+    h1 {
+        color: #1abc9c;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    table {
+        width: 100%;
+        max-width: 100vw;
+        margin: 0 auto 30px;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+
+    th {
+        background-color: #a0eecc;
+        color: black;
+        text-align: left;
+        padding: 8px;
+        width: 30%;
+        vertical-align: middle;
+    }
+
+    td {
+        background-color: #ecf0f1;
+        padding: 8px;
+        width: 70%;
+        word-wrap: break-word;
+    }
+
+    tr + tr td,
+    tr + tr th {
+        border-top: 4px solid #ffffff;
+    }
+    
+    a.btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    a.btn:hover {
+        background-color: #2980b9;
+    }
+    button {
+        background-color: #3498db;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        font-size: 14px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 20px auto;
+        display: block;
+    }
+
+    button:hover {
+        background-color: #2980b9;
+    }
+    .btn-large-text {
+        font-size: 1.8rem; /* Ajuste la taille ici */
+    }
+</style>
+
+<h1>Détails de l'inscription de l'enfant</h1>
+
+<table>
+    <tr>
+        <th>Nom de l'enfant</th>
+        <td>{{ enfant.nomEnfant }}</td>
+    </tr>
+    <tr>
+        <th>Prénom de l'enfant</th>
+        <td>{{ enfant.prenomEnfant }}</td>
+    </tr>
+    <tr>
+        <th>Date de naissance</th>
+        <td>{{ enfant.dateNaissance ? enfant.dateNaissance|date('d/m/Y') : 'Non renseignée' }}</td>
+    </tr>
+    <tr>
+        <th>Genre</th>
+        <td>{{ enfant.genre }}</td>
+    </tr>
+    <tr>
+        <th>Classe</th>
+        <td>{{ enfant.classe }}</td>
+    </tr>
+    <tr><th>Niveau scolaire</th>
+        <td>{{ enfant.niveauScolaire }}</td>
+        
+    </tr>
+    <tr>
+        <th>Établissement</th>
+        <td>{{ enfant.etablissement }}</td>
+    </tr>
+    <tr>
+        <th>Nouvelle inscription</th>
+        <td>{{ enfant.nouvelleInscription ? 'Oui' : 'Non' }}</td>
+    </tr>
+    <tr>
+        <th>Réinscription</th>
+        <td>{{ enfant.reinscription ? 'Oui' : 'Non' }}</td>
+    </tr>
+    <tr>
+        <th>Bénévole accompagnant</th>
+        <td>{{ enfant.ancienAccompagnement ?: 'Non renseigné' }}</td>
+    </tr>
+    <tr>
+        <th>Nombre d'année suivie</th>
+        <td>{{ enfant.nombreAnneesSuivies }}</td>
+    </tr>
+    <!-- Infos Parent 1 -->
+    <tr>
+        <th>Nom Parent 1</th>
+        <td>{{ enfant.nomParent1 }}</td>
+    </tr>
+    <tr>
+        <th>Prénom Parent 1</th>
+        <td>{{ enfant.prenomParent1 }}</td>
+    </tr>
+    <tr>
+        <th>Adresse Parent 1</th>
+        <td>{{ enfant.adresseParent1 }}</td>
+    </tr>
+    <tr>
+        <th>Code Postal Parent 1</th>
+        <td>{{ enfant.codePostalParent1 }}</td>
+    </tr>
+    <tr>
+        <th>Ville Parent 1</th>
+        <td>{{ enfant.villeParent1 }}</td>
+    </tr>
+    <tr>
+        <th>Profession Parent 1</th>
+        <td>{{ enfant.professionParent1 }}</td>
+    </tr>
+    <tr>
+        <th>Téléphone Parent 1</th>
+        <td>{{ enfant.telephoneParent1 }}</td>
+    </tr>
+    <tr>
+        <th>Email Parent 1</th>
+        <td><a href="mailto:{{ enfant.emailParent1 }}">{{ enfant.emailParent1 }}</a></td>
+    </tr>
+
+    <!-- Infos Parent 2 (optionnel) -->
+    <tr>
+        <th>Nom Parent 2</th>
+        <td>{{ enfant.nomParent2 ?: 'Non renseigné' }}</td>
+    </tr>
+    <tr>
+        <th>Prénom Parent 2</th>
+        <td>{{ enfant.prenomParent2 ?: 'Non renseigné' }}</td>
+    </tr>
+    <tr>
+        <th>Adresse Parent 2</th>
+        <td>{{ enfant.adresseParent2 ?: 'Non renseigné' }}</td>
+    </tr>
+    <tr>
+        <th>Code Postal Parent 2</th>
+        <td>{{ enfant.codePostalParent2 ?: 'Non renseigné' }}</td>
+    </tr>
+    <tr>
+        <th>Ville Parent 2</th>
+        <td>{{ enfant.villeParent2 ?: 'Non renseigné' }}</td>
+    </tr>
+    <tr>
+        <th>Profession Parent 2</th>
+        <td>{{ enfant.professionParent2 ?: 'Non renseigné' }}</td>
+    </tr>
+    <tr>
+        <th>Téléphone Parent 2</th>
+        <td>{{ enfant.telephoneParent2 ?: 'Non renseigné' }}</td>
+    </tr>
+    <tr>
+        <th>Email Parent 2</th>
+        <td>
+            {% if enfant.emailParent2 %}
+                <a href="mailto:{{ enfant.emailParent2 }}">{{ enfant.emailParent2 }}</a>
+            {% else %}
+                Non renseigné
+            {% endif %}
+        </td>
+    </tr>
+
+    <!-- Autres infos -->
+    <tr>
+        <th>Matières souhaitées</th>
+        <td>{{ enfant.matieresSouhaitees|join(', ') }}</td>
+    </tr>
+    <tr>
+        <th>Diagnostic établi</th>
+        <td>{{ enfant.diagnosticEtabli ? 'Oui' : 'Non' }}</td>
+    </tr>
+    <tr>
+        <th>Information complémentaire </th>
+        <td>{{ enfant.informationsComplementaires }}</td>
+    </tr>
+    <tr>
+        <th>Accepte les activités culturelles</th>
+        <td>{{ enfant.accepteActivitesCulturelles ? 'Oui' : 'Non' }}</td>
+    </tr>
+    <tr>
+        <th>Protocole</th>
+        <td>{{ enfant.protocole ? 'Oui' : 'Non' }}</td>
+    </tr>
+</table>
+        <button class="btn btn-primary no-print" onclick="window.open('{{ path('app_enfant_generate_pdf', { 'id': enfant.id }) }}', '_blank')">
+            Générer PDF
+        </button>
+{% endblock %}

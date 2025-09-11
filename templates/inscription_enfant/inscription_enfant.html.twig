@@ -1,0 +1,119 @@
+{% extends 'baseedit.html.twig' %}
+
+{% block title %}
+    Inscription Enfant
+{% endblock %}
+
+{% block body %}
+<style>
+        /* === Bouton retour en haut === */
+        #backToTop {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #a0eecc;
+            color: #000;
+            border: none;
+            border-radius: 50%;
+            padding: 14px;
+            font-size: 22px;
+            cursor: pointer;
+            display: none; /* caché par défaut */
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+            z-index: 999;
+        }
+
+        #backToTop:hover {
+            background-color: #7ddfc3;
+        }
+
+        #backToTop i {
+            font-size: 20px;
+            color: #000;
+        }
+    </style>
+
+    <div class="container d-flex flex-column align-items-center text-center">
+        <h1 class="text-black">Inscription d’un enfant</h1>
+    </div><br>
+
+    <div class="container d-flex flex-column align-items-center" style="background-color: rgba(55, 55, 55, 0.15); width: 40%;">
+
+        {% for message in app.flashes('success') %}
+            <div class="alert alert-success mt-3">{{ message|nl2br|raw }}</div>
+        {% endfor %}
+
+        {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+
+        <h3>Inscription</h3>
+        
+        <div>{{ form_label(form.nouvelleInscription) }}{{ form_widget(form.nouvelleInscription) }}{{ form_errors(form.nouvelleInscription) }}</div>
+        <div>{{ form_label(form.reinscription) }}{{ form_widget(form.reinscription) }}{{ form_errors(form.reinscription) }}</div>
+        <div>{{ form_label(form.ancienAccompagnement) }}{{ form_widget(form.ancienAccompagnement) }}{{ form_errors(form.ancienAccompagnement) }}</div><br>
+        
+        
+        
+        <h3>Informations de l'enfant</h3>
+        <div>{{ form_label(form.genre) }}{{ form_widget(form.genre) }}{{ form_errors(form.genre) }}</div>
+        <div>{{ form_label(form.nomEnfant) }}{{ form_widget(form.nomEnfant) }}{{ form_errors(form.nomEnfant) }}</div>
+        <div>{{ form_label(form.prenomEnfant) }}{{ form_widget(form.prenomEnfant) }}{{ form_errors(form.prenomEnfant) }}</div>
+        <div>{{ form_label(form.dateNaissance) }}{{ form_widget(form.dateNaissance) }}{{ form_errors(form.dateNaissance) }}</div>
+        <div>{{ form_label(form.classe) }}{{ form_widget(form.classe) }}{{ form_errors(form.classe) }}</div>
+        <div>{{ form_label(form.etablissement) }}{{ form_widget(form.etablissement) }}{{ form_errors(form.etablissement) }}</div>
+
+        
+
+        <h3>Parent 1 (Obligatoire)</h3>
+        <div>{{ form_label(form.nomParent1) }}{{ form_widget(form.nomParent1) }}{{ form_errors(form.nomParent1) }}</div>
+        <div>{{ form_label(form.prenomParent1) }}{{ form_widget(form.prenomParent1) }}{{ form_errors(form.prenomParent1) }}</div>
+        <div>{{ form_label(form.adresseParent1) }}{{ form_widget(form.adresseParent1) }}{{ form_errors(form.adresseParent1) }}</div>
+        <div>{{ form_label(form.codePostalParent1) }}{{ form_widget(form.codePostalParent1) }}{{ form_errors(form.codePostalParent1) }}</div>
+        <div>{{ form_label(form.villeParent1) }}{{ form_widget(form.villeParent1) }}{{ form_errors(form.villeParent1) }}</div>
+        <div>{{ form_label(form.professionParent1) }}{{ form_widget(form.professionParent1) }}{{ form_errors(form.professionParent1) }}</div>
+        <div>{{ form_label(form.telephoneParent1) }}{{ form_widget(form.telephoneParent1) }}{{ form_errors(form.telephoneParent1) }}</div>
+        <div>{{ form_label(form.emailParent1) }}{{ form_widget(form.emailParent1) }}{{ form_errors(form.emailParent1) }}</div>
+
+        <h3>Parent 2 (Facultatif)</h3>
+        <div>{{ form_label(form.nomParent2) }}{{ form_widget(form.nomParent2) }}{{ form_errors(form.nomParent2) }}</div>
+        <div>{{ form_label(form.prenomParent2) }}{{ form_widget(form.prenomParent2) }}{{ form_errors(form.prenomParent2) }}</div>
+        <div>{{ form_label(form.adresseParent2) }}{{ form_widget(form.adresseParent2) }}{{ form_errors(form.adresseParent2) }}</div>
+        <div>{{ form_label(form.codePostalParent2) }}{{ form_widget(form.codePostalParent2) }}{{ form_errors(form.codePostalParent2) }}</div>
+        <div>{{ form_label(form.villeParent2) }}{{ form_widget(form.villeParent2) }}{{ form_errors(form.villeParent2) }}</div>
+        <div>{{ form_label(form.professionParent2) }}{{ form_widget(form.professionParent2) }}{{ form_errors(form.professionParent2) }}</div>
+        <div>{{ form_label(form.telephoneParent2) }}{{ form_widget(form.telephoneParent2) }}{{ form_errors(form.telephoneParent2) }}</div>
+        <div>{{ form_label(form.emailParent2) }}{{ form_widget(form.emailParent2) }}{{ form_errors(form.emailParent2) }}</div>
+
+        <h3>Matières pour l’accompagnement</h3>
+        <div>{{ form_label(form.matieresSouhaitees) }}{{ form_widget(form.matieresSouhaitees) }}{{ form_errors(form.matieresSouhaitees) }}</div>
+
+        <h3>Diagnostic & Activités</h3>
+        <div>{{ form_label(form.diagnosticEtabli) }}{{ form_widget(form.diagnosticEtabli) }}{{ form_errors(form.diagnosticEtabli) }}</div><br>
+        
+      
+        <div>
+        {{ form_label(form.informationsComplementaires) }}
+        {{ form_widget(form.informationsComplementaires, {'attr': {'class': 'form-control'}}) }}
+        {{ form_errors(form.informationsComplementaires) }}
+        </div>
+
+
+        <div>{{ form_label(form.accepteActivitesCulturelles) }}{{ form_widget(form.accepteActivitesCulturelles) }}{{ form_errors(form.accepteActivitesCulturelles) }}</div>
+
+        <div>{{ form_label(form.quotientFamilial) }}{{ form_widget(form.quotientFamilial) }}{{ form_errors(form.quotientFamilial) }}</div><br>
+        <div>{{ form_label(form.donLibre) }}{{ form_widget(form.donLibre) }}{{ form_errors(form.donLibre) }}</div><br>
+        <div>{{ form_label(form.quotientFamilialPdf) }}{{ form_widget(form.quotientFamilialPdf) }}{{ form_errors(form.quotientFamilialPdf) }}</div><br>
+        
+        <div>
+            <a href="https://caf.fr/" class="btn btn-info" style="border: none; padding: 8px 25px; border-radius: 5px; position: relative;top: -00px;left: 220px;" target="_blank">Récupérer son quotient familial</a>
+        </div><br>
+        <a><strong>Ce formulaire ne constitue pas une demande définitive. En remplissant ce formulaire, vous exprimez simplement votre souhait d'avoir un accompagnement scolaire pour votre enfant.
+        Vous serez informé(e) des modalités et de la disponibilité lorsqu'un bénévole vous sera trouvé. Le réglement doit être envoyé au siége de T'es Cap  aprés de la soumission du formulaire. Il ne sera encaissé que lorsqu’un bénévole aura été attribué. Merci de votre compréhension.
+        </strong></a>
+        <div>
+                <button type="submit" class="btn btn-success" style="border: none; padding: 8px 25px; border-radius: 5px; position: relative;top: -60px;left: 50px;">Envoyer le formulaire</button>
+        </div>
+        
+        {#{{ form_end(form) }}#}
+    </div><br><br><br>
+    
+{% endblock %}

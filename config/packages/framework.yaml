@@ -1,0 +1,41 @@
+# see https://symfony.com/doc/current/reference/configuration/framework.html
+framework:
+    secret: '%env(APP_SECRET)%'
+    annotations: false
+    http_method_override: false
+    handle_all_throwables: true
+    validation:
+        enabled: true
+        enable_annotations: true
+    default_locale: fr
+    error_controller: App\Controller\ErrorController::show
+    
+    assets:
+        # Activer les assets (si ce n'est pas déjà activé)
+        enabled: true
+        # Configurer le versionnement des assets, si vous en avez besoin
+        version: '1.0'
+    # Enables session support. Note that the session will ONLY be started if you read or write from it.
+    # Remove or comment this section to explicitly disable session support.
+        json_manifest_path: null
+        packages:
+            uploads:
+                base_path: '/uploads' 
+    session:
+        handler_id: 'session.handler.native_file'
+        cookie_lifetime: 0
+        cookie_secure: auto
+        cookie_samesite: lax
+        save_path: '%kernel.cache_dir%/sessions'
+
+
+    #esi: true
+    #fragments: true
+    php_errors:
+        log: true
+
+when@test:
+    framework:
+        test: true
+        session:
+            storage_factory_id: session.storage.factory.mock_file

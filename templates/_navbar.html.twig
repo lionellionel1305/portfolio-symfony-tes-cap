@@ -1,0 +1,73 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <!-- Logo et Titre -->
+        <a class="navbar-brand d-flex align-items-center" href="{{ path('accueil_accueil') }}">
+{#            <img src="{{ asset('img/t_es_cap.png') }}" alt="Image du logo T'es Cap" width="120" height="120">#}
+            <span class="ms-2 tesCap">
+                <span>T'</span><span>es</span> <span>C</span><span>a</span><span>p</span>
+            </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <ul class="navbar-nav d-flex flex-row align-items-center">
+        {% if is_granted('ROLE_ADMIN') %}
+        <li class="nav-item mb-2 me-3">
+            <a class="nav-link" href="{{ path('app_benevoles_liste') }}"> 🖥 ️Base</a>
+        </li>
+        <li class="nav-item mb-2 me-3">
+             <a class="nav-link" 
+            href="#" 
+             onclick="window.open('https://mail.google.com/mail/u/0/#inbox', 'gmailWindow'); return false;">
+            📧 Boîte mail
+            </a>
+        </li>
+        <li class="nav-item mb-2 me-3">
+            <a class="nav-link" href="{{ path('popup_edit') }}">  ⚙️ Option</a>
+        </li>
+      
+        {% endif %}
+        
+        <li class="nav-item mb-2 me-3">
+            <a class="nav-link" href="{{ path('accueil_accueil') }}"> 🏠 Accueil</a>
+        </li>
+        <li class="nav-item mb-2 me-3">
+            <a class="nav-link" href="{{ path('app_pages_famille') }}"> 👨‍👩‍👧 Adhésion Famille</a>
+        </li>
+        <li class="nav-item mb-2 me-3">
+            <a class="nav-link" href="{{ path('app_charger_mission') }}"> 🙋‍♂️Adhésion Bénévole</a>
+        </li>
+        <li class="nav-item mb-2 me-3">
+            <a class="nav-link" href="{{ path('app_contact') }}">  📞 Contact/Horaires</a>
+        </li>
+
+        {% if app.user %}
+        <li class="nav-item mb-2 me-3">
+            <a class="nav-link" href="{{ path('app_logout') }}"> 🚪 Se déconnecter</a>
+        </li>
+        {% else %}
+        <li class="nav-item mb-2 me-3">
+            <a class="nav-link" href="{{ path('app_login') }}"> 🚪 Administrateur</a>
+        </li>
+        {% endif %}
+
+        <!-- Réseaux sociaux dans un <li> pour garder l'alignement -->
+        <li class="nav-item d-flex align-items-center me-3">
+            <a href="https://www.facebook.com/tescapdereussir" target="_blank" class="social-logo">
+                <img src="{{ asset('img/accueil/facebook.png') }}" alt="Facebook Logo" style="width: 30px; height: 30px; margin-right: 10px;">
+            </a>
+            <a href="https://www.instagram.com/tescap29720/" target="_blank" class="social-logo">
+                <img src="{{ asset('img/accueil/insta1.png') }}" alt="Instagram Logo" style="width: 30px; height: 30px; margin-left: 10px;">
+            </a>
+        </li>
+    </ul>
+</div>
+
+

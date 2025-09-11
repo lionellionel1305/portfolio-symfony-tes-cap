@@ -1,0 +1,78 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Famille{% endblock %}
+
+{% block body %}
+    <div class="container text-center mt-5">
+        <div class="row mt-4">
+            <div class="col-13">
+                <h1 class="text-black">{{ titre|default('') }}</h1>
+            </div>
+        </div><br>
+        <div class="p-2 border rounded fw-bold text-center">
+            <div class="mb-5">
+                <h4 class="text-muted fw-bold">{{ information1|default('')|linkify|nl2br }}</h4>
+            </div>
+            <div class="mb-5">
+                <h4 class="text-muted fw-bold">{{ information2|linkify|nl2br }}</h4>
+            
+            </div>
+            <div class="mb-5">
+                <h1 class="text-danger fw-bold text-center"><strong>{{ information4|default('')|linkify|nl2br }}</strong></h1>
+            </div>
+            <ul class="list-group mb-3">
+                <li class="list-group-item">{{ information5|default('')|linkify|nl2br|raw }}</li>
+            </ul>
+            <div class="mb-2">
+                <h4 class="text-muted fw-bold">{{ information6|default('')|linkify|nl2br }}</h4>
+              </div>  
+              
+            <div class="list-group mb-2 text-muted fw-bold ">
+                <h5 class="list-group-item">
+                    * Cotisation de 20€ : Jusqu’à 750 € du QF <br> 
+                    * Cotisation de 40€ : De 751 € à 900 € du QF  <br>
+                    * Cotisation de 60€ : De 901 € à 1050 € du QF  <br>
+                    * Cotisation de 80€ : Plus de 1051 € du QF  <br>
+                    * Cotisation de 20€ par enfant(s) supplémentaire(s) au sein d’une même famille</h5>
+            </div>
+            
+            <div class="list-group mb-2 text-muted fw-bold">
+                <h5 class="list-group-item">
+                    Pièces à joindre :<br>
+                    * Votre bulletin d’inscription complété<br>
+                    * L’attestation mentionnant votre quotient familial (QF) délivrée par la CAF, la MSA ou autres régimes<br>
+                    * Cotisation par espèces, par virement ou par chèque à l’ordre de T’es Cap.<br>
+                      <strong><span style="color: #dc2f2f;">Tout dossier incomplet ne sera pas pris en compte</span></strong>
+            </div>
+                    
+            <ul class="list-group mb-2">
+                <li class="list-group-item">{{ information8|default('')|linkify|nl2br|raw }}</li>
+            </ul>
+            
+            {#<div class="button-container">#}
+            {#            <a href="{{ asset('uploads/pdfs/famille/formulaire_famille.pdf') }}" class="btn btn-success"style="background-color: #179d25   ; color: white; border: none; padding: 5px 10px; border-radius: 5px; position: relative; top: 0px; left: 40px;" download>#}
+            {#                Télécharger le formulaire en PDF#}
+            {#            </a>#}
+            {#        </div>#}
+            
+                 
+                 <div class="button-container">
+                     <a href="{{ path('app_enfant_inscription') }}" class="btn btn-warning" style="background-color: #30d9ed   ; color: white; border: none; padding: 5px 10px; border-radius: 5px;">S'inscrire</a>
+                        <a href="{{ asset('uploads/pdfs/famille/formulaire_famille.pdf') }}" class="btn btn-success"style="background-color: #179d25   ; color: white; border: none; padding: 5px 10px; border-radius: 5px; position: relative; top: 0px; left: 30px;" download>
+                            Télécharger le formulaire en PDF
+                        </a>
+                        
+                    </div>
+                {% if is_granted('ROLE_ADMIN') or is_granted('ROLE_BUREAU') %}        
+                 <div style="d-grid modifier_charger_mission">
+                    <a href="{{ path('app_pages_famille_edit') }}" <div style="position: relative;">
+                    <button class="btn btn-primary" style="background-color: #d33bf8; color: white; border: none; padding: 10px 120px; border-radius: 5px; position: relative; top: 3px; left: 250px;">Modifier texte</button>
+                </div>
+                <div class=" d-grid nouveau_formulaire">
+                    <a href="{{ path('app_adminpdf_upload_famille') }}" class="btn btn-primary" style="background-color: #d33bf8 ; color: white; border: none; padding: 10px 40px; top: -70px; border-radius: 5px; left: 350px;">Changer le formulaire</a>
+                 </div>
+            </div>
+                
+<br><br>
+        {% endif %}
+{% endblock %}

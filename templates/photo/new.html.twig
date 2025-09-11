@@ -1,0 +1,39 @@
+{% extends 'baseedit.html.twig' %}
+
+{% block body %}
+    <h1>Ajouter une nouvelle photo</h1>
+
+    {{ form_start(form) }}
+    {{ form_row(form.titre) }}
+    {{ form_row(form.description) }}
+
+    <div class="form-group">
+
+        <div class="mt-5">
+            {{ form_label(form.imageFile) }}
+            {{ form_widget(form.imageFile) }}
+            <img id="imagePreview" src="#" alt="Prévisualisation de l'image" style="display: none; max-width: 200px; max-height: 200px; border: 1px solid #ccc;">
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-success">Ajouter</button>
+    <a href="{{ path('app_photo_index') }}" class="btn btn-danger">Annuler</a>
+    {{ form_end(form) }}
+
+    <script>
+        // Fonction pour afficher la prévisualisation de l'image
+        document.getElementById("{{ form.imageFile.vars.id }}").addEventListener("change", function(event) {
+            var file = event.target.files[0];
+            if (file) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    var imagePreview = document.getElementById("imagePreview");
+                    imagePreview.src = e.target.result;
+                    imagePreview.style.display = "block";
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+{% endblock %}
+

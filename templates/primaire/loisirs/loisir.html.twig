@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Loisirs Creatifs{% endblock %}
+
+{% block body %}
+    <div class="container">
+        {% if loisirs is not empty %}
+            {% for key, loisirs in loisirs %}
+                <div class="col-11">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <div>
+                                <h1 class="custom-title">{{ loisirs.editableTitle | default('Titre non défini') }}</h1>
+                            </div>
+
+                            <div class="container_dys_description">
+                                <h5>{{ loisirs.description | default('') | linkify | nl2br }}</h5>
+                                <h5>{{ loisirs.description1 | default('') | linkify | nl2br }}</h5>
+                                <h5>{{ loisirs.description2 | default('') | linkify | nl2br }}</h5>
+                                <h5>{{ loisirs.description3 | default('') | linkify | nl2br }}</h5>
+                                <h5>{{ loisirs.description4 | default('') | linkify | nl2br }}</h5>
+                                <h5>{{ loisirs.description5 | default('') | linkify | nl2br }}</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>Aucune entrée trouvée pour Loisirs et Creatifs.</p>
+        {% endif %}
+
+        <div class="buton_modifier_dys">
+            <div class="col-12">
+                {% if is_granted('ROLE_ADMIN') or is_granted('ROLE_BUREAU') %}
+                    <div class="container_dys_description_button text-center">
+                        <a href="{{ path('app_loisir_edit') }}" class="boutton_dys btn btn-primary btn-lg">Modifier</a>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

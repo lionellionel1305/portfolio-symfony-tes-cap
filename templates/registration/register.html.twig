@@ -1,0 +1,75 @@
+{# templates/registration/register.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}S'enregistrer{% endblock %}
+
+{% block body %}
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <form method="post" action="{{ path('app_register') }}">
+        {% for type, messages in app.flashes %}
+            {% for message in messages %}
+                <div class="alert alert-{{ type }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endfor %}
+        <div class="card-inscription row justify-content-center">
+            <div class="col-md-3">
+                <div class="card shadow-sm">
+                    <h1 class="login mb-4 col-lg-12 font-weight-normal text-center">
+                        Inscription</h1>
+                    <div class="card-body">
+                        {{ form_start(form) }}
+                        <div class="mb-3">
+                            <label for="username" class="form-label"></label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                {{ form_widget(form.username, {'attr': {'placeholder': 'Nom'}}) }}
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="firstname" class="form-label"></label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                {{ form_widget(form.firstname, {'attr': {'placeholder': 'Prénom'}}) }}
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label"></label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                {{ form_widget(form.email, {'attr': {'placeholder': 'Email'}}) }}
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label"></label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                {{ form_widget(form.password, {'attr': {'placeholder': 'Mot de passe'}}) }}
+                            </div>
+                            {{ form_errors(form.password) }}
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="confirm_password" class="form-label"></label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                {{ form_widget(form.confirm_password,  {'attr': {'placeholder': 'Confirmer mot de passe'}}) }}
+                            </div>
+                            {{ form_errors(form.confirm_password) }}
+                        </div>
+
+                        <div class="button_incription">
+                            <button class="btn btn-lg btn-warning btn-block" type="submit">S'incrire</button>
+                        </div>
+
+                        {{ form_end(form) }}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+{% endblock %}

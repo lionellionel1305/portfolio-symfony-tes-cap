@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Tdah{% endblock %}
+
+{% block body %}
+<div class="container">
+    {% if tsas is not empty %}
+        {% for key, tsa in tsas %}
+            <div class="col-11">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div>
+                            <h1 class="custom-title">{{ tsa.editableTitle | default('Titre non défini') }}</h1>
+                        </div>
+
+                        <div class="container_dys_description">
+                            <h5>{{ tsa.description | default('') | linkify | nl2br }}</h5>
+                            <h5>{{ tsa.description1 | default('') | linkify | nl2br }}</h5>
+                            <h5>{{ tsa.description2 | default('') | linkify | nl2br }}</h5>
+                            <h5>{{ tsa.description3 | default('') | linkify | nl2br }}</h5>
+                            <h5>{{ tsa.description4 | default('') | linkify | nl2br }}</h5>
+                            <h5>{{ tsa.description5 | default('') | linkify | nl2br }}</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>Aucune entrée trouvée pour tsa.</p>
+    {% endif %}
+
+    <div class="buton_modifier_dys">
+        <div class="col-12">
+            {% if is_granted('ROLE_ADMIN') or is_granted('ROLE_BUREAU') %}
+                <div class="container_dys_description_button text-center">
+                    <a href="{{ path('app_tsa_edit') }}" class="boutton_dys btn btn-primary btn-lg">Modifier</a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

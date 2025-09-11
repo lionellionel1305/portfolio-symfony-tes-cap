@@ -1,0 +1,88 @@
+{% block body %}
+
+    {% if app.session.get('show_christmas_card') == true %}
+        <div id="christmas-card" class="christmas-card show">
+            <div class="christmas-card-content">
+                <h2>Bienvenue </h2>
+                <h1>Sur le future site de t' es Cap</h1>
+                <button id="close-card">Fermer</button>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function attachChristmasCardEvents() {
+                // Récupérer l'élément de la carte et le bouton de fermeture
+                let christmasCard = document.getElementById('christmas-card');
+                let closeButton = document.getElementById('close-card');
+
+                if (christmasCard) {
+                    // S'assurer que la carte n'a pas déjà des événements attachés
+                    if (!christmasCard.dataset.eventsAttached) {
+                        // Ajouter un délai pour masquer la carte automatiquement après 10 secondes
+                        setTimeout(function () {
+                            if (christmasCard.style.display !== 'none') {
+                                christmasCard.style.display = 'none';
+
+                                // Appel AJAX pour mettre à jour la session côté serveur
+                                fetch("{{ path('close_christmas_card') }}", {
+                                    method: 'POST',
+                                }).then(response => {
+                                    if (response.ok) {
+                                        console.log("Carte de Noël fermée automatiquement et session mise à jour.");
+                                    } else {
+                                        console.error("Erreur lors de la fermeture automatique de la carte.");
+                                    }
+                                }).catch(error => {
+                                    console.error("Erreur AJAX :", error);
+                                });
+                            }
+                        }, 10000);
+
+                        // Ajouter un événement au bouton de fermeture
+                        if (closeButton) {
+                            closeButton.addEventListener('click', function () {
+                                // Masquer la carte en la mettant en display: none
+                                christmasCard.style.display = 'none';
+
+                                // Appel AJAX pour mettre à jour la session côté serveur
+                                fetch("{{ path('close_christmas_card') }}", {
+                                    method: 'POST',
+                                }).then(response => {
+                                    if (response.ok) {
+                                        console.log("Carte de Noël fermée manuellement et session mise à jour.");
+                                    } else {
+                                        console.error("Erreur lors de la fermeture manuelle de la carte.");
+                                    }
+                                }).catch(error => {
+                                    console.error("Erreur AJAX :", error);
+                                });
+                            });
+                        }
+
+                        // Marquer que les événements sont attachés pour éviter les doublons
+                        christmasCard.dataset.eventsAttached = "true";
+                    }
+                }
+            }
+
+            // Appel initial
+            attachChristmasCardEvents();
+
+            // Surveiller les changements dans le DOM pour détecter si la carte est injectée dynamiquement
+            const observer = new MutationObserver((mutationsList) => {
+                for (const mutation of mutationsList) {
+                    if (mutation.addedNodes.length > 0) {
+                        attachChristmasCardEvents();
+                    }
+                }
+            });
+
+            // Surveiller le body pour les modifications
+            observer.observe(document.body, { childList: true, subtree: true });
+        });
+    </script>
+{% endblock %}

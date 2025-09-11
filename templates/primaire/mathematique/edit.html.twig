@@ -1,0 +1,19 @@
+{% extends 'baseedit.html.twig' %}
+
+
+{% block title %}Modifier Mathématique{% endblock %}
+
+{% block body %}
+    <h1>Modifier la description</h1>
+
+    {{ form_start(form) }}
+    <div class="d-flex gap-2 col-3 mx-auto">
+        <button class="btn btn-success">Sauvegarder</button>
+        <a href="{{ path('app_math') }}" class="btn btn-danger">Annuler</a>
+    </div>
+    {{ form_widget(form) }}
+
+    {{ form_end(form) }}
+
+
+{% endblock %}

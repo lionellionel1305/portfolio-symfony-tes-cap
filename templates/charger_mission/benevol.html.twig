@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Benevole{% endblock %}
+
+{% block body %}
+    <div class="container text-center mt-5">
+            <div class="row mt-4">
+                <div class="col-13">
+                    <h1 class="text-black">{{ titre|default('') }}</h1>
+                </div>
+                </div><br>
+             <div class="p-2 border rounded fw-bold text-center">
+                    <div class="mb-5">
+                        <h4 class="text-muted fw-bold "><stong>{{ information1|default('')|linkify|nl2br }}</stong></h4>
+                    </div>
+                    <div class="mb-5">
+                        <h1 class="text-danger fw-bold text-center "><strong>{{ information2|linkify|nl2br }}</strong></h1>
+                    </div>
+                    <ul class="list-group mb-2">
+                        <li class="list-group-item">{{ information3|default('')|linkify|nl2br }}</li>
+                    </ul>
+                    <ul class="list-group mb-2">    
+                        <li class="list-group-item">{{ information4|default('')|linkify|nl2br }}</li>
+                    </ul>
+                    <ul class="list-group mb-2">    
+                        <li class="list-group-item">{{ information5|default('')|linkify|nl2br }}</li>
+                    </ul>
+                    <ul class="list-group mb-2">    
+                        <li class="list-group-item">{{ information6|default('')|linkify|nl2br }}</li>
+                    </ul>
+                    <ul class="list-group mb-2">    
+                        <li class="list-group-item">{{ information7|default('')|linkify|nl2br }}</li>
+                    </ul>
+                    <ul class="list-group mb-2">    
+                        <li class="list-group-item">{{ information8|default('')|linkify|nl2br }}</li>
+                    </ul>
+                   <div class="button-container">
+                        <a href="{{ path('app_benevoles_benevoles_inscription') }}" class="btn btn-warning" style="background-color: #30d9ed   ; color: white; border: none; padding: 5px 10px; border-radius: 5px;">S'inscrire</a>
+                        <a href="{{ asset('uploads/pdfs/benevole/formulaire_benevole.pdf') }}" class="btn btn-success"style="background-color: #179d25   ; color: white; border: none; padding: 5px 10px; border-radius: 5px;" download>
+                            Télécharger le formulaire en PDF
+                        </a>
+                    </div>
+                    <div class="photos_illustrations">
+                </div><br><br><br>
+            </div>
+        </div>
+
+        {% if is_granted('ROLE_ADMIN') or is_granted('ROLE_BUREAU') %}
+                  <div class=" d-grid nouveau_formulaire">
+                    <a href="{{ path('app_adminpdf_upload_benevole') }}" class="btn btn-primary" style="background-color: #d33bf8 ; color: white; border: none; padding: 5px 10px; border-radius: 5px;">Changer le formulaire</a>
+                 </div>
+                 <div class=" d-grid modifier_charger_mission">
+                    <a href="{{ path('app_charger_mission_edit') }}" class="btn btn-primary" style="background-color: #d33bf8 ; color: white; border: none; padding: 5px 10px; border-radius: 5px; position: relative; top: -110px; left: -100px;">Modifier ce texte</a>
+                 </div>
+<br><br>
+        {% endif %}
+    </div>
+{% endblock %}

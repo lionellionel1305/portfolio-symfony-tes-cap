@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier l'association{% endblock %}
+
+{% block body %}
+    <h1>Modifier la description</h1>
+
+    <div>
+    {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+        <div class="d-flex gap-2 col-3 mx-auto">
+            <button class="btn btn-success">Sauvegarder</button>
+            <a href="{{ path('app_pages_famille') }}" class="btn btn-danger">Annuler</a>
+        </div>
+        <div class="container large-margin-bottom">
+            {{ form_widget(form) }}
+            <br><br> <br><br>
+            {{ form_end(form) }}
+        </div>
+    </div>
+
+{% endblock %}

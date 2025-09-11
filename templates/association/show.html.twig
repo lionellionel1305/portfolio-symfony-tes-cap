@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}L'association{% endblock %}
+
+{% block body %}
+
+<div class="container text-center mt-2">
+        <div class="row mt-4">
+            <div class="col-13">
+                <h1 class="text-black">Qui sommes nous ?</h1>
+            </div>
+         <div class="col-12 mt-5">
+                    <h4>{{ description|linkify|nl2br }}</h4>
+                     <h4><a class="nav-link custom-nav-link" href="{{ path('app_contact') }}">Rejoignez-nous !</a></h4>
+                </div>
+            </div>
+
+
+    <div class="buton_modifier_dys">
+        <div class="col-10 mt-5"> <!-- Utilisation de col-12 pour une colonne pleine largeur -->
+            {% if is_granted('ROLE_ADMIN') or is_granted('ROLE_BUREAU') %}
+                <div class="container_dys_description_button text-center">
+                    <a href="{{ path('app_association_edit') }}" class="boutton_dys btn btn-primary btn-lg">Modifier</a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+    
+</div>
+{% endblock %}

@@ -1,0 +1,37 @@
+<div class="don-container">
+    <div class="coin_faire_un_don">
+        <a href="https://www.helloasso.com/associations/t-es-cap/formulaires/1/widget" target="_blank">
+            <img src="{{ asset('img/coin1.png') }}" alt="Pièce de Monnaie" class="coin1">
+        </a>
+    </div>
+    <div class="don">
+        <h2 style="white-space: nowrap;">Faire un don</h2>
+        <form>
+            <div>
+                <label for="moyen-paiement"></label>
+                <select id="moyen-paiement" name="moyen-paiement" onchange="handlePaymentChange(this)">
+                    <option value="">-- Au choix --</option>
+                    <option value="hello-asso">HelloAsso</option>
+                    <option value="cheque">Chèque (nous contacter)</option>
+                    <option value="virement">Virement (nous contacter)</option>
+                    <option value="especes">Espèces (nous contacter)</option>
+                </select><br><br>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    function handlePaymentChange(select) {
+        if (select.value === "hello-asso") {
+            // Ouvrir la page HelloAsso dans un nouvel onglet
+            window.open("https://www.helloasso.com/associations/t-es-cap/formulaires/1/widget", "_blank");
+        } else if (select.value === "cheque") {
+            window.location.href = '{{ path('app_contact') }}';
+        } else if (select.value === "virement") {
+            window.location.href = '{{ path('app_contact') }}';
+        }else if (select.value === "especes") {
+            window.location.href = '{{ path('app_contact') }}';
+        }
+    }
+
+</script>

@@ -1,0 +1,78 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<h2>Modifier la Pop-up</h2>
+
+<div class="container mt-4">
+    {{ form_start(form) }}
+
+    <div class="mb-2">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Toolbar">
+            <button type="button" class="btn btn-secondary" onclick="bbWrap('[b]','[/b]')">Gras</button>
+            <button type="button" class="btn btn-secondary" onclick="bbWrap('[i]','[/i]')">Italique</button>
+            <button type="button" class="btn btn-secondary" onclick="bbWrap('[u]','[/u]')">Souligné</button>
+            <button type="button" class="btn btn-outline-danger" onclick="bbWrap('[red]','[/red]')">Rouge</button>
+            <button type="button" class="btn btn-outline-success" onclick="bbWrap('[green]','[/green]')">Vert</button>
+            <button type="button" class="btn btn-outline-primary" onclick="bbWrap('[blue]','[/blue]')">Bleu</button>
+            
+            
+            <select class="form-select form-select-sm" style="width:auto; display:inline-block;" onchange="if(this.value){ bbWrap('[size='+this.value+']','[/size]'); this.selectedIndex = 0; }">
+                <option value="">Taille…</option>
+                <option value="10">10 px</option>
+                <option value="12">12 px</option>
+                <option value="14">14 px</option>
+                <option value="16">16 px</option>
+                <option value="18">18 px</option>
+                <option value="24">24 px</option>
+                <option value="32">32 px</option>
+                <option value="48">48 px</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="mb-3">
+    {{ form_row(form.content, {'attr': {'class': 'form-control h1'}}) }}
+    <small class="text-muted">
+        Astuces mise en forme:
+        [b]gras[/b], [i]italique[/i], [u]souligné[/u],
+        [red]rouge[/red], [green]vert[/green], [blue]bleu[/blue],
+        [color=#FF6600]couleur HEX[/color],
+        [size=small]petit[/size], [size=large]grand[/size].
+        Les retours à la ligne sont conservés.
+    </small>
+    </div>
+    <div class="mb-3">
+        {{ form_row(form.isActive) }}
+    </div>
+
+    <!-- Le bouton dans un div bien positionné -->
+    <div class="d-flex justify-content-start mt-3">
+        <button type="submit" class="btn btn-primary">Enregistrer</button>
+    </div>
+
+    {{ form_end(form) }}
+
+    <a href="{{ path('accueil_accueil') }}" class="btn btn-secondary mt-2">Retour</a>
+</div>
+
+<script>
+(function(){
+    const textareaId = '{{ form.content.vars.id }}';
+    function getTextarea(){ return document.getElementById(textareaId); }
+    window.bbWrap = function openTag(tagStart, tagEnd){
+        const ta = getTextarea();
+        if(!ta) return;
+        const start = ta.selectionStart || 0;
+        const end = ta.selectionEnd || 0;
+        const before = ta.value.substring(0, start);
+        const selected = ta.value.substring(start, end);
+        const after = ta.value.substring(end);
+        const insertion = tagStart + (selected || 'texte') + tagEnd;
+        ta.value = before + insertion + after;
+        const cursor = before.length + tagStart.length + (selected ? selected.length : 5) + tagEnd.length;
+        ta.focus();
+        ta.setSelectionRange(cursor, cursor);
+    }
+})();
+</script>
+{% endblock %}

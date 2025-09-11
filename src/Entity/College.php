@@ -1,0 +1,68 @@
+<?php
+
+namespace App\Entity;
+
+use App\Repository\CollegeRepository;
+use Doctrine\DBAL\Types\Types;
+use Doctrine\ORM\Mapping as ORM;
+
+#[ORM\Entity(repositoryClass: CollegeRepository::class)]
+class College
+{
+    #[ORM\Id]
+    #[ORM\GeneratedValue]
+    #[ORM\Column]
+    private ?int $id = null;
+
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $matiere = null;
+
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $editableTitle = null;
+
+    #[ORM\Column(type: Types::TEXT, nullable: true)]
+    private ?string $description = null;
+
+
+    public function getId(): ?int
+    {
+        return $this->id;
+    }
+
+    public function getMatiere(): ?string
+    {
+        return $this->matiere;
+    }
+
+    public function setMatiere(?string $matiere): static
+    {
+        $this->matiere = $matiere;
+
+        return $this;
+    }
+
+    public function getEditableTitle(): ?string
+    {
+        return $this->editableTitle;
+    }
+
+    public function setEditableTitle(?string $editableTitle): static
+    {
+        $this->editableTitle = $editableTitle;
+
+        return $this;
+    }
+
+    public function getDescription(): ?string
+    {
+        return $this->description;
+    }
+
+    public function setDescription(?string $description): static
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+}

@@ -1,0 +1,73 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    colleges
+{% endblock %}
+
+{% block body %}
+<div class="container text-center mt-1">
+        <div class="row mt-2 ">
+            <div class="col-12">
+                <h1 class="text-black">Collège</h1>
+            </div>
+        </div><br>
+    <div class="container-fuild ">
+    <div class="row g-2">
+         <!-- Première ligne (3 photos) -->
+        <div class="col-3 ">
+             <h5>Français</h5>
+            <a href="{{ path('app_collegeFrancais') }}">
+            <img src="{{ asset('img/matieres/francais2.webp') }}" alt="Francais" class="img-fluid" width="140" height="140">
+            </a>
+        </div>    
+        <div class="col-3">
+            <h5>Math</h5>
+            <a href="{{ path('app_collegeMath') }}">
+            <img src="{{ asset('img/matieres/Math1.webp') }}" alt="Mathématique" class="img-fluid" width="140" height="140">
+            </a>
+        </div>
+        <div class="col-3">
+            <h5>Langues</h5>
+            <a href="{{ path('app_collegeAnglais') }}">
+            <img src="{{ asset('img/matieres/langues1.webp') }}" alt="Langues" class="img-fluid" width="140" height="140">
+            </a>
+        </div>
+        <div class="col-3">
+            <h5>Techno</h5>
+            <a href="{{ path('app_CollegeTechno') }}">
+            <img src="{{ asset('img/matieres/technogpt.webp') }}" alt="techno" class="img-fluid" width="140" height="140">
+            </a>
+        </div>
+    </div><br><br>
+    <div class="row g-2">
+        <!-- Deuxième ligne (3 photos) -->
+        <div class="col-3">
+            <h5>Physique-Chimie</h5>
+            <a href="{{ path('app_collegePhysique') }}">
+            <img src="{{ asset('img/matieres/physiquegpt.webp') }}" alt="physique" class="img-fluid" width="140" height="140">
+            </a>
+        </div>
+        <div class="col-3">
+            <h5>Hist-Géo</h5>
+            <a href="{{ path('app_CollegeHist') }}">
+            <img src="{{ asset('img/matieres/histoire.webp') }}" alt="Histoire/Géographie" class="img-fluid" width="140" height="140">
+            </a>
+        </div>
+        <div class="col-3">
+            <h5>SVT</h5>
+            <a href="{{ path('app_CollegeSvt') }}">
+            <img src="{{ asset('img/matieres/svtgpt.webp') }}" alt="svt" class="img-fluid" width="140" height="140">
+            </a>
+        </div>
+        <div class="col-3">
+            <h5>Loisirs créatifs</h5>
+            <a href="{{ path('app_CollegeLoisir') }}">
+            <img src="{{ asset('img/matieres/loisir1.webp') }}" alt="loisir" class="img-fluid" width="140" height="140">
+            </a>
+            </div>
+        </div>    
+    </div>
+</div><br><br>
+        </div>
+    </div>
+{% endblock %}

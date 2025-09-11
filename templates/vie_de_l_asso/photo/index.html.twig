@@ -1,0 +1,84 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+{% block body %}
+   <div class="container text-center mt-4">
+        <div class="row mt-4">
+            <div class="col-13">
+                <h1 class="text-black">Photos et Articles de Presse</h1>
+            </div>
+        </div>
+        <div class="d-flex gap-2 col-3">
+    {% if is_granted('ROLE_ADMIN') %}
+        <a href="{{ path('photo_new') }}" class="bouton_ajouter_photo btn btn-primary">Ajouter une photo</a>
+    {% endif %}
+</div>
+<br>
+    <div class="photo-gallery mb-5">
+        {% for photo in photos %}
+            <div class="photo-item">
+                {% if is_granted('ROLE_ADMIN') %}
+                    <form action="{{ path('photo_delete', { id: photo.id }) }}" method="post" onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer cette photo ?');">
+                        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ photo.id) }}">
+                        <button type="submit" class="btn btn-danger">Supprimer</button>
+                    </form>
+            {% endif %}
+
+                <h4>{{ photo.titre }}</h4>
+                <img 
+                    src="/uploads/photos/{{ photo.imagePath }}" 
+                     alt="{{ photo.titre }}"
+                     class="photo-image"
+                     data-full-image="{{ asset('/uploads/photos/' ~ photo.imagePath) }}">
+                <p>{{ photo.description }}</p>
+            </div>
+        {% endfor %}
+    </div><br><br>
+
+    <!-- Fullscreen Modal -->
+    <div id="photoModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('.photo-image');
+            const modal = document.getElementById('photoModal');
+            const modalImage = document.getElementById('modalImage');
+            const closeModal = document.querySelector('.close-modal');
+
+            images.forEach(image => {
+                image.addEventListener('click', function() {
+                    modal.style.display = 'flex';
+                    modalImage.src = this.dataset.fullImage;
+                });
+            });
+
+            closeModal.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+
+            // Close modal when clicking outside the image
+            modal.addEventListener('click', function(event) {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+
+            // Close modal with Escape key
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape' && modal.style.display === 'flex') {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+    </script>
+{% endblock %}

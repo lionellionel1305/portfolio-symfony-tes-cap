@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <h1>{{ photo.titre }}</h1>
+    <img src="{{ asset('uploads/photos/' ~ photo.imagePath) }}" alt="{{ photo.titre }}">
+    <p>{{ photo.description }}</p>
+
+    <h2>Commentaires</h2>
+    <div>
+        {% for comment in photo.description %}
+            <div>
+                <p>{{ comment.content }}</p>
+                <small>Posté le {{ comment.createdAt|date('d/m/Y H:i') }}</small>
+            </div>
+        {% endfor %}
+        
+    </div>
+
+    <h2>Ajouter un commentaire</h2>
+    {{ form_start(commentForm) }}
+    {{ form_widget(commentForm) }}
+    <button type="submit">Envoyer</button>
+    {{ form_end(commentForm) }}
+    
+{% endblock %}

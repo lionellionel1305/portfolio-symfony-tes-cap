@@ -1,0 +1,329 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+accueil:
+    path: /
+    controller: App\Controller\AccueilController::show
+# -----------------Benevoles------------------
+admin_description:
+    path: /admin/description
+    controller: App\Controller\DescriptionController::edit
+
+app_benevoles_benevoles_inscription:
+    path: benevoles/inscription
+    controller: App\Controller\BenevoleController::benevole_inscription
+    
+app_benevoles_modifier:
+    path: /benevole/modifier/{id}
+    controller: App\Controller\BenevoleController::modifier
+    
+supprimer_benevole:
+    path: /benevole/supprimer/{id}
+    controller: App\Controller\BenevoleController::supprimer
+
+app_benevoles_detail:
+    path: /benevole/{id}/detail
+    controller: App\Controller\BenevoleController::detail
+
+close_christmas_card:
+    path: /close-christmas-card
+    controller: App\Controller\MessagesFlashController::closeChristmasCard
+    
+app_charger_mission:
+    path: /chargée/mission
+    controller: App\Controller\ChargerMissionController::chargerMission
+    
+app_charger_mission_edit:
+    path: /chargée/mission/edit
+    controller: App\Controller\ChargerMissionController::edit   
+    
+# -----------------Primaire------------------
+app_francais:
+    path: /primaire/francais
+    controller: App\Controller\FrancaisController::francais
+    
+app_francais_edit:
+    path: /primaire/francais/edit
+    controller: App\Controller\FrancaisController::editFrancais    
+
+app_math:
+    path: /primaire/mathematique
+    controller: App\Controller\FrancaisController::Math
+    
+app_math_edit:
+    path: /primaire/mathematique/edit
+    controller: App\Controller\FrancaisController::editMathematique
+
+app_hist:
+    path: /primaire/Histoire-Géographie
+    controller: App\Controller\FrancaisController::Histoire
+
+app_hist_edit:
+    path: /primaire/Histoire-Géographie/edit
+    controller: App\Controller\FrancaisController::editHistoire
+    
+app_anglais:
+    path: /primaire/anglais
+    controller: App\Controller\FrancaisController::Langue
+    
+app_anglais_edit:
+    path: /primaire/anglais/edit
+    controller: App\Controller\FrancaisController::editAnglais
+    
+app_loisirs:
+    path: /primaire/loisir-creatif
+    controller: App\Controller\FrancaisController::Loisir
+    
+app_loisir_edit:
+    path: /primaire/loisir-creatif/edit
+    controller: App\Controller\FrancaisController::editloisir
+    
+app_primaire:     
+    path: /primaire
+    controller: App\Controller\PrimaireController::primaire
+# -----------------Collège------------------    
+
+app_college:
+    path: /college
+    controller: App\Controller\CollegeController::college
+
+app_collegeFrancais:
+    path: /college/francais
+    controller: App\Controller\FrancaisCollegeController::Francais
+
+app_collegeFrancais_edit:
+    path: /college/francais/edit
+    controller: App\Controller\FrancaisCollegeController::editFrancais
+
+app_collegeMath:
+    path: /college/mathematique
+    controller: App\Controller\FrancaisCollegeController::Math
+
+app_collegeMath_edit:
+    path: /college/mathematique/edit
+    controller: App\Controller\FrancaisCollegeController::editMathematique
+
+app_collegeAnglais:
+    path: /college/anglais
+    controller: App\Controller\FrancaisCollegeController::Langue
+
+app_CollegeAnglais_edit:
+    path: /college/anglais/edit
+    controller: App\Controller\FrancaisCollegeController::editAnglais
+    
+app_collegePhysique:
+    path: /college/physique-chimie
+    controller: App\Controller\FrancaisCollegeController::Histoire
+
+app_collegePhysique_edit:
+    path: /college/physique-chimie/edit
+    controller: App\Controller\FrancaisCollegeController::editHistoire
+
+app_CollegeHist:
+    path: /college/histoire-geographie
+    controller: App\Controller\FrancaisCollegeController::CollegeHistoire
+
+app_collegeHist_edit:
+    path: /college/histoire-geographie/edit
+    controller: App\Controller\FrancaisCollegeController::editCollegeHistoire
+    
+app_CollegeSvt:
+    path: /college/Svt
+    controller: App\Controller\FrancaisCollegeController::CollegeSvt
+
+app_collegeSvt_edit:
+    path: /college/Svt/edit
+    controller: App\Controller\FrancaisCollegeController::editCollegeSvt
+
+app_CollegeTechno:
+    path: /college/techno
+    controller: App\Controller\FrancaisCollegeController::CollegeTechno
+
+app_CollegeTechno_edit:
+    path: /college/techno/edit
+    controller: App\Controller\FrancaisCollegeController::editCollegeTechno
+
+app_CollegeLoisir:
+    path: /college/loisir-creatif
+    controller: App\Controller\FrancaisCollegeController::CollegeLoisir
+
+app_collegeLoisir_edit:
+    path: /college/loisir-creatif/edit
+    controller: App\Controller\FrancaisCollegeController::editCollegeLoisir
+
+# -----------------Lycée------------------    
+ 
+app_lycee:
+    path: /lycee
+    controller: App\Controller\LyceeController::Lycee
+    
+app_lyceeFrancais:
+    path: /lycee/francais
+    controller: App\Controller\FrancaisLyceeController::LyceeFrancais
+
+app_lyceeFrancais_edit:
+    path: /lycee/francais/edit
+    controller: App\Controller\FrancaisLyceeController::editLyceeFrancais
+    
+    
+    
+    
+    
+    
+# -----------------DYs------------------    
+ 
+app_dys:
+    path: /dys
+    controller: App\Controller\DysController::Dys
+    
+app_dyslexie:    
+    path: /dys/dyslexie
+    controller: App\Controller\DyslexieController::dyslexie
+    
+app_dyslexie_edit:    
+    path: /dys/dyslexie/edit
+    controller: App\Controller\DyslexieController::edit  
+    
+app_dysorthographie:    
+    path: /dys/dysorthographie
+    controller: App\Controller\DysorthoController::dysorthographie
+    
+app_dysorthographie_edit:    
+    path: /dys/dysorthographie/edit
+    controller: App\Controller\DysorthoController::edit    
+    
+app_dysgraphie:    
+    path: /dys/dysgraphie
+    controller: App\Controller\DysgraphieController::dysgraphie
+    
+app_dysgraphie_edit:    
+    path: /dys/dysgraphie/edit
+    controller: App\Controller\DysgraphieController::edit        
+    
+app_dyspraxie:    
+    path: /dys/dyspraxie
+    controller: App\Controller\DyspraxieController::dyspraxie
+    
+app_dyspraxie_edit:    
+    path: /dys/dyspraxie/edit
+    controller: App\Controller\DyspraxieController::edit       
+    
+   
+app_dysphasie:    
+    path: /dys/dysphasie
+    controller: App\Controller\DysphasieController::dysphasie
+    
+app_dysphasie_edit:    
+    path: /dys/dysphasie/edit
+    controller: App\Controller\DysphasieController::edit           
+    
+app_dyschronie:    
+    path: /dys/dyschronie
+    controller: App\Controller\DyschronieController::dyschronie
+    
+app_dyschronie_edit:    
+    path: /dys/dyschronie/edit
+    controller: App\Controller\DyschronieController::edit      
+    
+app_dys_tsa:    
+    path: /dys/tsa
+    controller: App\Controller\TsaController::tsa
+    
+app_tsa_edit:    
+    path: /dys/tsa/edit
+    controller: App\Controller\TsaController::edit    
+    
+    
+app_dys_tdah:    
+    path: /dys/tdah
+    controller: App\Controller\TdahController::tdah
+    
+app_tdah_edit:    
+    path: /dys/tdah/edit
+    controller: App\Controller\TdahController::edit    
+    
+    
+ # -----------------autre liens------------------    
+    
+app_autres_lien_dys:
+    path: /autres/liens/dys
+    controller: App\Controller\AutresLienDysController::AutresLienDys
+
+app_autres_lien_dys_edit:
+    path: /autres/liens/dys/edit
+    controller: App\Controller\AutresLienDysController::edit
+
+ # -----------------vie  de l 'asso------------------ 
+
+app_photo_index:
+    path: /vie/association/photos
+    controller: App\Controller\PhotoController::index
+    
+photo_new:    
+    path: /photos/new
+    controller: App\Controller\PhotoController::new
+    
+    
+ # -----------------Mention legals ------------------    
+    
+  
+app_mentions_legales:
+    path: /mentions/legales
+    controller: App\Controller\MentionsLegalesController::MentionsLegal
+    
+app_mentions_legales_edit:    
+    path: /mentions/legales/edit
+    controller: App\Controller\MentionsLegalesController::edit
+  
+  # -----------------Service civique et snu ------------------ 
+  
+  
+app_scivique:
+    path: /service/civique
+    controller: App\Controller\SciviqueController::scivique
+    
+app_scivique_edit:   
+    path: /service/civique/edit
+    controller: App\Controller\SciviqueController::edit  
+  
+app_service_snu:
+    path: /service/snu
+    controller: App\Controller\SnuController::snu
+    
+app_snu_edit:   
+    path: /service/snu/edit
+    controller: App\Controller\SnuController::edit  
+  
+  
+uploads:
+    path: /uploads/{path}
+    controller: Symfony\Bundle\FrameworkBundle\Controller\RedirectController
+    defaults:
+        path: '%kernel.project_dir%/public/uploads/{path}'
+        permanent: true
+  
+  
+popup:
+    path: /popup
+    controller: App\Controller\PopupController::showPopup
+
+ppopup_edit:
+    path: /popup/edit
+    controller: App\Controller\PopupController::edit
+    methods: ['GET', 'POST']
+
+  
+app_adminpdf_upload_famille:
+    path: /admin/upload/pdf/famille
+    controller: App\Controller\AdminpdfController::uploadFamille
+    
+app_adminpdf_upload_benevole:
+    path: /admin/upload/pdf/benevole
+    controller: App\Controller\AdminpdfController::uploadbenevole 
+  
+  
+  
+    

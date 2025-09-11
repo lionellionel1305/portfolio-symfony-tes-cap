@@ -1,0 +1,36 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://tescap29.fr/sitemap.xml
+
+
+
+# Empêcher l'indexation des fichiers sensibles
+Disallow: /admin/
+Disallow: /uploads/
+Disallow: /var/
+Disallow: /vendor/
+Disallow: /config/
+Disallow: /src/
+Disallow: /migrations/
+Disallow: /tests/
+Disallow: /tmp/
+Disallow: /node_modules/
+Disallow: /composer.*
+Disallow: /symfony.lock
+Disallow: /webpack.config.js
+Disallow: /package.*
+Disallow: /error_log
+Disallow: /TesCap.PNG
+Disallow: /test.php
+Disallow: /cgi-bin/
+Disallow: /compose.*
+Disallow: /bin/
+Disallow: /assets/
+Disallow: /image/
+Disallow: /public_html/
+Disallow: /www/
+Disallow: /templates/
+Disallow: /translations/
+Disallow: /webpack.config.js

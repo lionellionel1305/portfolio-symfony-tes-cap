@@ -1,0 +1,74 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+ Dys
+{% endblock %}
+
+{% block body %}
+<div class="container text-center mt-0">
+        <div class="row mt-2 ">
+            <div class="col-12">
+                <h1 class="text-black">{{ editableTitle | default('Titre non défini') }}</h1>
+            </div>
+        </div><br>
+    <div class="d-flex flex-column align-items-center">
+        <div class="container-fuild  mt-0 ">
+            <div class="col-2">
+            <label for="liste_dys"></label>
+            <select id="liste_dys" name="liste_dys" onchange="handlePaymentChange(this)">
+                <option value="">----Liste---- </option>
+                <option value="Dyslexie">Dyslexie</option>
+                <option value="Dyscalculie">Dyscalculie</option>
+                <option value="Dysorthographie">Dysorthographie</option>
+                <option value="Dysgraphie">Dysgraphie</option>
+                <option value="Dyspraxie">Dyspraxie</option>
+                <option value="Dysphasie">Dysphasie</option>
+                <option value="Dyschronie">Dyschronie</option>
+                <option value="Tdah">TDAH</option>
+                <option value="Tsa">TSA</option>
+            </select>
+        </div>
+        </div>
+            <div class="row g-6">
+
+                                <h5 class="card-title">{{ description1|nl2br }}</h5><br>
+
+                                <h5 class="card-title">{{ description2|nl2br }}</h5><br>
+
+                                <h5 class="card-title">{{ description3|nl2br }}</h5><br>
+
+                                <h5 class="card-title">{{ description4|nl2br }}</h5><br>
+
+                                <h5 class="card-title">{{ description5|nl2br }}</h5>
+            </div>
+        </div>
+        <div class="buton_modifier_dys">
+        {% if is_granted('ROLE_ADMIN') or is_granted('ROLE_BUREAU') %}
+            <a href="{{ path('app_dys_edit') }}" class="btn btn-primary btn-lg">modifier</a>
+        {% endif %}
+        </div>
+    
+    <script>
+        function handlePaymentChange(select) {
+            if (select.value === "Dyslexie") {
+                window.location.href = '{{ path('app_dyslexie') }}';
+            } else if (select.value === "Dysorthographie") {
+                window.location.href = '{{ path('app_dysorthographie') }}';
+            } else if (select.value === "Dysgraphie") {
+                window.location.href = '{{ path('app_dysgraphie') }}';
+            }else if (select.value === "Dyspraxie") {
+                window.location.href = '{{ path('app_dyspraxie') }}';
+            }else if (select.value === "Dysphasie") {
+                window.location.href = '{{ path('app_dysphasie') }}';
+            }else if (select.value === "Dyschronie") {
+                window.location.href = '{{ path('app_dyschronie') }}';
+            }else if (select.value === "Dyscalculie") {
+                window.location.href = '{{ path('app_dyscalculie') }}';
+            }else if (select.value === "Tdah") {
+                window.location.href = '{{ path('app_dys_tdah') }}';
+            }else if (select.value === "Tsa") {
+                window.location.href = '{{ path('app_dys_tsa') }}';
+            }
+        }
+    </script>
+{% endblock %}

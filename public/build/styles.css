@@ -1,0 +1,861 @@
+/*!***********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[1].use[1]!./assets/css/app.css ***!
+  \***********************************************************************************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/*-------------------------TITRE------------------------------------------*/
+.tesCap {
+    font-size: clamp(2rem, 13vw, 6rem);
+    position: relative;
+    font-family: "Mistral", serif;
+    font-style: italic;
+    text-decoration: none;
+}
+/*---------------------------------NAVBAR------------------------------------*/
+
+.container-fluid {
+    background-color: rgba(55, 55, 55, 0.15);
+}
+
+.navbar-nav {
+    color: #050505;
+    font-size: clamp(0.8rem, 1.5vw, 1.3rem); /* Adaptation de la taille pour différents écrans */
+    font-weight: 900; /* Réduction du poids pour éviter une surcharge visuelle */
+}
+
+/* Lorsque le menu est ouvert */
+.menu-open .nav-link {
+    font-size: clamp(1.25rem, 2vw, 2rem); /* Responsivité contrôlée */
+    font-weight: 900; /* Fort contraste pour attirer l'attention */
+}
+
+/* Effet hover sur les liens */
+.nav-link:hover {
+    color: #f80404; /* Rouge vif pour attirer l'attention */
+    text-decoration: underline; /* Ajout pour indiquer l'interaction */
+}
+
+/*---------------------------------FOOTER------------------------------------*/
+.footer {
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5%;
+    text-align: center;
+    color: black;
+    font-size: 90%;
+    /*background-color: rgb(213, 213, 213);*/
+    font-weight: 700;
+    /*margin-top: auto;*/
+
+
+}
+
+.liens_utiles {
+    position: absolute;
+    left: 65vw;
+    top: 65vh;
+    font-size: 1.5rem;
+}
+
+.en_plus h2 {
+    position: absolute;
+    left: 65vw;
+    top: 62vh;
+
+}
+.partenaire{
+    font-size: 1.5rem;
+    position: absolute;
+    left: 18vw;
+    top: 64vh;
+}
+.association {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 18vw;
+    top: 32vh;
+}
+.titre_page-accueil h1{
+    font-size: 3rem;
+    position: absolute;
+    left: 22vw;
+    top: 18vh;
+}
+.scolarite {
+    position: absolute;
+    left: 65vw;
+    top: 32vh;
+    font-size: 1.5rem;
+
+}
+.piece{
+    position: absolute;
+    left: 48vw;
+    top: 92vh;
+
+}
+.photo_classeur{
+    position: absolute;
+    left: 92vw;
+    top: 42vh;
+    /*z-index: 10;*/
+}
+.photo_cahier_spirale{
+    position: absolute;
+    left: 4vw;
+    top: 42vh;
+    /*z-index: 10;*/
+}
+.photo_etudiant {
+    position: absolute;
+    left: 4vw;
+    top: 22vh;
+}
+.photo_equerre{
+    position: absolute;
+    left: 92vw;
+    top: 82vh;
+    /*z-index: 10;*/
+}
+.photo_enfants{
+    position: absolute;
+    left: 92vw;
+    top: 22vh;
+    /*z-index: 10;*/
+}
+.photo_stationnaire{
+    position: absolute;
+    left: 4vw;
+    top: 62vh;
+    /*z-index: 10;*/
+}
+.photo_calcultrice{
+    position: absolute;
+    left: 92vw;
+    top: 62vh;
+    /*z-index: 10;*/
+}
+.photo_pot{
+    position: absolute;
+    left: 4vw;
+    top: 82vh;
+
+}
+/*.photo_bureau2{*/
+/*    position: absolute;*/
+/*    left: 52vw;*/
+/*    top: -52vh;*/
+
+/*}*/
+.photo{
+    position: absolute;
+    left: 52vw;
+    top: -52vh;
+    /*z-index: 10;*/
+
+}
+.photo1{
+    position: absolute;
+    left: 52vw;
+    top: -52vh;
+    /*z-index: 10;*/
+
+}
+.photo_page_accueil {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(3, 150px);
+    margin-top: 2vh;
+
+}
+
+.img-acceuil_t_es_cap {
+    grid-column: 5 / 9; /* Place l'image dans la première colonne */
+    grid-row: 2;
+
+
+}
+.btn-primary{
+    position: relative;
+    top: -5rem;
+    left: 55%;
+}
+.titre_page-accueil h1{
+    position: absolute;
+    left: 22vw;
+    top: 20vh;
+    /*z-index: 10;*/
+
+}
+/*------------------------------------------------------LOGIN- + s'enregistrer-----------------------------------------------------------------*/
+.custom-card {
+    max-width: 30%; /* Garde cette taille si tu veux une carte plus petite */
+    width: 70%;
+    margin: 0 auto; /* Centre la carte horizontalement */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 75vh; /* Garantir que la carte occupe au moins 70% de la hauteur de l'écran */
+
+}
+
+.custom-card .card {
+    padding: 40px; /* Ajuster l'espace intérieur pour plus de confort */
+    background-color: #d6d7d8;
+    box-sizing: border-box;  position: relative;
+    top: 10vh;
+}
+.button_login {
+    margin-top: auto; /* Cela pousse le bouton vers le bas de la carte */
+}
+
+.login {
+    margin-top: 2rem; /* Ajuste la position du titre pour qu'il soit bien espacé */
+    background-color: #d6d7d8;
+}
+.button_incription{
+    position: relative;
+    left: 8vw;
+    top: 1vh;
+
+}
+.card-header{
+    background-color: #d6d7d8;
+}
+.card-inscription{
+    position: relative;
+    top: 8vh;
+
+}
+/* CSS pour la carte de Noël de 15x15 cm */
+.christmas-card {
+    position: fixed;
+    top: 24vw;
+    left: 48vw;
+    transform: translate(-50%, -50%);  /* Centre la carte sur la page */
+    width: 30vw;  /* Largeur de la carte (15 cm) */
+    height: 18vw; /* Hauteur de la carte (15 cm) */
+    background-color: rgb(213, 211, 211);
+    border: 2px solid rgba(41, 166, 60, 0.95); /* Bordure bleue */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999; /* S'assure que la carte est au-dessus des autres éléments */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;  /* Carte initialement invisible */
+    transition: opacity 0.5s ease; /* Effet de transition pour l'ouverture */
+}
+
+/* Lorsque la carte est affichée */
+.christmas-card.show {
+    opacity: 1;
+}
+
+.christmas-card-content {
+    text-align: center;
+}
+
+.christmas-card h2 {
+    color: rgba(41, 166, 60, 0.95);
+    font-size: 2em;
+}
+
+#close-card {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgba(41, 166, 60, 0.95);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#close-card:hover {
+    background-color: rgba(41, 166, 60, 0.95);
+}
+
+/*-------------------------------------------------Couleur pour les textes--------------------------------------------------*/
+
+.tesCap span:nth-child(1), .text_présentation span:nth-child(1),.container_horaires span:nth-child(1),.container_rue span:nth-child(1), .container_tel span:nth-child(1),
+.contacter span:nth-child(2), .container_partenaire span:nth-child(1),.container_dys_titre span:nth-child(1){ color: #050505; }
+
+.tesCap span:nth-child(2), .text_présentation span:nth-child(2), .container_horaires span:nth-child(2),.container_rue span:nth-child(2), .container_tel span:nth-child(2),
+.contacter span:nth-child(3), .container_partenaire span:nth-child(2),.container_dys_titre span:nth-child(2){ color: rgba(41, 166, 60, 0.95); }
+
+.tesCap span:nth-child(3),.text_présentation span:nth-child(4), .container_horaires span:nth-child(3), .container_rue span:nth-child(3) , .container_tel span:nth-child(3),
+.contacter span:nth-child(4), .container_partenaire span:nth-child(3),.container_dys_titre span:nth-child(3){ color: #dc0e1f; }
+
+.tesCap span:nth-child(4), .text_présentation span:nth-child(5), .contacter span:nth-child(5)  { color: #fbfb03; }
+
+.tesCap span:nth-child(5),.text_présentation span:nth-child(6), .container_horaires span:nth-child(5), .container_rue span:nth-child(4), .container_tel span:nth-child(4),
+.contacter span:nth-child(7), .container_partenaire span:nth-child(4),.container_dys_titre span:nth-child(4) { color: rgba(15, 155, 250, 0.9); }
+.text_présentation span:nth-child(8), .container_horaires span:nth-child(6), .container_rue span:nth-child(5), .container_tel span:nth-child(5),
+.contacter span:nth-child(6), .container_partenaire span:nth-child(5){ color: #050505; }
+.text_présentation span:nth-child(9), .container_rue span:nth-child(6), .container_tel span:nth-child(4),
+.contacter span:nth-child(8), .container_partenaire span:nth-child(6),.container_dys_titre span:nth-child(6){ color: rgba(41, 166, 60, 0.95); }
+.text_présentation span:nth-child(10), .container_tel span:nth-child(7),.container_dys_titre span:nth-child(7) { color: #dc0e1f; }
+.text_présentation span:nth-child(11){ color: #dfed12; }
+.text_présentation span:nth-child(12), .container_tel span:nth-child(6) { color: #4ea6e4; }
+.container_tel span:nth-child(9) { color: #050505; }
+.container_tel span:nth-child(10) { color: rgba(41, 166, 60, 0.95); }
+.container_tel span:nth-child(11){ color: #dc0e1f; }
+
+/*----------------------------------------------------Conctact et horaires---------------------------------*/
+.contacter {
+    position: relative;
+    text-align: center;
+    left: 32vw;
+    top: -3vh;
+    width: 35%;
+    font-size: 3rem;
+    font-weight: 900;
+    border: 4px solid white;
+
+    }
+/*.photo_horloge{*/
+/*    position: relative;*/
+/*    left: 2vw;*/
+/*    top: -80vh;*/
+/*}*/
+/*.photo_telephone{*/
+/*    position: relative;*/
+/*    left: 28vw;*/
+/*    top: -84vh;*/
+/*}*/
+/*.photo_batiment{*/
+/*    position: relative;*/
+/*    left: 30vw;*/
+/*    top: -65vh;*/
+/*}*/
+.container_adresse {
+    position: relative;
+    left: -20vw;
+    top: 2vh;
+
+}
+.container_rue{
+    position: relative;
+    left: 20vw;
+    top: 5vh;
+}
+.tel{
+    position: relative;
+    left: 45vw;
+    top: -52vh;
+}
+/*---------------------------------------Partenaires--------------------*/
+
+.custom-title_scolaire_partenaires{
+    position: relative;
+    left:40%;
+    font-size: 5rem;
+}
+/*----------------------Primaires----------------------*/
+
+.custom-title_scolaire{
+    position: relative;
+    left:45%;
+    font-size: 5rem;
+}
+.custom-title_scolaire_lycee{
+    position: relative;
+    left:48%;
+    font-size: 5rem;
+}
+
+/*-----------------------------college/Lycee-----------------------------------*/
+.container_college, .container_lycee, .container_primaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4%;
+    gap: 20px; /* Espacement entre les éléments */
+    position: relative;
+    left:5%;
+}
+/*-------------------------------------Troubles-------------------*/
+.buton_modifier_dys{
+    position: relative;
+    left: -10%;
+    top: 15vh;
+}
+.no-underline {
+    font-size: 2.2rem;
+    text-decoration: none; /* Supprime le soulignement par défaut */
+    color: inherit; /* Prend la couleur du texte par défaut */
+}
+
+.no-underline:hover {
+    color: red; /* Changer la couleur du texte en rouge au survol */
+    text-decoration: underline; /* Optionnel : tu peux aussi ajouter un soulignement */
+}
+.custom-title {
+    /*font-family: "Mistral", serif; !* Applique la police Mistral ou une police de remplacement *!*/
+    font-size: 3rem;
+}
+/*-------------------------description des dys--------------------*/
+
+.container_dys_description h5{
+    font-size: 1.5rem; /* Ajuste la taille du texte */
+    line-height: 1.5; /* Rend le texte plus lisible */
+    position: relative;
+    left: 6%;
+    top: 25px;
+}
+#liste_dys{
+    position: relative;
+    left: -10%;
+    top: 38vh;
+    width: 20vw;
+}
+.custom-title_mentionsLegales {
+    /*font-family: "Mistral", serif; !* Applique la police Mistral ou une police de remplacement *!*/
+    font-size: 3rem;
+    position: relative;
+    left: 8%;
+}
+
+/*--------------------------------Vie Asso----------------------*/
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrer les photos */
+}
+.photo-image {
+    width: 60%; /* L'image occupe toute la largeur de son conteneur */
+    height: auto; /* La hauteur s'ajuste automatiquement pour garder les proportions */
+    object-fit: cover; /* L'image s'adapte pour remplir l'espace sans déformer */
+    /*max-height: 200px; !* Limite la hauteur à 200px *!*/
+}
+.photo-item {
+    width: 30%; /* Chaque photo occupe 30% de la largeur de son conteneur */
+    text-align: center;
+}
+.bouton_ajouter_photo{
+    position: relative;
+    left: 8vw;
+    top: -5vh;
+
+}
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.photo-item {
+    text-align: center;
+    max-width: 300px;
+}
+.photo-image {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.photo-image:hover {
+    transform: scale(1.05);
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    align-items: center;
+    justify-content: center;
+}
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*----------------------------formulaire inscription benevole----------------------*/
+.centrer_titre{
+    position: relative;
+    left: 36vw;
+    top: -1vh;
+
+}
+.centrer_titre h1{
+    font-size: 3.5rem;
+    color: red;
+
+}
+.inscription-container {
+    width: 80%;
+    max-width: 600px;  /* Limite la largeur du formulaire */
+    position: relative;
+    left: 34vw;
+    top: -2vh;
+    padding: 2rem;
+    background-color: rgba(233, 235, 237, 0.4);
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.inscription-group {
+    margin-bottom: 1.5rem;  /* Espacement entre chaque champ */
+}
+
+.inscription{
+    width: 50%;
+}
+.pdf{
+    width: 49%;
+    position: relative;
+    left: 34vw;
+    top: -5vh;
+}
+.nouveau_formulaire{
+    width: 30%;
+    position: relative;
+    left: -2vw;
+    top: 3vh;
+}
+.modifier_charger_mission{
+    width: 30%;
+    position: relative;
+    left: 28vw;
+    top: -2vh;
+}
+
+/*--------------------------------Responsive--------------------------*/
+
+@media (max-width: 768px) {
+    .tesCap {
+        font-size: 3rem; /* Taille plus petite pour tablettes */
+        left: 5vw; /* Réduire le décalage */
+    }
+}
+@media (max-width: 576px) {
+    .tesCap {
+        font-size: 2rem; /* Taille encore plus petite */
+        left: 2vw; /* Réduire davantage le décalage horizontal */
+        text-align: center; /* Centrer le texte si nécessaire */
+    }
+}
+@media (max-width: 768px) {
+    .navbar-nav {
+        font-size: 14px; /* Taille adaptée aux tablettes */
+    }
+    .menu-open .nav-link {
+        font-size: 2rem; /* Plus petit pour éviter les débordements */
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-nav {
+        font-size: 12px; /* Taille plus petite pour les téléphones */
+    }
+    .menu-open .nav-link {
+        font-size: 1.5rem; /* Plus compact pour les petits écrans */
+    }
+}
+@media (max-width: 576px) {
+    .footer {
+        font-size: 85%;
+        padding: 2%;
+    }
+}
+
+@media (max-width: 768px) {
+    left: -20%;
+    top: -15rem;
+}
+
+@media (min-width: 769px) {
+    left: -10vw;
+    top: -10vh;
+}
+@media (max-width: 992px) {
+    .footer {
+        font-size: 90%;
+    }
+}
+@media (max-width: 576px) {
+    .menu {
+        width: 100%; /* Ajuste la largeur à 100% */
+        padding: 15px; /* Augmente légèrement le padding pour un meilleur confort sur mobile */
+        font-size: 1.2rem; /* Augmente légèrement la taille de la police sur mobile */
+        top: 1rem; /* Supprime le décalage vers le haut */
+        border: 5px double black; /* Réduit l'épaisseur du bord */
+    }
+}
+
+@media (max-width: 992px) {
+    .menu {
+        width: 100%; /* Ajuste la largeur à 100% sur des écrans plus larges que les mobiles */
+        font-size: 1.1rem; /* Taille de police ajustée */
+        padding: 12px;
+    }
+}
+@media (max-width: 1024px) {
+    .text_présentation {
+        font-size: 2.5rem; /* Réduit légèrement la taille de la police */
+        width: 90%;
+        max-width: 550px; /* Réduit légèrement la largeur maximale */
+        height: 4rem;
+        top: -8rem;
+        left: 15rem;
+    }
+
+    .Accompagnement {
+        width: 300px; /* Réduit la taille */
+        height: 110px;
+    }
+
+    .horaire {
+        width: 270px;
+        height: 110px;
+    }
+
+    .commune {
+        width: 350px;
+        height: 150px;
+    }
+
+    .CP {
+        width: 270px;
+        height: 120px;
+    }
+
+    .volontaire {
+        width: 420px;
+        height: 180px;
+    }
+
+    .Collective {
+        width: 180px;
+        height: 160px;
+    }
+
+    .Scolaire {
+        width: 180px;
+        height: 160px;
+    }
+
+    .mot_clés {
+        width: 270px;
+        height: 270px;
+    }
+}
+
+/* Pour les petits écrans comme les mobiles */
+@media (max-width: 768px) {
+    .text_présentation {
+        font-size:1.5rem; /* Réduit la taille de la police */
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        top: -3rem;
+        left: -6rem;
+    }
+
+    .Accompagnement {
+        width: 250px;
+        height: 150px;
+        left: 55%;
+        top: 43rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .horaire {
+        width: 150px;
+        height: 150px;
+        left: -50%;
+        top: 16rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .commune {
+        width: 250px;
+        height: 150px;
+        left: 15%;
+        top: -51rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .CP {
+        width: 150px;
+        height: 150px;
+        left: -50%;
+        top: 13rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .volontaire {
+        width: 250px;
+        height: 150px;
+        left: 15%;
+        top: -45rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .Collective {
+        width: 250px;
+        height: 150px;
+        left: 15%;
+        top: -57rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .Scolaire {
+        width: 250px;
+        height: 150px;
+        left: 15%;
+        top: -48rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .mot_clés {
+        width: 250px;
+        height: 150px;
+        left: 15%;
+        top: -54rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}
+
+/* Pour les très petits écrans mobiles */
+@media (max-width: 480px) {
+    .text_présentation {
+        font-size: 1.5rem; /* Réduit encore plus la taille de la police */
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        top: -3rem;
+        left: 3rem;
+    }
+
+    .Accompagnement {
+        width: 200px;
+        height: 80px;
+    }
+
+    .horaire {
+        width: 180px;
+        height: 80px;
+    }
+
+    .commune {
+        width: 240px;
+        height: 100px;
+    }
+
+    .CP {
+        width: 200px;
+        height: 100px;
+    }
+
+    .volontaire {
+        width: 300px;
+        height: 130px;
+    }
+
+    .Collective {
+        width: 150px;
+        height: 130px;
+    }
+
+    .Scolaire {
+        width: 150px;
+        height: 130px;
+    }
+
+    .mot_clés {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-acceuil_t_es_cap {
+        left: -35%;
+        top: -50%;
+        width: 80%;
+    }
+}
+
+/* Media Query pour les écrans très petits */
+@media (max-width: 480px) {
+    .img-acceuil_t_es_cap {
+        left: 25%; /* Déplace l'image à 25% du côté gauche */
+        top: -25%; /* Déplace l'image 10% du haut */
+        transform: translateX(0); /* Utilisation de `left` donc inutile ici */
+    }
+}
+
+@media (max-width: 768px) {
+    .photo_classeur,
+    .photo_cahier_spirale,
+    .photo_etudiant,
+    .photo_bureau,
+    .photo_equerre,
+    .photo_enfants,
+    .photo_stationnaire,
+    .photo_calcultrice,
+    .photo_pot,
+    .photo_bureau2,
+    .photo,
+    .photo1 {
+        display: none !important;
+    }
+}
+@media (max-width: 480px) {
+.photo_classeur,
+.photo_cahier_spirale,
+.photo_etudiant,
+.photo_bureau,
+.photo_equerre,
+.photo_enfants,
+.photo_stationnaire,
+.photo_calcultrice,
+.photo_pot,
+.photo_bureau2,
+.photo,
+.photo1 {
+    display: none !important;
+}
+}
+

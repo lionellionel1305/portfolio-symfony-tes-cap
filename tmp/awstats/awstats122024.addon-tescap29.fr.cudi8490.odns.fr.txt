@@ -1,0 +1,575 @@
+AWSTATS DATA FILE 7.8 (build 20200416)
+# If you remove this file, all statistics for date 202412 will be lost/reset.
+# Last config file used to build this data file was /home/cudi8490/tmp/awstats/awstats.addon-tescap29.fr.cudi8490.odns.fr.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2031                
+POS_TIME 2702                
+POS_VISITOR 14055               
+POS_DAY 17183               
+POS_DOMAIN 3303                
+POS_LOGIN 3718                
+POS_ROBOT 3873                
+POS_WORMS 4191                
+POS_EMAILSENDER 4322                
+POS_EMAILRECEIVER 4465                
+POS_SESSION 17478               
+POS_SIDER 17646               
+POS_FILETYPES 4600                
+POS_DOWNLOADS 4720                
+POS_OS 4768                
+POS_BROWSER 4950                
+POS_SCREENSIZE 5665                
+POS_UNKNOWNREFERER 5739                
+POS_UNKNOWNREFERERBROWSER 6380                
+POS_ORIGIN 6787                
+POS_SEREFERRALS 6921                
+POS_PAGEREFS 7065                
+POS_SEARCHWORDS 7259                
+POS_KEYWORDS 7411                
+POS_MISC 2366                
+POS_ERRORS 7470                
+POS_CLUSTER 3574                
+POS_SIDER_404 7556                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20250101002619 1 0 3846447739822
+FirstTime 20241221183247
+LastTime 20241231234709
+LastUpdate 20250102002453 1 0 0 0 0
+TotalVisits 97                  
+TotalUnique 81                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 82                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+PDFSupport 0 0 0
+QuickTimeSupport 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+JavascriptDisabled 0 0 0
+JavaEnabled 0 0 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+AddToFavourites 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 0 0 0 2 4 0
+1 3 3 2448 20 23 0
+2 9 9 7344 1 5 816
+3 0 0 0 2 3 0
+4 1 1 816 10 13 0
+5 0 0 0 8 9 0
+6 5 5 3501 36 40 816
+7 2 2 1632 12 13 0
+8 2 2 1632 17 21 0
+9 12 12 9792 67 68 0
+10 1 1 816 5 8 0
+11 2 2 1632 131 132 0
+12 33 33 14167 22 29 3416
+13 9 10 45453 34 37 816
+14 3 3 2448 15 19 816
+15 1 1 816 3 7 0
+16 2 2 1632 10 16 1632
+17 10 10 8160 44 46 0
+18 7 7 5326 55 57 623
+19 2 2 1632 11 12 0
+20 6 6 4896 23 26 0
+21 9 11 83775 27 31 0
+22 1 1 816 5 8 0
+23 9 9 7344 34 37 816
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 17
+us 73 76 163822
+ca 19 19 15108
+fr 10 10 7496
+gb 9 9 7344
+zz 3 3 261
+ir 2 2 1632
+de 2 2 1632
+se 2 2 1439
+bg 1 1 816
+it 1 1 816
+nl 1 1 816
+jp 1 1 816
+ua 1 1 816
+ip 1 1 816
+tr 1 1 816
+by 1 1 816
+au 1 1 816
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 5
+no_user_agent 7 5214 20241229022104 0
+Googlebot/ 2 1632 20241228135537 0
+curl 2 1632 20241224235518 0
+archive\.org_bot 1 650 20241223122307 0
+bot[\s_+:,\.\;\/\\-] 1 623 20241222184021 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 3
+html 114 89258 0 0
+png 3 115515 0 0
+Unknown 15 1305 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 10
+winxp 1 1
+ios_iphone 7 4
+macosx15 7 7
+macosx6 1 1
+unix 1 1
+win7 2 2
+android 2 2
+linux 3 3
+win10 81 81
+Unknown 27 27
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 32
+chrome117.0.5938.132 2 2
+chrome119.0.0.0 1 1
+chrome74.0.3729.169 22 22
+chrome106.0.0.0 2 2
+safari17.4.1 1 1
+Unknown 4 4
+chrome131.0.0.0 9 9
+chrome95.0.4638.69 1 1
+chrome18.0.1025.7 1 1
+safari17.5 1 1
+firefox133.0 1 1
+chrome27.0.1453.116 1 1
+mozilla 23 23
+chrome124.0.0.0 2 2
+chrome79.0.3945.88 1 1
+firefox115 1 1
+chrome88.0.4240.193 18 18
+chrome122.0.0.0 1 1
+safari18.1.1 7 4
+chrome80.0.3987.149 3 3
+chrome113.0.0.0 1 1
+chrome78.0.3904.108 6 6
+safari5.0.4 1 1
+chrome118.0.0.0 2 2
+chrome118.0.5993.80 2 2
+chrome58.0.3029.110 5 5
+chrome83.0.4103.97 1 1
+chrome125.0.6422.60 2 2
+chrome108.0.0.0 2 2
+chrome100.0.1814.949 1 1
+chrome91.0.4472.114 2 2
+chrome121.0.0.0 5 5
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 5
+Mozilla/5.0_(compatible) 20241227020819
+Mozilla/5.0_(compatible;_CensysInspect/1.1;__https://about.censys.io/) 20241230020830
+Mozilla/5.0_(compatible;_Let's_Encrypt_validation_server;__https://www.letsencrypt.org) 20241223122256
+Expanse,_a_Palo_Alto_Networks_company,_searches_across_the_global_IPv4_space_multiple_times_per_day_to_identify_customers&#39;_presences_on_the_Internet._If_you_would_like_to_be_excluded_from_our_scans,_please_send_IP_addresses/domains_to:_scaninfo@paloaltonetworks.com 20241231142314
+Python/3.6_aiohttp/3.8.6 20241231234709
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 2
+Expanse,_a_Palo_Alto_Networks_company,_searches_across_the_global_IPv4_space_multiple_times_per_day_to_identify_customers&#39;_presences_on_the_Internet._If_you_would_like_to_be_excluded_from_our_scans,_please_send_IP_addresses/domains_to:_scaninfo@paloaltonetworks.com 20241231142314
+Python/3.6_aiohttp/3.8.6 20241231234709
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 127 127
+From1 0 0
+From2 0 0
+From3 2 2
+From4 0 3
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 2
+https://dzen.ru 1 1
+https://www.quora.com 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 1
+404 633 0
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 181
+/.well-known/acme-challenge/ALFA_DATA/alfacgiapi/index.php 1 -
+/cms/wp-includes/wlwmanifest.xml 10 -
+/.well-known/acme-challenge/ALFA_DATA/alfacgiapi/perl.alfa 2 -
+/app-ads.txt 2 -
+/wp-content/uploads/json.php 5 -
+/cgi-bin/upfile.php 1 -
+/wp-includes/wlwmanifest.xml 9 -
+/wp-2019.php 2 -
+/wp-content/alfacgiapi/py.alfa 2 -
+/blog/ALFA_DATA/alfacgiapi/404.php 1 -
+/wp-content/plugins/library/alfacgiapi/perl.alfa 2 -
+/alfacgiapi/404.php 1 -
+/wp-content/ALFA_DATA/alfacgiapi/wp-content/uploads/alfacgiapi/bash.alfa 2 -
+/feed/ 1 -
+/ALFA_DATA/alfacgiapi/perl.alfa 2 -
+/alfacgiapi/perl.alfa 2 -
+/.well-known/acme-challenge/ALFA_DATA/alfacgiapi/radio.php 1 -
+/contact_tpl.php 1 -
+/booyah.php 1 -
+/.well-known/pki-validation/index.php 1 -
+/lycee-outils-histoire-geographie 1 -
+/wp-includes/certificates/plugins.php 1 -
+/images/ALFA_DATA/alfacgiapi/perl.alfa 2 -
+/assets/alfacgiapi/bash.alfa 2 -
+/admin/fileman/dev.html 1 -
+/assets/alfacgiapi/py.alfa 2 -
+/wp-includes/theme-compat/embed-core.php 1 -
+/assets/ALFA_DATA/alfacgiapi/404.php 1 -
+/wp-content/plugins/alfacgiapi/bash.alfa 2 -
+/images/ALFA_DATA/alfacgiapi/py.alfa 1 -
+/wp-content/alfacgiapi/radio.php 1 -
+/wp-admin/dropdown.php 1 -
+/wp1/wp-includes/wlwmanifest.xml 10 -
+/wp-admin/includes/xmrlpc.php 2 -
+/post.php 1 -
+/wp-admin/file.php 1 -
+/xleet.php 8 -
+/wp/wp-includes/wlwmanifest.xml 10 -
+/fileman/dev.html 1 -
+/.well-known/acme-challenge/ALFA_DATA/alfacgiapi/bash.alfa 2 -
+/.well-known/pki-validation/alfacgiapi/bash.alfa 2 -
+/wp-content/plugins/alfacgiapi/perl.alfa 2 -
+/wp-content/alfacgiapi/perl.alfa 2 -
+/alfacgiapi/index.php 1 -
+/wp-content/ALFA_DATA/alfacgiapi/wp-content/uploads/alfacgiapi/py.alfa 2 -
+/.well-known/acme-challenge/ALFA_DATA/alfacgiapi/404.php 1 -
+/media/wp-includes/wlwmanifest.xml 3 -
+/.well-known/pki-validation/alfacgiapi/perl.alfa 2 -
+/ALFA_DATA/alfacgiapi/radio.php 1 -
+/assets/editor/fileman/index.html 1 -
+/cron.php 2 -
+/old 22 -
+/wp-content/alfacgiapi/404.php 1 -
+/website/wp-includes/wlwmanifest.xml 9 -
+/site/wp-includes/wlwmanifest.xml 10 -
+/test/wp-includes/wlwmanifest.xml 10 -
+/blog/ALFA_DATA/alfacgiapi/index.php 1 -
+/wp-content/alfacgiapi/index.php 1 -
+/wp-content/uploads/ALFA_DATA/alfacgiapi/py.alfa 2 -
+/lib/fileman/index.html 1 -
+/favicon.php 1 -
+/web/wp-includes/wlwmanifest.xml 10 -
+/assets/ALFA_DATA/alfacgiapi/bash.alfa 2 -
+/admin/fckeditor/editor/filemanager/alfanew.php 1 -
+/wp-content/plugins/Cache/footer.php 1 -
+/admin/config 1 -
+/2018/wp-includes/wlwmanifest.xml 3 -
+/lycee-outils-preparer-le-bac 1 -
+/ALFA_DATA/alfacgiapi/bash.alfa 2 -
+/assets/ALFA_DATA/alfacgiapi/py.alfa 2 -
+/js/fileman/index.html 1 -
+/1.php 1 -
+/wp-content/uploads/ALFA_DATA/alfacgiapi/perl.alfa 2 -
+/admin/function.php 6 -
+/wp2/wp-includes/wlwmanifest.xml 9 -
+/wp-includes/certificates/about.php 2 -
+/presse 2 -
+/wp-login.php 5 -
+/blog/ALFA_DATA/alfacgiapi/perl.alfa 2 -
+/ads.txt 3 -
+/ALFA_DATA/alfacgiapi/py.alfa 2 -
+/config.php 1 -
+/accompagner-un-enfant-de-lycee 1 -
+/new/alfacgiapi/bash.alfa 2 -
+/sito/wp-includes/wlwmanifest.xml 9 -
+/_files/ugd/293439_d1a5c486936c4f079a49146873f80864.pdf 2 -
+/dys-autisme 1 -
+/geju.php 4 -
+/.well-known/pki-validation/alfacgiapi/py.alfa 2 -
+/images/alfacgiapi/bash.alfa 2 -
+/ALFA_DATA/alfacgiapi/index.php 1 -
+/.well-known/acme-challenge/ALFA_DATA/alfacgiapi/py.alfa 2 -
+/new 22 -
+/assets/ALFA_DATA/alfacgiapi/perl.alfa 2 -
+/alfanew.php7 1 -
+/wp-includes/Text/network.php 3 -
+/dropdown.php 1 -
+/5173e.php 1 -
+/wp-includes/fonts/flower.php 1 -
+/wp-content/upgrade-temp-backup/about.php 1 -
+/wp-admin/css/colors/blue/xmrlpc.php 1 -
+/alfacgiapi/radio.php 1 -
+/2019/wp-includes/wlwmanifest.xml 10 -
+/blog/ALFA_DATA/alfacgiapi/radio.php 1 -
+/wordpress/wp-includes/wlwmanifest.xml 10 -
+/backup 22 -
+/aider-un-enfant-de-primaire 2 -
+/assets/alfacgiapi/index.php 1 -
+/lib/fileman/dev.html 1 -
+/wp-content/plugins/library/alfacgiapi/radio.php 1 -
+/blog/wp-includes/wlwmanifest.xml 10 -
+/news/wp-includes/wlwmanifest.xml 9 -
+/sftp-config.json 1 -
+/blog/ALFA_DATA/alfacgiapi/bash.alfa 2 -
+/lycee-outils-francais 1 -
+/fileman/index.html 1 -
+/_files/ugd/293439_74364712ebc14086bfc5e608d2a5b7a7.pdf 2 -
+/wp-includes/js/jquery/jquery.js 4 -
+/wsoyanz.php 1 -
+/contact 2 -
+/.well-known/pki-validation/alfacgiapi/index.php 1 -
+/22.php 2 -
+/.well-known/pki-validation/alfacgiapi/radio.php 1 -
+/wp-content/plugins/library/ALFA_DATA/alfacgiapi/perl.alfa 2 -
+/images/alfacgiapi/perl.alfa 2 -
+/wp-content/alfacgiapi/bash.alfa 2 -
+/wp-content/plugins/library/ALFA_DATA/alfacgiapi/bash.alfa 1 -
+/images/ALFA_DATA/alfacgiapi/bash.alfa 2 -
+/wp-content/plugins/library/alfacgiapi/index.php 1 -
+/_files/ugd/293439_91a03285ac3f4f27897b192cdc5c1461.pdf 1 -
+/wp-includes/sitemaps/providers/index.php 1 -
+/assets/ALFA_DATA/alfacgiapi/radio.php 1 -
+/2020/wp-includes/wlwmanifest.xml 7 -
+/robots.txt 35 -
+/new/alfacgiapi/perl.alfa 2 -
+/images/alfacgiapi/404.php 1 -
+/2021/wp-includes/wlwmanifest.xml 1 -
+/alfacgiapi/py.alfa 2 -
+/bk 22 -
+/aQzODIgoBr.php 1 -
+/item.php 1 -
+/lycee-outils-langues 1 -
+/cljntmcz.php 1 -
+/new/alfacgiapi/py.alfa 2 -
+/_files/ugd/293439_d54e351d566744ef84a227a4666b563a.pdf 1 -
+/xmlrpc.php 1 -
+/assets/alfacgiapi/perl.alfa 2 -
+/blog/ALFA_DATA/alfacgiapi/py.alfa 2 -
+/x/index.php 1 -
+/wp-content/plugins/library/alfacgiapi/404.php 1 -
+/assets/alfacgiapi/radio.php 1 -
+/bc 22 -
+/media/system/js/core.js 1 -
+/js/fileman/dev.html 1 -
+/path/to/wordlist.txt 1 -
+/images/alfacgiapi/radio.php 1 -
+/cafes-pedagogiques 2 -
+/wordpress 22 -
+/wp-includes/options.php 1 -
+/sellers.json 2 -
+/wp-content/ALFA_DATA/alfacgiapi/wp-content/uploads/alfacgiapi/perl.alfa 2 -
+/wp 22 -
+/main 22 -
+/images/alfacgiapi/py.alfa 2 -
+/jzzjq24u.php 1 -
+/assets/alfacgiapi/404.php 1 -
+/wp-content/plugins/library/alfacgiapi/py.alfa 2 -
+/assets/ALFA_DATA/alfacgiapi/index.php 1 -
+/shell.php 2 -
+/wp-content/plugins/2eam9kkj/autoload_classmap.php 1 -
+/home 22 -
+/images/alfacgiapi/index.php 1 -
+/wp-content/plugins/library/alfacgiapi/bash.alfa 2 -
+/wp-content/uploads/ALFA_DATA/alfacgiapi/bash.alfa 2 -
+/admin/fileman/index.html 1 -
+/wp-content/upgrade/about.php 1 -
+/alfacgiapi/bash.alfa 2 -
+/shop/wp-includes/wlwmanifest.xml 10 -
+/wp-includes/Text/wp-login.php 2 -
+/ALFA_DATA/alfacgiapi/404.php 1 -
+/M1.php 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 82
+159.89.206.115 12 12 9792 20241226090619
+128.199.217.247 6 6 4896 20241231175402
+18.220.251.152 5 5 4080 20241228041715
+54.84.149.143 5 5 3308 20241223184816
+109.31.122.195 4 4 2600 20241223121925
+34.209.244.71 4 4 3264 20241231234124
+178.170.117.219 3 3 2448 20241224203908
+3.133.101.5 3 3 2448 20241226130141
+147.182.134.35 3 3 2448 20241227181117
+18.223.155.143 3 3 1869 20241221212742
+34.220.164.196 3 3 2448 20241230183008
+206.189.33.53 3 3 2448 20241226125958
+85.198.36.30 2 2 1632 20241228234932
+88.99.26.177 2 2 1632 20241223170728
+3.140.190.102 2 2 174 20241223122253
+54.189.73.36 2 2 174 20241223122253
+37.65.166.141 2 2 1632 20241223204237
+18.216.104.37 2 2 1632 20241230123141
+172.81.133.246 1 1 816 20241226200222
+205.169.39.22 1 1 650 20241223122421
+18.142.140.164 1 1 87 20241223122254
+205.169.39.7 1 1 650 20241223122422
+23.178.112.103 1 1 87 20241223122255
+23.178.112.109 1 1 87 20241223122253
+178.120.11.92 1 1 816 20241226194104
+104.28.30.23 1 1 816 20241226210702
+212.102.33.245 1 1 816 20241230112708
+159.223.225.153 1 1 816 20241225020033
+91.217.80.200 1 1 816 20241226234819
+109.199.118.129 1 1 816 20241230233617
+205.169.39.30 1 1 650 20241223122432
+34.57.156.33 1 1 650 20241223122923
+205.210.31.53 1 1 816 20241231142314
+212.115.49.105 1 1 816 20241225065144
+205.169.39.21 1 1 650 20241223122656
+18.232.112.18 1 1 816 20241227171149
+172.225.191.1 1 2 39321 20241223214106
+13.58.82.60 1 1 87 20241223122256
+130.255.166.122 1 1 816 20241228072119
+167.94.146.49 1 1 816 20241227132434
+46.101.84.138 1 1 816 20241227020819
+147.182.150.181 1 1 816 20241224164658
+18.141.56.241 1 1 87 20241223122256
+13.53.89.226 1 1 87 20241223122256
+54.167.92.154 1 1 816 20241224213800
+34.123.170.104 1 1 650 20241223122412
+82.165.193.212 1 1 816 20241223142945
+45.77.36.115 1 1 816 20241231022352
+52.89.128.77 1 1 816 20241226124159
+3.72.2.104 1 1 816 20241231234709
+2a06:98c0:3600::103 1 1 816 20241229024604
+156.146.36.72 1 1 816 20241226023846
+152.53.19.174 1 1 816 20241227220624
+43.128.19.78 1 1 816 20241225025617
+205.210.31.225 1 1 816 20241227083309
+104.28.30.21 0 1 38505 
+137.184.225.11 1 1 816 20241225021746
+209.97.163.227 1 1 816 20241225213953
+54.148.28.138 1 1 816 20241224112529
+54.169.155.62 1 1 87 20241223122251
+167.94.146.50 1 1 816 20241230020830
+64.15.129.102 1 1 717 20241223130200
+23.178.112.107 1 1 87 20241223122250
+104.28.30.30 1 2 39321 20241224135107
+134.122.15.184 1 1 816 20241226151443
+51.159.103.19 1 1 816 20241224235524
+62.141.44.236 1 1 816 20241224024747
+192.175.111.233 1 1 717 20241223130200
+54.187.174.90 1 1 87 20241223122256
+34.122.147.229 1 1 650 20241223122412
+192.175.111.253 1 1 717 20241223130206
+158.69.25.39 1 1 816 20241227133146
+147.185.132.45 1 1 816 20241231104116
+64.23.142.151 1 1 816 20241227014604
+62.210.90.209 1 1 816 20241223161800
+13.49.145.186 1 1 87 20241223122251
+18.220.150.94 1 1 816 20241223210106
+16.16.162.191 1 1 87 20241223122253
+64.15.129.105 1 1 717 20241223130206
+139.59.238.252 1 1 816 20241228233500
+3.26.37.172 1 1 816 20241223173621
+5.133.192.212 1 1 623 20241222063528
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 11
+20241221 4 4 2492 2
+20241222 3 3 1869 3
+20241223 41 42 58611 34
+20241224 9 10 45849 7
+20241225 6 6 4896 6
+20241226 24 25 58089 11
+20241227 14 14 11424 12
+20241228 5 5 4080 4
+20241229 2 2 1632 2
+20241230 11 11 8976 8
+20241231 10 10 8160 8
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 3
+5mn-15mn 1
+0s-30s 94
+2mn-5mn 2
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 4
+/ 114 89258 84 84
+/.well-known/acme-challenge/34IqFskVR8wTepfbMKtlVduynePYX8JsFgPFlLGyw2o 5 435 3 5
+/.well-known/acme-challenge/DRepeQhl9m_tpXLWBtq_YAQPk4mHX18hE_hGU4CU230 5 435 5 5
+/.well-known/acme-challenge/zzoslXoXmGF-uDbcjK7Pv5HVBlILXSMjvvNt-HPh3GI 5 435 5 3
+END_SIDER

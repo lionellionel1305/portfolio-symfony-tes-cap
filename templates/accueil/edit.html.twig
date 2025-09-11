@@ -1,0 +1,15 @@
+{% extends 'baseedit.html.twig' %}
+
+{% block title %}Modifier l'association{% endblock %}
+
+{% block body %}
+    <h1>Modifier la description</h1>
+
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <div style="display: flex; justify-content: center; align-items: center; gap: 40px;">
+        <button class="btn btn-success" style="padding: 10px 20px; height: 40px;">Sauvegarder</button>
+        <a href="{{ path('app_association') }}" class="btn btn-secondary" style="padding: 10px 40px; height: 40px; display: inline-flex; justify-content: center; align-items: center;">Annuler</a>
+    </div>
+    {{ form_end(form) }}
+{% endblock %}

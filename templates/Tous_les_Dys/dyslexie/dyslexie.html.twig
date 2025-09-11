@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Dyslexie{% endblock %}
+
+{% block body %}
+    <div class="container">
+    {% if dyslexies is not empty %}
+    {% for key, dyslexie in dyslexies %}
+        <div class="col-11">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div>
+                        <h1 class="custom-title">{{ dyslexie.editableTitle | default('Titre non défini') }}</h1>
+                    </div>
+
+                    <div class="container_dys_description">
+                        <h5>{{ dyslexie.description | default('') | linkify | nl2br }}</h5>
+                        <h5>{{ dyslexie.description1 | default('') | linkify | nl2br }}</h5>
+                        <h5>{{ dyslexie.description2 | default('') | linkify | nl2br }}</h5>
+                        <h5>{{ dyslexie.description3 | default('') | linkify | nl2br }}</h5>
+                        <h5>{{ dyslexie.description4 | default('') | linkify | nl2br }}</h5>
+                        <h5>{{ dyslexie.description5 | default('') | linkify | nl2br }}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    {% else %}
+        <p>Aucune entrée trouvée pour Dyslexie.</p>
+    {% endif %}
+
+    <div class="buton_modifier_dys">
+        <div class="col-12">
+            {% if is_granted('ROLE_ADMIN') or is_granted('ROLE_BUREAU') %}
+                <div class="container_dys_description_button text-center">
+                    <a href="{{ path('app_dyslexie_edit') }}" class="boutton_dys btn btn-primary btn-lg">Modifier</a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+    </div>
+{% endblock %}

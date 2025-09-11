@@ -1,0 +1,104 @@
+<?php
+
+namespace App\Controller;
+
+use App\Entity\Dys;
+use App\Form\DysType;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Attribute\Route;
+use Doctrine\ORM\EntityManagerInterface;
+use Symfony\Component\HttpFoundation\Request;
+
+#[Route('/tesCap29.fr')]
+class DysgraphieController extends AbstractController
+{
+    private EntityManagerInterface $entityManager;
+
+    public function __construct(EntityManagerInterface $entityManager)
+    {
+        $this->entityManager = $entityManager;
+    }
+    #[Route('/dys/dysgraphie', name: 'app_dysgraphie')]
+    public function dysgraphie(EntityManagerInterface $em): Response
+    {
+
+        $typeDys = 'Dysgraphie';
+        $dysgraphies = $em->getRepository(Dys::class)->findBy(['typeDys' => $typeDys]);
+
+        if (empty($dysgraphies)) {
+            return $this->render('Tous_les_Dys/dysgraphie/dysgraphie.html.twig', [
+                'dysgraphies' => [],
+                'forms' => [],
+            ]);
+        }
+        $forms = [];
+        foreach ($dysgraphies as $dysgraphie) {
+            $forms[] = $this->createFormBuilder($dysgraphie)
+                ->add('description', TextareaType::class, [
+                    'label' => 'Description de la dysgraphie',
+                    'attr' => [
+                        'rows' => 10,
+                        'cols' => 30,
+                        'class' => 'form-control'
+                    ],
+                ])
+                ->add('editableTitle', TextType::class, [
+                    'label' => 'Titre modifiable',
+                    'required' => false,
+                ])
+                ->getForm()->createView();
+        }
+
+        // Renvoyer les données et formulaires à la vue
+        return $this->render('Tous_les_Dys/dysgraphie/dysgraphie.html.twig', [
+            'dysgraphies' => $dysgraphies,
+            'forms' => $forms,
+        ]);
+    }
+    #[Route('/dys/dysgraphie/edit', name: 'app_dysgraphie_edit')]
+    public function edit(Request $request, EntityManagerInterface $em): Response
+    {
+        $this->denyAccessUnlessGranted('ROLE_ADMIN');
+        $typeDys = 'Dysgraphie';
+        $dysgraphie = $em->getRepository(Dys::class)->findOneBy(['typeDys' => $typeDys]);
+
+        if (!$dysgraphie) {
+            $dysgraphie = new Dys();
+            $dysgraphie->setTypeDys($typeDys);
+        }
+        $form = $this->createForm(DysType::class, $dysgraphie)
+
+            ->add('description', TextareaType::class, [
+                'label' => 'Description de la dysgraphie',
+                'attr' => [
+                    'rows' => 10,  // Hauteur en nombre de lignes
+                    'cols' => 10,  // Largeur en nombre de colonnes (généralement caractères)
+                    'class' => 'form-control custom-textarea' // Classe CSS personnalisée
+                ]
+            ])
+            ->add('editableTitle', TextType::class, [
+                'label' => 'Titre modifiable',
+                'required' => false,
+            ]);
+
+        // Traite la soumission du formulaire
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            // Si le formulaire est soumis et valide, persiste les modifications dans la base de données
+            $this->entityManager->persist($dysgraphie);
+            $this->entityManager->flush();
+
+            // Redirige vers la route de liste des dyscalculies ou une autre page
+            return $this->redirectToRoute('app_dysgraphie');
+        }
+
+        // Retourne le rendu de la vue avec le formulaire
+        return $this->render('Tous_les_Dys/dysgraphie/edit.html.twig', [
+            'form' => $form->createView(),
+        ]);
+    }
+}
