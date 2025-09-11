@@ -14,7 +14,7 @@ Mon projet Symfony “T’es Cap” est un site vitrine complet pour un portfoli
 ![Projets](screenshots/enfant-inscription.png)
 
 ### Page Contact
-![Contact](screenshots/Contact.png)
+![Contact](screenshots/Contact.PNG)
 
 
 ## Description
