@@ -8,7 +8,7 @@ Mon projet Symfony “T’es Cap” est un site vitrine complet pour un portfoli
 ## Capture d'écran
 
 ### Page d'accueil
-![Accueil](screenshots/accueil.png)
+![Accueil](screenshots/accueil.PNG)
 
 ### Page enfant inscription
 ![Projets](screenshots/enfant-inscription.png)
