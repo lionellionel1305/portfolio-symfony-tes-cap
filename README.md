@@ -1,6 +1,6 @@
 # T'es Cap - Portfolio Symfony
 
-Mon projet Symfony “T’es Cap” est un site vitrine complet pour un portfolio freelance.
+
 
 ## Lien vers le site en ligne
 [Voir le site](https://tescap29.fr/accueil)
